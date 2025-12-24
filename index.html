@@ -8,7 +8,7 @@
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Custom Brand Colors -->
+  <!-- Brand Colors -->
   <script>
     tailwind.config = {
       theme: {
@@ -29,244 +29,184 @@
 
 <!-- NAVBAR -->
 <nav class="bg-evergreen text-offwhite shadow-md">
-  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
-    <!-- Logo / Home -->
-    <div class="flex items-center space-x-3">
-      <a href="index.html"><span class="text-4xl font-bold tracking-wide text-gold">
-        PrimeMagnus Care
-      </span></a>
-    </div>
+    <!-- Logo -->
+    <a href="index.html"
+       class="text-4xl md:text-4xl text-2xl font-bold tracking-wide text-gold">
+      PrimeMagnus Care
+    </a>
 
-    <!-- Center Nav -->
-    <div class="flex-grow flex justify-end space-x-10">
+    <!-- Desktop Nav -->
+    <div class="hidden md:flex space-x-10">
       <a href="index.html" class="hover:text-gold transition font-medium">Home</a>
-      <a href="operate.html" class="hover:text-gold transition font-medium">How we Operate</a>
+      <a href="operate.html" class="hover:text-gold transition font-medium">
+        How We Operate
+      </a>
     </div>
+
+    <!-- Mobile Menu Button -->
+    <button id="menuBtn" class="md:hidden focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg"
+           class="h-6 w-6"
+           fill="none"
+           viewBox="0 0 24 24"
+           stroke="currentColor">
+        <path stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden bg-evergreen px-6 pb-4">
+    <a href="index.html" class="block py-2 hover:text-gold">Home</a>
+    <a href="operate.html" class="block py-2 hover:text-gold">
+      How We Operate
+    </a>
   </div>
 </nav>
 
-<!-- HERO SECTION -->
+<!-- HERO -->
 <section class="relative bg-evergreen text-offwhite">
   <div class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-10 items-center">
 
-    <!-- Text -->
     <div>
-      <h1 class="text-4xl font-bold leading-tight mb-6">
-        PrimeMagnus Care Global<br>
-        <!-- <span class="text-gold">Built on Trust</span>-->
+      <h1 class="text-4xl font-bold mb-6">
+        PrimeMagnus Care Global
       </h1>
       <p class="text-lg opacity-90">
         PrimeMagnus Care Global supports governed and predictable cross-border care pathways.
-We work with healthcare institutions, public bodies, and ecosystem partners to bring structure, accountability, and operational clarity to complex cross-border care engagement.
+        We work with healthcare institutions, public bodies, and ecosystem partners to bring
+        structure, accountability, and operational clarity to complex cross-border care engagement.
       </p>
     </div>
 
-    <!-- Image -->
-   <div class="relative rounded-xl shadow-lg overflow-hidden w-full h-[320px]">
-
-  <!-- Slides -->
-  <img
-    id="slideImage"
-    src="https://images.unsplash.com/photo-1579154204601-01588f351e67"
-    alt="Hospital"
-    class="w-full h-full object-cover transition-opacity duration-700"
-  />
-
-</div>
+    <!-- Slideshow -->
+    <div class="relative rounded-xl shadow-lg overflow-hidden w-full h-[320px]">
+      <img id="slideImage"
+           src="https://images.unsplash.com/photo-1579154204601-01588f351e67"
+           class="w-full h-full object-cover transition-opacity duration-700"
+           alt="Hospital"/>
+    </div>
 
   </div>
 </section>
 
-<!-- SPACER -->
-<section class="h-20"></section>
-
-<!-- TILES SECTION -->
-<section class="max-w-6xl mx-auto px-6 py-24">
-
- 
-
-  <!-- Content Box -->
+<!-- OUR ROLE -->
+<section class="max-w-6xl mx-auto px-6 py-16">
   <div class="bg-white border-l-4 border-gold rounded-2xl shadow-lg p-14">
-     <!-- Heading -->
-  <h2 class="text-4xl font-semibold text-center mb-14 text-evergreen">
-    Our Role
-  </h2>
-    <p class="text-xl text-charcoal mb-8 font-medium leading-relaxed">
+
+    <h2 class="text-4xl font-semibold text-center mb-10 text-evergreen">
+      Our Role
+    </h2>
+
+    <p class="text-xl mb-6 font-medium">
       Our role is <span class="text-evergreen font-semibold">not</span> to move patients.
     </p>
 
-    <p class="text-lg text-charcoal mb-6 leading-relaxed">
-      Our role is to ensure that when care pathways exist, they are
-      <span class="font-medium">owned, governed, and clearly understood</span>
-      by all stakeholders involved.
+    <p class="text-lg mb-4">
+      Our role is to ensure that when care pathways exist,
+      they are <span class="font-medium">owned, governed, and understood</span>.
     </p>
 
-    <p class="text-lg text-charcoal mb-6 leading-relaxed">
-      <span class="font-semibold text-evergreen">
-        PrimeMagnus Care Global
-      </span>
-      operates as an <span class="font-medium">institutional partner</span>,
-      not as a medical travel facilitator.
+    <p class="text-lg mb-4">
+      <span class="font-semibold text-evergreen">PrimeMagnus Care Global</span>
+      operates as an institutional partner, not a medical travel facilitator.
     </p>
 
-    <p class="text-lg text-charcoal leading-relaxed">
-      We engage where <span class="font-medium">clarity</span>,
-      <span class="font-medium">discipline</span>, and
-      <span class="font-medium">structured oversight</span> are required
-      to reduce institutional risk before care pathways are activated.
+    <p class="text-lg">
+      We engage where clarity, discipline, and structured oversight
+      are required to reduce institutional risk.
     </p>
 
   </div>
-
 </section>
-<section class="max-w-6xl mx-auto px-6 py-20">
 
-  <!-- Content Box -->
-  <div class="bg-white rounded-2xl shadow-lg p-14 border-l-4 border-gold">
+<!-- WHAT WE ENABLE -->
+<section class="max-w-6xl mx-auto px-6 py-14">
+  <div class="bg-white border-l-4 border-gold rounded-2xl shadow-lg p-14">
 
-    <!-- Heading -->
-    <h2 class="text-4xl font-semibold text-center mb-14 text-evergreen">
+    <h2 class="text-4xl font-semibold text-center mb-10 text-evergreen">
       What We Enable
     </h2>
 
-    <!-- List -->
-    <ul class="space-y-6 mb-10">
-      <li class="flex items-start gap-4">
-        <span class="text-gold text-2xl leading-none">•</span>
-        <p class="text-lg text-charcoal leading-relaxed">
-          <span class="font-medium text-evergreen">
-            Pathway design and governance
-          </span>,
-          ensuring clinical and operational accountability from the outset.
-        </p>
-      </li>
-
-      <li class="flex items-start gap-4">
-        <span class="text-gold text-2xl leading-none">•</span>
-        <p class="text-lg text-charcoal leading-relaxed">
-          <span class="font-medium text-evergreen">
-            Institutional readiness
-          </span>
-          for cross-border engagement, aligned to regulatory and ethical standards.
-        </p>
-      </li>
-
-      <li class="flex items-start gap-4">
-        <span class="text-gold text-2xl leading-none">•</span>
-        <p class="text-lg text-charcoal leading-relaxed">
-          <span class="font-medium text-evergreen">
-            Pilot-based collaboration
-          </span>
-          before scale, enabling controlled learning and risk-managed expansion.
-        </p>
-      </li>
+    <ul class="space-y-4 mb-8 text-lg">
+      <li>• <span class="text-evergreen font-medium">Pathway design and governance</span></li>
+      <li>• <span class="text-evergreen font-medium">Institutional readiness</span> for cross-border engagement</li>
+      <li>• <span class="text-evergreen font-medium">Pilot-based collaboration</span> before scale</li>
     </ul>
 
-    <!-- Closing Statement -->
-    <p class="text-lg text-charcoal leading-relaxed border-t pt-6">
-      Our work focuses on
-      <span class="font-medium">predictability</span>,
-      <span class="font-medium">patient dignity</span>, and
-      <span class="font-medium">responsible coordination</span>,
-      ensuring healthcare partnerships are sustainable, ethical, and institutionally sound.
+    <p class="border-t pt-6 text-lg">
+      Our work focuses on predictability, patient dignity,
+      and responsible coordination.
     </p>
 
   </div>
-
 </section>
 
+<!-- WHO WE WORK WITH -->
+<section class="max-w-6xl mx-auto px-6 py-14">
+  <div class="bg-white border-l-4 border-gold rounded-2xl shadow-lg p-14">
 
-<section class="max-w-6xl mx-auto px-6 py-20">
+    <h2 class="text-4xl font-semibold text-center mb-10 text-evergreen">
+      Who We Work With
+    </h2>
 
-  
-  <!-- Content Box -->
-  <div class="bg-white rounded-2xl shadow-lg p-14 border-l-4 border-gold">
-    <!-- Heading -->
-  <h2 class="text-4xl font-semibold text-center mb-14 text-evergreen">
-    Who We Work With
-  </h2>
-
-    <!-- List -->
-    <ul class="space-y-6 mb-10">
-      <li class="flex items-start gap-4">
-        <span class="text-gold text-2xl leading-none">•</span>
-        <p class="text-lg text-charcoal leading-relaxed">
-          <span class="font-medium text-evergreen">
-            Healthcare providers
-          </span>
-          as care delivery partners operating within defined clinical pathways.
-        </p>
-      </li>
-
-      <li class="flex items-start gap-4">
-        <span class="text-gold text-2xl leading-none">•</span>
-        <p class="text-lg text-charcoal leading-relaxed">
-          <span class="font-medium text-evergreen">
-            Public-sector bodies
-          </span>,
-          including institutions responsible for health system governance and oversight.
-        </p>
-      </li>
-
-      <li class="flex items-start gap-4">
-        <span class="text-gold text-2xl leading-none">•</span>
-        <p class="text-lg text-charcoal leading-relaxed">
-          <span class="font-medium text-evergreen">
-            Healthcare ecosystem partners
-          </span>,
-          supporting infrastructure, compliance, and coordination across systems.
-        </p>
-      </li>
+    <ul class="space-y-4 mb-8 text-lg">
+      <li>• Healthcare providers (care delivery partners)</li>
+      <li>• Public-sector bodies</li>
+      <li>• Healthcare ecosystem partners</li>
     </ul>
 
-    <!-- Boundary Statement -->
-    <div class="border-t pt-6">
-      <p class="text-lg text-charcoal leading-relaxed font-medium">
-        We do <span class="text-evergreen font-semibold">not</span> market to patients
-        or operate consumer-facing models.
-      </p>
-    </div>
+    <p class="border-t pt-6 text-lg font-medium">
+      We do <span class="text-evergreen font-semibold">not</span>
+      market to patients or operate consumer-facing models.
+    </p>
 
   </div>
-
 </section>
-
 
 <!-- FOOTER -->
-<footer class="bg-evergreen text-offwhite mt-20">
-  <div class="max-w-7xl mx-auto px-6 py-6 text-center">
-    <p class="text-sm">
-      Contact Us:
-      <a href="mailto:azeem@primemagnuscareglobal.com"
-         class="text-gold hover:underline ml-1">
-        azeem@primemagnuscareglobal.com
-      </a>
-    </p>
+<footer class="bg-evergreen text-offwhite mt-14">
+  <div class="max-w-7xl mx-auto px-6 py-6 text-center text-sm">
+    Contact Us:
+    <a href="mailto:azeem@primemagnuscareglobal.com"
+       class="text-gold hover:underline ml-1">
+      azeem@primemagnuscareglobal.com
+    </a>
   </div>
 </footer>
+
+<!-- SCRIPTS -->
 <script>
+  // Mobile menu
+  document.getElementById('menuBtn').onclick = () =>
+    document.getElementById('mobileMenu').classList.toggle('hidden');
+
+  // Slideshow
   const images = [
     "https://images.unsplash.com/photo-1579154204601-01588f351e67",
-    "https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=868&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1513224502586-d1e602410265?q=80&w=1031&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://plus.unsplash.com/premium_photo-1675686363477-c28d5bf65adb?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1629909613654-28e377c37b09",
+    "https://images.unsplash.com/photo-1513224502586-d1e602410265",
     "https://images.unsplash.com/photo-1504439468489-c8920d796a29"
   ];
 
-  let currentIndex = 0;
-  const slideImage = document.getElementById("slideImage");
+  let i = 0;
+  const img = document.getElementById("slideImage");
 
   setInterval(() => {
-    slideImage.classList.add("opacity-0");
-
+    img.classList.add("opacity-0");
     setTimeout(() => {
-      currentIndex = (currentIndex + 1) % images.length;
-      slideImage.src = images[currentIndex];
-      slideImage.classList.remove("opacity-0");
+      i = (i + 1) % images.length;
+      img.src = images[i];
+      img.classList.remove("opacity-0");
     }, 400);
-
-  }, 5000); // 5 seconds
+  }, 5000);
 </script>
+
 </body>
 </html>
