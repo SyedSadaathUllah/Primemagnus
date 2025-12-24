@@ -72,29 +72,21 @@
 
 <!-- HERO -->
 <section class="relative bg-evergreen text-offwhite">
-  <div class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-10 items-center">
+  <div class="max-w-4xl mx-auto px-6 py-20 flex flex-col items-center text-center">
 
-    <div>
-      <h1 class="text-4xl font-bold mb-6">
-        PrimeMagnus Care Global
-      </h1>
-      <p class="text-lg opacity-90">
-        PrimeMagnus Care Global supports governed and predictable cross-border care pathways.
-        We work with healthcare institutions, public bodies, and ecosystem partners to bring
-        structure, accountability, and operational clarity to complex cross-border care engagement.
-      </p>
-    </div>
+    <h1 class="text-4xl font-bold mb-6">
+      PrimeMagnus Care Global
+    </h1>
 
-    <!-- Slideshow -->
-    <div class="relative rounded-xl shadow-lg overflow-hidden w-full h-[320px]">
-      <img id="slideImage"
-           src="https://images.unsplash.com/photo-1579154204601-01588f351e67"
-           class="w-full h-full object-cover transition-opacity duration-700"
-           alt="Hospital"/>
-    </div>
+    <p class="text-lg opacity-90 leading-relaxed">
+      PrimeMagnus Care Global supports governed and predictable cross-border care pathways.
+      We work with healthcare institutions, public bodies, and ecosystem partners to bring
+      structure, accountability, and operational clarity to complex cross-border care engagement.
+    </p>
 
   </div>
 </section>
+
 
 <!-- OUR ROLE -->
 <section class="max-w-6xl mx-auto px-6 py-16">
@@ -180,33 +172,5 @@
     </a>
   </div>
 </footer>
-
-<!-- SCRIPTS -->
-<script>
-  // Mobile menu
-  document.getElementById('menuBtn').onclick = () =>
-    document.getElementById('mobileMenu').classList.toggle('hidden');
-
-  // Slideshow
-  const images = [
-    "https://images.unsplash.com/photo-1579154204601-01588f351e67",
-    "https://images.unsplash.com/photo-1629909613654-28e377c37b09",
-    "https://images.unsplash.com/photo-1513224502586-d1e602410265",
-    "https://images.unsplash.com/photo-1504439468489-c8920d796a29"
-  ];
-
-  let i = 0;
-  const img = document.getElementById("slideImage");
-
-  setInterval(() => {
-    img.classList.add("opacity-0");
-    setTimeout(() => {
-      i = (i + 1) % images.length;
-      img.src = images[i];
-      img.classList.remove("opacity-0");
-    }, 400);
-  }, 5000);
-</script>
-
 </body>
 </html>
