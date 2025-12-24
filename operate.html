@@ -5,10 +5,8 @@
   <title>How PrimeMagnus Care Global Operates</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Brand Configuration -->
   <script>
     tailwind.config = {
       theme: {
@@ -25,205 +23,102 @@
   </script>
 </head>
 
-<body class="bg-offwhite text-charcoal">
+<body class="bg-offwhite text-charcoal text-justify">
 
-<!-- NAVBAR (UNCHANGED) -->
+<!-- NAVBAR -->
 <nav class="bg-evergreen text-offwhite shadow-md">
-  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+  <div class="max-w-7xl mx-auto px-6 py-3 md:py-4 flex items-center justify-between">
 
     <a href="index.html"
-       class="text-2xl md:text-4xl font-bold tracking-wide text-gold">
+       class="text-lg md:text-4xl font-bold tracking-wide text-gold whitespace-nowrap">
       PrimeMagnus Care Global
     </a>
 
     <div class="hidden md:flex space-x-10">
-      <a href="index.html" class="hover:text-gold transition font-medium">Home</a>
-      <a href="operate.html" class="hover:text-gold transition font-medium">
-        How We Operate
-      </a>
+      <a href="index.html" class="hover:text-gold font-medium">Home</a>
+      <a href="operate.html" class="hover:text-gold font-medium">How We Operate</a>
     </div>
 
-    <button id="menuBtn" class="md:hidden focus:outline-none">
-      <svg xmlns="http://www.w3.org/2000/svg"
-           class="h-6 w-6"
-           fill="none"
-           viewBox="0 0 24 24"
-           stroke="currentColor">
-        <path stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+    <button id="menuBtn" class="md:hidden">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+           viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               d="M4 6h16M4 12h16M4 18h16"/>
       </svg>
     </button>
 
   </div>
 
-  <div id="mobileMenu" class="hidden md:hidden bg-evergreen px-6 pb-4">
+  <div id="mobileMenu" class="hidden md:hidden bg-evergreen px-6 pb-3">
     <a href="index.html" class="block py-2 hover:text-gold">Home</a>
-    <a href="operate.html" class="block py-2 hover:text-gold">
-      How We Operate
-    </a>
+    <a href="operate.html" class="block py-2 hover:text-gold">How We Operate</a>
   </div>
 </nav>
 
-<main class="text-center md:text-justify">
+<main class="max-w-6xl mx-auto px-6 py-12 space-y-10">
 
-<!-- PAGE INTRO -->
-<section class="max-w-6xl mx-auto px-6 py-12">
-  <div class="bg-white rounded-2xl shadow-lg p-14 border-l-4 border-gold">
-    <h1 class="text-2xl md:text-3xl font-semibold text-evergreen mb-6 text-center">
-      How PrimeMagnus Care Global Operates
-    </h1>
-    <p class="text-sm md:text-lg leading-relaxed">
-      PrimeMagnus Care Global works with healthcare institutions, public bodies,
-      and ecosystem partners to design, review, and govern cross-border care pathways.
-      Our role is to ensure that when care pathways exist, they are structured,
-      institutional risks are understood, and accountability is embedded at every stage.
-    </p>
-  </div>
+<section class="bg-white p-8 md:p-14 rounded-2xl shadow-lg border-l-4 border-gold">
+  <h1 class="text-2xl md:text-3xl font-semibold text-evergreen mb-6 text-center">
+    How PrimeMagnus Care Global Operates
+  </h1>
+  <p class="text-sm md:text-lg leading-snug md:leading-relaxed">
+    PrimeMagnus Care Global works with healthcare institutions, public bodies,
+    and ecosystem partners to design and govern cross-border care pathways.
+  </p>
 </section>
 
-<!-- PATHWAY DESIGN -->
-<section class="max-w-6xl mx-auto px-6 py-10">
-  <div class="bg-white rounded-2xl shadow-lg p-14 border-l-4 border-gold">
-    <h2 class="text-2xl md:text-3xl font-semibold text-evergreen mb-6 text-center">
-      Pathway Design and Governance
-    </h2>
+<section class="bg-white p-8 md:p-14 rounded-2xl shadow-lg border-l-4 border-gold">
+  <h2 class="text-2xl md:text-3xl font-semibold text-evergreen mb-6 text-center">
+    Pathway Design and Governance
+  </h2>
 
-    <ul class="space-y-4 mb-5 text-sm md:text-lg">
-      <li>• defined ownership and responsibilities</li>
-      <li>• governance and risk-review mechanisms</li>
-      <li>• escalation and communication protocols</li>
-    </ul>
-
-    <p class="text-sm md:text-lg leading-relaxed">
-      The objective is to reduce uncertainty, prevent avoidable distress,
-      and ensure continuity across borders.
-    </p>
-  </div>
+  <ul class="list-disc list-inside text-left space-y-2 text-sm md:text-lg">
+    <li>Defined ownership and responsibilities</li>
+    <li>Governance and risk-review mechanisms</li>
+    <li>Escalation and communication protocols</li>
+  </ul>
 </section>
 
-<!-- INSTITUTIONAL READINESS -->
-<section class="max-w-6xl mx-auto px-6 py-10">
-  <div class="bg-white rounded-2xl shadow-lg p-14 border-l-4 border-gold">
-    <h2 class="text-2xl md:text-3xl font-semibold text-evergreen mb-6 text-center">
-      Institutional Readiness and Capability Building
-    </h2>
+<section class="bg-white p-8 md:p-14 rounded-2xl shadow-lg border-l-4 border-gold">
+  <h2 class="text-2xl md:text-3xl font-semibold text-evergreen mb-6 text-center">
+    Institutional Readiness
+  </h2>
 
-    <ul class="space-y-4 mb-5 text-sm md:text-lg">
-      <li>• process and communication discipline</li>
-      <li>• internal alignment across teams</li>
-      <li>• capability-building aligned to internationally accepted standards</li>
-    </ul>
-
-    <p class="text-sm md:text-lg leading-relaxed">
-      Our focus is institutional maturity rather than volume growth.
-    </p>
-  </div>
+  <ul class="list-disc list-inside text-left space-y-2 text-sm md:text-lg">
+    <li>Process and communication discipline</li>
+    <li>Internal alignment across teams</li>
+    <li>Capability building aligned to global standards</li>
+  </ul>
 </section>
 
-<!-- PILOT BASED COLLABORATION -->
-<section class="max-w-6xl mx-auto px-6 py-10">
-  <div class="bg-white rounded-2xl shadow-lg p-14 border-l-4 border-gold">
-    <h2 class="text-2xl md:text-3xl font-semibold text-evergreen mb-6 text-center">
-      Pilot-Based Collaboration
-    </h2>
+<section class="bg-white p-8 md:p-14 rounded-2xl shadow-lg border-l-4 border-gold">
+  <h2 class="text-2xl md:text-3xl font-semibold text-evergreen mb-6 text-center">
+    What We Do Not Do
+  </h2>
 
-    <ul class="space-y-4 mb-5 text-sm md:text-lg">
-      <li>• prioritise patient safety</li>
-      <li>• limit operational and ethical risk</li>
-      <li>• allow learning before any consideration of scale</li>
-    </ul>
-
-    <p class="text-sm md:text-lg leading-relaxed">
-      There is no expectation of volume or expansion.
-    </p>
-  </div>
-</section>
-
-<!-- HOW WE ARE ENGAGED -->
-<section class="max-w-6xl mx-auto px-6 py-10">
-  <div class="bg-white rounded-2xl shadow-lg p-14 border-l-4 border-gold">
-    <h2 class="text-2xl md:text-3xl font-semibold text-evergreen mb-6 text-center">
-      How We Are Engaged
-    </h2>
-
-    <p class="text-sm md:text-lg leading-relaxed mb-4">
-      PrimeMagnus Care Global operates through professional advisory,
-      pathway-design, and institutional-enablement engagements.
-      We are compensated for governance, coordination,
-      and capability-building services.
-    </p>
-
-    <p class="text-sm md:text-lg leading-relaxed">
-      We do not operate patient-volume incentives,
-      referral-fee arrangements, or outcome-linked payments.
-    </p>
-  </div>
-</section>
-
-<!-- WHAT GUIDES OUR WORK -->
-<section class="max-w-6xl mx-auto px-6 py-10">
-  <div class="bg-white rounded-2xl shadow-lg p-14 border-l-4 border-gold">
-    <h2 class="text-2xl md:text-3xl font-semibold text-evergreen mb-6 text-center">
-      What Guides Our Work
-    </h2>
-
-    <ul class="space-y-4 mb-5 text-sm md:text-lg">
-      <li>• patient dignity is never compromised</li>
-      <li>• clinical independence is always respected</li>
-      <li>• accountability is embedded into every pathway</li>
-    </ul>
-
-    <p class="text-sm md:text-lg leading-relaxed font-medium">
-      If these principles cannot be upheld, we do not engage.
-    </p>
-  </div>
-</section>
-
-<!-- WHAT WE DO NOT DO -->
-<section class="max-w-6xl mx-auto px-6 py-12">
-  <div class="bg-white rounded-2xl shadow-lg p-14 border-l-4 border-gold">
-    <h2 class="text-2xl md:text-3xl font-semibold text-evergreen mb-6 text-center">
-      What We Do Not Do
-    </h2>
-
-    <ul class="space-y-4 text-sm md:text-lg">
-      <li>• market or solicit patients</li>
-      <li>• operate referral or finder-fee models</li>
-      <li>• influence clinical decision-making</li>
-      <li>• prioritise speed over safety</li>
-    </ul>
-  </div>
-</section>
-
-<!-- CLOSING STATEMENT -->
-<section class="max-w-6xl mx-auto px-6 py-12">
-  <div class="bg-white rounded-2xl shadow-lg p-14 border-l-4 border-gold text-center">
-    <p class="text-base md:text-2xl text-evergreen font-medium leading-relaxed max-w-4xl mx-auto">
-      PrimeMagnus Care Global supports cross-border care by ensuring pathways are owned,
-      governed, and understood before they are used.
-    </p>
-  </div>
+  <ul class="list-disc list-inside text-left space-y-2 text-sm md:text-lg">
+    <li>Market or solicit patients</li>
+    <li>Operate referral-fee models</li>
+    <li>Influence clinical decision-making</li>
+    <li>Prioritise speed over safety</li>
+  </ul>
 </section>
 
 </main>
 
-<!-- FOOTER -->
 <footer class="bg-evergreen text-offwhite mt-10">
   <div class="max-w-7xl mx-auto px-6 py-6 text-center text-sm">
     Contact:
     <a href="mailto:azeem@primemagnuscareglobal.com"
-       class="text-gold hover:underline ml-1">
+       class="text-gold underline ml-1">
       azeem@primemagnuscareglobal.com
     </a>
   </div>
 </footer>
 
 <script>
-  document.getElementById("menuBtn").addEventListener("click", function () {
+  document.getElementById("menuBtn").onclick = () =>
     document.getElementById("mobileMenu").classList.toggle("hidden");
-  });
 </script>
 
 </body>
