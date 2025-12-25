@@ -2,8 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>How PrimeMagnus Care Global Operates</title>
+  <title>How we Operate</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <script src="https://cdn.tailwindcss.com"></script>
 
@@ -11,6 +16,10 @@
     tailwind.config = {
       theme: {
         extend: {
+          fontFamily: {
+            heading: ['"Cormorant Garamond"', 'serif'],
+            body: ['Inter', 'system-ui', 'sans-serif'],
+          },
           colors: {
             evergreen: '#0F3D2E',
             gold: '#C9A24D',
@@ -23,14 +32,14 @@
   </script>
 </head>
 
-<body class="bg-offwhite text-charcoal">
+<body class="bg-offwhite text-charcoal font-body">
 
 <!-- NAVBAR -->
 <nav class="bg-evergreen text-offwhite shadow-md">
   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
     <a href="index.html"
-       class="text-lg md:text-3xl font-bold tracking-wide text-gold whitespace-nowrap">
+       class="text-lg md:text-3xl font-bold tracking-wide text-gold whitespace-nowrap font-heading">
       PrimeMagnus Care Global
     </a>
 
@@ -56,64 +65,114 @@
 </nav>
 
 <!-- CONTENT -->
-<main class="max-w-4xl mx-auto px-6 py-14 space-y-16">
+<main class="max-w-4xl mx-auto px-6 py-16">
 
-  <!-- PAGE INTRO -->
-  <section>
-    <h1 class="text-2xl md:text-3xl font-semibold text-evergreen mb-4">
-      How PrimeMagnus Care Global Operates
-    </h1>
+  <!-- SINGLE BOX -->
+  <div class="relative bg-white rounded-2xl shadow-xl px-8 md:px-14 py-14 space-y-8">
 
-    <p class="text-sm md:text-base text-charcoal mb-8">
-      Who owns your cross-border care pathway?
-    </p>
+    <!-- LEFT SPINE -->
+    <div
+      class="absolute left-0 top-16 bottom-16 w-1 rounded-full
+             bg-gradient-to-b from-transparent via-gold to-transparent opacity-80">
+    </div>
 
-    <p class="text-sm md:text-lg leading-relaxed">
-      We work with healthcare institutions, public bodies, and ecosystem partners
-      to design and govern structured cross-border care pathways that are clear,
-      accountable, and operationally sound.
-    </p>
-  </section>
+    <!-- RIGHT SPINE -->
+    <div
+      class="absolute right-0 top-16 bottom-16 w-1 rounded-full
+             bg-gradient-to-b from-transparent via-gold to-transparent opacity-80">
+    </div>
 
-  <!-- PATHWAY GOVERNANCE -->
-  <section>
-    <h2 class="text-2xl md:text-3xl font-semibold text-evergreen mb-6">
-      Pathway Design and Governance
-    </h2>
+    <!-- PAGE INTRO -->
+    <section>
+      <h1 class="text-2xl md:text-3xl font-heading font-semibold text-evergreen mb-4">
+        How We Operate
+      </h1>
 
-    <ul class="list-disc pl-5 space-y-2 text-sm md:text-lg">
-      <li>Defined ownership and institutional responsibility</li>
-      <li>Formal governance and risk-review mechanisms</li>
-      <li>Clear escalation and communication protocols</li>
-    </ul>
-  </section>
+      <p class="text-sm md:text-base text-charcoal mb-6">
+        Who owns your cross-border care pathway?
+      </p>
 
-  <!-- INSTITUTIONAL READINESS -->
-  <section>
-    <h2 class="text-2xl md:text-3xl font-semibold text-evergreen mb-6">
-      Institutional Readiness
-    </h2>
+      <p class="text-sm md:text-lg leading-relaxed">
+        We work with healthcare institutions and partners where cross-border care requires structured oversight, defined accountability, and clear operating models.
+      </p>
+    </section>
 
-    <ul class="list-disc pl-5 space-y-2 text-sm md:text-lg">
-      <li>Process discipline and structured coordination</li>
-      <li>Internal alignment across clinical and operational teams</li>
-      <li>Capability building aligned with global standards</li>
-    </ul>
-  </section>
+    <!-- DIVIDER -->
+    <div class="flex items-center justify-center">
+      <div class="h-px w-12 bg-gradient-to-r from-transparent to-gray-300"></div>
+      <div class="mx-3 h-2 w-2 rounded-full bg-gold"></div>
+      <div class="h-px w-12 bg-gradient-to-l from-transparent to-gray-300"></div>
+    </div>
 
-  <!-- WHAT WE DO NOT DO -->
-  <section>
-    <h2 class="text-2xl md:text-3xl font-semibold text-evergreen mb-6">
-      What We Do Not Do
-    </h2>
+    <!-- PATHWAY GOVERNANCE -->
+    <section>
+      <h1 class="text-2xl md:text-3xl font-heading font-semibold text-evergreen mb-4">
+        Pathway Design and Governance
+      </h1>
 
-    <ul class="list-disc pl-5 space-y-2 text-sm md:text-lg">
-      <li>Market or solicit patients</li>
-      <li>Operate referral-fee or incentive-based models</li>
-      <li>Influence clinical decision-making</li>
-      <li>Prioritise speed over safety</li>
-    </ul>
-  </section>
+      <p class="text-sm md:text-lg leading-relaxed">
+        Pathways are designed with clear ownership, governance structures, and decision rights defined upfront.
+      </p>
+    </section>
+
+    <!-- DIVIDER -->
+    <div class="flex items-center justify-center">
+      <div class="h-px w-12 bg-gradient-to-r from-transparent to-gray-300"></div>
+      <div class="mx-3 h-2 w-2 rounded-full bg-gold"></div>
+      <div class="h-px w-12 bg-gradient-to-l from-transparent to-gray-300"></div>
+    </div>
+
+    <!-- INSTITUTIONAL READINESS -->
+    <section>
+      <h1 class="text-2xl md:text-3xl font-heading font-semibold text-evergreen mb-4">
+        Institutional Readiness
+      </h1>
+
+      <p class="text-sm md:text-lg leading-relaxed">
+        We assess institutional readiness to participate in cross-border care pathways, including clinical independence, escalation protocols, and operational coordination.
+      </p>
+    </section>
+
+    <!-- DIVIDER -->
+    <div class="flex items-center justify-center">
+      <div class="h-px w-12 bg-gradient-to-r from-transparent to-gray-300"></div>
+      <div class="mx-3 h-2 w-2 rounded-full bg-gold"></div>
+      <div class="h-px w-12 bg-gradient-to-l from-transparent to-gray-300"></div>
+    </div>
+
+    <!-- ENGAGEMENT MODEL -->
+    <section>
+      <h1 class="text-2xl md:text-3xl font-heading font-semibold text-evergreen mb-4">
+        Engagement Model
+      </h1>
+
+      <p class="text-sm md:text-lg leading-relaxed">
+        Engagements are advisory and governance-led. We do not act as intermediaries or facilitators in patient movement or commercial transactions.
+      </p>
+    </section>
+
+    <!-- DIVIDER -->
+    <div class="flex items-center justify-center">
+      <div class="h-px w-12 bg-gradient-to-r from-transparent to-gray-300"></div>
+      <div class="mx-3 h-2 w-2 rounded-full bg-gold"></div>
+      <div class="h-px w-12 bg-gradient-to-l from-transparent to-gray-300"></div>
+    </div>
+
+    <!-- WHAT WE DO NOT DO -->
+    <section>
+      <h2 class="text-2xl md:text-3xl font-heading font-semibold text-evergreen mb-4">
+        What We Do Not Do
+      </h2>
+
+      <ul class="list-disc pl-5 space-y-2 text-sm md:text-lg">
+        <li>Market or solicit patients</li>
+        <li>Operate referral-fee or incentive-based models</li>
+        <li>Influence clinical decision-making</li>
+        <li>Prioritise speed over safety</li>
+      </ul>
+    </section>
+
+  </div>
 
 </main>
 

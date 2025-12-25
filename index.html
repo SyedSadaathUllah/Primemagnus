@@ -5,12 +5,21 @@
   <title>PrimeMagnus Care</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
   <script src="https://cdn.tailwindcss.com"></script>
 
   <script>
     tailwind.config = {
       theme: {
         extend: {
+          fontFamily: {
+            heading: ['"Cormorant Garamond"', 'serif'],
+            body: ['Inter', 'system-ui', 'sans-serif'],
+          },
           colors: {
             evergreen: '#0F3D2E',
             gold: '#C9A24D',
@@ -23,14 +32,14 @@
   </script>
 </head>
 
-<body class="bg-offwhite text-charcoal">
+<body class="bg-offwhite text-charcoal font-body">
 
 <!-- NAVBAR -->
 <nav class="bg-evergreen text-offwhite shadow-md">
   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
     <a href="index.html"
-       class="text-lg md:text-3xl font-bold tracking-wide text-gold whitespace-nowrap">
+       class="text-lg md:text-3xl font-bold tracking-wide text-gold whitespace-nowrap font-heading">
       PrimeMagnus Care Global
     </a>
 
@@ -58,83 +67,96 @@
 <section class="bg-evergreen text-offwhite">
   <div class="max-w-4xl mx-auto px-6 py-12 text-center">
 
-    <h1 class="text-2xl md:text-3xl font-bold mb-3">
-      PrimeMagnus Care Global
-    </h1>
-
-    <p class="text-sm md:text-base text-gold mb-6">
-      Structured governance for cross-border care pathways
+    <p class="text-gold text-2xl md:text-3xl font-bold mb-3 font-heading">
+      We design and govern cross-border care pathways.
     </p>
 
     <p class="text-sm md:text-lg leading-relaxed max-w-3xl mx-auto">
-      We support governed and predictable cross-border care pathways by working
-      with healthcare institutions, public bodies, and ecosystem partners.
-      Our focus is on bringing structure, accountability, and operational clarity
-      to complex international care engagement.
+      We work with healthcare institutions, public bodies, and ecosystem partners to bring structure, accountability, and operational clarity to complex cross-border care engagement.
     </p>
-
   </div>
 </section>
 
-<!-- CONTENT FLOW -->
-<main class="max-w-4xl mx-auto px-6 py-14 space-y-16">
+<!-- SINGLE PREMIUM CONTAINER -->
+<main class="max-w-4xl mx-auto px-6 py-16">
 
-  <!-- OUR ROLE -->
-  <section>
-    <h2 class="text-2xl md:text-3xl font-semibold text-evergreen mb-6">
-      Our Role
-    </h2>
+  <!-- CHANGE space-y-16 BELOW TO ADJUST SECTION SPACING -->
+  <div class="relative bg-white rounded-2xl shadow-xl px-8 md:px-10 py-6 space-y-8">
 
-    <p class="text-sm md:text-lg leading-relaxed mb-4">
-      We are not involved in moving patients or facilitating medical travel.
-    </p>
+    <!-- LEFT SPINE -->
+    <div class="absolute left-0 top-16 bottom-16 w-1 rounded-full
+      bg-gradient-to-b from-transparent via-gold to-transparent opacity-80"></div>
 
-    <p class="text-sm md:text-lg leading-relaxed mb-4">
-      Our work focuses on ensuring that when cross-border care pathways exist,
-      they are clearly defined, responsibly governed, and institutionally owned.
-    </p>
+    <!-- RIGHT SPINE -->
+    <div class="absolute right-0 top-16 bottom-16 w-1 rounded-full
+      bg-gradient-to-b from-transparent via-gold to-transparent opacity-80"></div>
 
-    <p class="text-sm md:text-lg leading-relaxed">
-      We operate as an institutional partner, engaging where clarity, discipline,
-      and structured oversight are required.
-    </p>
-  </section>
+    <!-- OUR ROLE -->
+    <section>
+      <h2 class="text-2xl md:text-3xl font-heading font-semibold text-evergreen mb-4">
+        Our Role
+      </h2>
 
-  <!-- WHAT WE ENABLE -->
-  <section>
-    <h2 class="text-2xl md:text-3xl font-semibold text-evergreen mb-6">
-      What We Enable
-    </h2>
+      <ul class="list-disc pl-5 space-y-2 text-sm md:text-lg mb-4">
+        <li>We do not move patients.</li>
+        <li>When care pathways exist, we ensure they are owned, governed, and understood.</li>
+        <li>We operate as an institutional partner, not a medical travel facilitator.</li>
+        <li>We engage where clarity, discipline, and structured oversight are required.</li>
+      </ul>
+    </section>
 
-    <ul class="list-disc pl-5 space-y-2 text-sm md:text-lg mb-6">
-      <li>Design and governance of structured care pathways</li>
-      <li>Institutional readiness for cross-border engagement</li>
-      <li>Pilot-based collaboration prior to scale</li>
-    </ul>
+    <!-- DIVIDER -->
+    <div class="flex items-center justify-center">
+      <div class="h-px w-14 bg-gradient-to-r from-transparent to-gray-300"></div>
+      <div class="mx-3 h-2 w-2 rounded-full bg-gold"></div>
+      <div class="h-px w-14 bg-gradient-to-l from-transparent to-gray-300"></div>
+    </div>
 
-    <p class="text-sm md:text-lg leading-relaxed">
-      The emphasis throughout is on predictability, patient dignity,
-      and responsible coordination.
-    </p>
-  </section>
+    <!-- WHAT WE ENABLE -->
+    <section>
+      <h2 class="text-2xl md:text-3xl font-heading font-semibold text-evergreen mb-4">
+        What We Enable
+      </h2>
 
-  <!-- WHO WE WORK WITH -->
-  <section>
-    <h2 class="text-2xl md:text-3xl font-semibold text-evergreen mb-6">
-      Who We Work With
-    </h2>
+      <ul class="list-disc pl-5 space-y-2 text-sm md:text-lg mb-4">
+        <li>Clear ownership of cross-border care pathways</li>
+        <li>Design and governance of structured care pathways</li>
+        <li>Institutional readiness for cross-border engagement</li>
+        <li>Pilot-based collaboration prior to scale</li>
+      </ul>
 
-    <ul class="list-disc pl-5 space-y-2 text-sm md:text-lg mb-6">
-      <li>Healthcare providers</li>
-      <li>Public-sector institutions</li>
-      <li>Healthcare ecosystem partners</li>
-    </ul>
+      <p class="text-sm md:text-lg leading-relaxed">
+        The emphasis throughout is on predictability, patient dignity,
+        and responsible coordination.
+      </p>
+    </section>
 
-    <p class="text-sm md:text-lg font-medium leading-relaxed">
-      We do not operate consumer-facing models or market services directly to patients.
-    </p>
-  </section>
+    <!-- DIVIDER -->
+    <div class="flex items-center justify-center">
+      <div class="h-px w-14 bg-gradient-to-r from-transparent to-gray-300"></div>
+      <div class="mx-3 h-2 w-2 rounded-full bg-gold"></div>
+      <div class="h-px w-14 bg-gradient-to-l from-transparent to-gray-300"></div>
+    </div>
 
+    <!-- WHO WE WORK WITH -->
+    <section>
+      <h2 class="text-2xl md:text-3xl font-heading font-semibold text-evergreen mb-4">
+        Who We Work With
+      </h2>
+
+      <ul class="list-disc pl-5 space-y-2 text-sm md:text-lg mb-4">
+        <li>Healthcare institutions</li>
+        <li>Public bodies and academic organisations</li>
+        <li>Insurers, employers, and international partners</li>
+        <li>Ecosystem participants requiring governed pathways</li>
+      </ul>
+
+      <p class="text-sm md:text-lg font-medium leading-relaxed">
+        We do not operate consumer-facing models or market services directly to patients.
+      </p>
+    </section>
+
+  </div>
 </main>
 
 <!-- FOOTER -->
