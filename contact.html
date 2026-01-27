@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PrimeMagnus Care</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+   <!-- Favicons -->
+<!-- <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"> -->
+<!-- <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png"> -->
+<link rel="icon" type="image/png" sizes="56x56" href="images/Logooo.png">
+
+<!-- Apple Touch Icon -->
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+
+<!-- Safari Pinned Tab -->
+<link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#0F3D2E">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            heading: ['"Cormorant Garamond"', 'serif'],
+            body: ['Inter', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            evergreen: '#0F3D2E',
+            gold: '#C9A24D',
+            offwhite: '#F7F6F2',
+            charcoal: '#1F2933',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-offwhite text-charcoal font-body">
+
+<!-- NAVBAR -->
+<nav class="bg-evergreen text-offwhite shadow-md">
+  <div class="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
+
+    <!-- LOGO + TEXT -->
+<a href="index.html"
+   class="flex items-center gap-1 font-heading font-semibold text-offwhite
+          text-xl md:text-3xl tracking-wide
+          flex-shrink-0">
+
+  <img src="images/logo.png"
+       alt="PrimeMagnus Care Global Logo"
+       class="h-14 md:h-20 w-auto" />
+
+  <span class="leading-tight text-left whitespace-normal mb-2">
+    PrimeMagnus Care Global
+  </span>
+</a>
+
+    <!-- DESKTOP NAV -->
+    <div class="hidden md:flex space-x-10">
+      <a href="index.html" class="hover:text-gold font-medium">Home</a>
+      <a href="operate.html" class="hover:text-gold font-medium">How We Operate</a>
+      <a href="services.html" class="hover:text-gold font-medium">Services</a>
+      <!-- <a href="contact.html" class="hover:text-gold font-medium">Contact</a> -->
+    </div>
+
+    <!-- MOBILE MENU BUTTON -->
+    <button id="menuBtn"
+            class="md:hidden text-2xl ml-4 mb-2 flex-shrink-0">
+      ☰
+    </button>
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div id="mobileMenu" class="hidden bg-evergreen px-6 pb-3 md:hidden">
+    <a href="index.html" class="block py-2 hover:text-gold">Home</a>
+    <a href="operate.html" class="block py-2 hover:text-gold">How We Operate</a>
+    <a href="services.html" class="hover:text-gold font-medium">Services</a>
+    <a href="contact.html" class="hover:text-gold font-medium">Contact</a>
+  </div>
+</nav>
+
+
+
+<!-- HERO (NOW A DISTINCT BOX) -->
+<section class="max-w-7xl mx-auto px-6 mt-12 text-center">
+  <div class="relative bg-white rounded-2xl shadow-xl px-8 md:px-12 py-12 text-center">
+
+    <!-- LEFT THIN ACCENT LINE -->
+    <div class="absolute left-0 top-2 bottom-12 w-0.5 bg-gradient-to-b from-transparent via-gold/60 to-transparent"></div>
+
+    <!-- RIGHT THIN ACCENT LINE -->
+    <div class="absolute right-0 top-12 bottom-12 w-px bg-gradient-to-b from-transparent via-gold/60 to-transparent"></div>
+
+    <div class="max-w-6xl mx-auto">
+
+      <p class="text-evergreen text-xl md:text-3xl font-heading font-semibold mb-4 text-center">
+        Contact Us
+      </p>
+
+      <!-- CENTER DIVIDER -->
+      <div class="flex items-center my-8">
+        <div class="h-px flex-1 bg-gradient-to-r from-transparent to-gray-300"></div>
+        <div class="mx-3 h-2 w-2 rounded-full bg-gold"></div>
+        <div class="h-px flex-1 bg-gradient-to-l from-transparent to-gray-300"></div>
+      </div>
+
+      <p class="text-charcoal text-sm md:text-lg font-normal leading-relaxed text-left">
+        All the contact details
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- FOOTER -->
+<footer class="bg-evergreen text-offwhite mt-16">
+  <div class="max-w-7xl mx-auto px-6 py-6 text-center text-sm">
+    
+  </div>
+</footer>
+
+<script>
+  document.getElementById("menuBtn").onclick = () =>
+    document.getElementById("mobileMenu").classList.toggle("hidden");
+</script>
+
+
+</body>
+</html>
