@@ -66,7 +66,7 @@
     <!-- DESKTOP NAV -->
     <div class="hidden md:flex space-x-10">
       <a href="index.html" class="hover:text-gold font-medium">Home</a>
-      <a href="operate.html" class="hover:text-gold font-medium">How We Operate</a>
+      <a href="operate.html" class="hover:text-gold font-medium">Operate</a>
       <a href="services.html" class="hover:text-gold font-medium">Services</a>
       <!-- <a href="contact.html" class="hover:text-gold font-medium">Contact</a> -->
     </div>
@@ -81,7 +81,7 @@
   <!-- MOBILE MENU -->
   <div id="mobileMenu" class="hidden bg-evergreen px-6 pb-3 md:hidden">
     <a href="index.html" class="block py-2 hover:text-gold">Home</a>
-    <a href="operate.html" class="block py-2 hover:text-gold">How We Operate</a>
+    <a href="operate.html" class="block py-2 hover:text-gold">Operate</a>
     <a href="services.html" class="hover:text-gold font-medium">Services</a>
     <a href="contact.html" class="hover:text-gold font-medium">Contact</a>
   </div>
@@ -120,6 +120,68 @@
   </div>
 </section>
 
+<section class="max-w-7xl mx-auto px-6 mt-12 text-center">
+  <div class="relative bg-white rounded-2xl shadow-xl px-8 md:px-12 py-12 text-center">
+
+    <!-- LEFT THIN ACCENT LINE -->
+    <div class="absolute left-0 top-2 bottom-12 w-0.5 bg-gradient-to-b from-transparent via-gold/60 to-transparent"></div>
+
+    <!-- RIGHT THIN ACCENT LINE -->
+    <div class="absolute right-0 top-12 bottom-12 w-px bg-gradient-to-b from-transparent via-gold/60 to-transparent"></div>
+
+    <div class="max-w-6xl mx-auto">
+
+      <p class="text-evergreen text-xl md:text-3xl font-heading font-semibold mb-4 text-center">
+        Why International Healthcare Needs Structure
+      </p>
+
+      <!-- CENTER DIVIDER -->
+      <div class="flex items-center my-8">
+        <div class="h-px flex-1 bg-gradient-to-r from-transparent to-gray-300"></div>
+        <div class="mx-3 h-2 w-2 rounded-full bg-gold"></div>
+        <div class="h-px flex-1 bg-gradient-to-l from-transparent to-gray-300"></div>
+      </div>
+
+      <p class="text-charcoal text-sm md:text-lg font-normal leading-relaxed text-left">
+        India’s healthcare ecosystem is diverse and rapidly maturing, with strong expectations around compliance, evidence and institutional credibility. International teams sometimes underestimate these requirements, which can delay adoption and partnerships. PMCG supports hospitals, digital health firms and investors in aligning with these expectations so solutions can progress responsibly and at pace, without friction in governance or delivery.
+      </p>
+      <!-- CTA BUTTONS -->
+<div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+
+  <!-- Explore Services -->
+  <a
+    href="services.html"
+    class="inline-flex justify-center items-center
+           px-8 py-3 rounded-full
+           bg-evergreen text-offwhite
+           font-medium tracking-wide
+           hover:bg-gold hover:text-evergreen
+           transition-all duration-300
+           shadow-lg hover:shadow-xl"
+  >
+    Explore Services
+  </a>
+
+  <!-- Speak with PMCG -->
+  <a
+    href="contact.html"
+    class="inline-flex justify-center items-center
+           px-8 py-3 rounded-full
+           border border-evergreen
+           text-evergreen bg-transparent
+           font-medium tracking-wide
+           hover:bg-evergreen hover:text-offwhite
+           transition-all duration-300
+           shadow-sm hover:shadow-lg"
+  >
+    Speak with PMCG
+  </a>
+
+</div>
+
+    </div>
+  </div>
+</section>
 
 <!-- MAIN CONTENT -->
 <main class="max-w-7xl mx-auto px-6 py-8">
@@ -256,13 +318,44 @@
     </div>
   </div>
 </main>
-
 <!-- FOOTER -->
 <footer class="bg-evergreen text-offwhite mt-16">
-  <div class="max-w-7xl mx-auto px-6 py-6 text-center text-sm">
-    
+  <div class="max-w-7xl mx-auto px-6 py-4">
+
+    <div class="flex flex-col items-center text-center gap-2">
+
+      <!-- LOGO -->
+      <img
+        src="images/Logooo.png"
+        alt="PrimeMagnus Care Global Logo"
+        class="h-12 w-auto"
+      />
+
+      <!-- TAGLINE -->
+      <p class="font-heading text-sm md:text-base text-3xl tracking-wide">
+        Trusted Pathways. Ethical Care. Integrity in Motion.
+      </p>
+
+      <!-- EMAIL -->
+      <!-- <a
+        href="mailto:azeem@primemagnuscareglobal.com"
+        class="text-sm md:text-base hover:text-gold transition-colors"
+      >
+        azeem@primemagnuscareglobal.com
+      </a> -->
+
+      <!-- DIVIDER -->
+      <div class="w-24 h-px bg-gold/50 my-2"></div>
+
+      <!-- COPYRIGHT -->
+      <p class="text-xs md:text-sm text-offwhite/80">
+        © <span id="year"></span> PrimeMagnus Care Global 2026. All rights reserved.
+      </p>
+
+    </div>
   </div>
 </footer>
+
 
 <script>
   document.getElementById("menuBtn").onclick = () =>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PrimeMagnus Care</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="56x56" href="images/Logooo.png">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            heading: ['"Cormorant Garamond"', 'serif'],
+            body: ['Inter', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            evergreen: '#0F3D2E',
+            gold: '#C9A24D',
+            offwhite: '#F7F6F2',
+            charcoal: '#1F2933',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-offwhite text-charcoal font-body">
+
+<!-- NAVBAR -->
+<nav class="bg-evergreen text-offwhite shadow-md">
+  <div class="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
+
+    <a href="index.html"
+       class="flex items-center gap-1 font-heading font-semibold text-offwhite
+              text-xl md:text-3xl tracking-wide flex-shrink-0">
+
+      <img src="images/logo.png"
+           alt="PrimeMagnus Care Global Logo"
+           class="h-14 md:h-20 w-auto" />
+
+      <span class="leading-tight mb-2">
+        PrimeMagnus Care Global
+      </span>
+    </a>
+
+    <div class="hidden md:flex space-x-10">
+      <a href="index.html" class="hover:text-gold font-medium">Home</a>
+      <a href="operate.html" class="hover:text-gold font-medium">Operate</a>
+      <a href="services.html" class="hover:text-gold font-medium">Services</a>
+    </div>
+
+    <button id="menuBtn" class="md:hidden text-2xl ml-4 mb-2">☰</button>
+  </div>
+
+  <div id="mobileMenu" class="hidden bg-evergreen px-6 pb-3 md:hidden">
+    <a href="index.html" class="block py-2 hover:text-gold">Home</a>
+    <a href="operate.html" class="block py-2 hover:text-gold">Operate</a>
+    <a href="services.html" class="block py-2 hover:text-gold">Services</a>
+  </div>
+</nav>
+
+<!-- PMCG SERVICES SECTION -->
+<section class="max-w-7xl mx-auto px-6 mt-12 text-center">
+  <div class="relative bg-white rounded-2xl shadow-xl px-8 md:px-12 py-12 text-center">
+
+    <!-- LEFT THIN ACCENT LINE -->
+    <div class="absolute left-0 top-2 bottom-12 w-0.5 bg-gradient-to-b from-transparent via-gold/60 to-transparent"></div>
+
+    <!-- RIGHT THIN ACCENT LINE -->
+    <div class="absolute right-0 top-12 bottom-12 w-px bg-gradient-to-b from-transparent via-gold/60 to-transparent"></div>
+
+    <div class="max-w-6xl mx-auto">
+
+      <p class="text-evergreen text-xl md:text-3xl font-heading font-semibold mb-4 text-center">
+        PMCG Services
+
+      <!-- CENTER DIVIDER -->
+      <div class="flex items-center my-8">
+        <div class="h-px flex-1 bg-gradient-to-r from-transparent to-gray-300"></div>
+        <div class="mx-3 h-2 w-2 rounded-full bg-gold"></div>
+        <div class="h-px flex-1 bg-gradient-to-l from-transparent to-gray-300"></div>
+      </div>
+      <ul class="space-y-3 text-sm md:text-lg font-normal leading-relaxed">
+          <li class="flex gap-3"><span class="text-gold">•</span>Clinical Readiness Audits</li>
+          <li class="flex gap-3"><span class="text-gold">•</span>International Patient Pathway Design</li>
+          <li class="flex gap-3"><span class="text-gold">•</span>Digital Health Validation Packs</li>
+          <li class="flex gap-3"><span class="text-gold">•</span>Due-Diligence for Investors</li>
+          <li class="flex gap-3"><span class="text-gold">•</span>Accreditation & Quality Readiness</li>
+          <li class="flex gap-3"><span class="text-gold">•</span>Medical Travel Letter of Intent (LOI)-to-Contract Bridging</li>           
+        </ul>
+      <p class="text-charcoal text-sm md:text-lg font-normal leading-relaxed text-left mt-6">
+        PMCG focuses on the institutional layer that determines whether international healthcare moves forward: credibility, readiness and evidence. Our services help hospitals modernise pathways, digital firms generate India-credible validation, and investors understand adoption and compliance signals. The goal is to reduce institutional uncertainty so credible solutions progress responsibly. This is structured enablement, not brokerage or patient referral.
+      </p>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- FOOTER -->
+<footer class="bg-evergreen text-offwhite mt-16">
+  <div class="max-w-7xl mx-auto px-6 py-4">
+    <div class="flex flex-col items-center gap-2 text-center">
+
+      <img src="images/Logooo.png" class="h-12 w-auto" alt="PMCG Logo"/>
+
+      <p class="font-heading text-sm md:text-base tracking-wide">
+        Trusted Pathways. Ethical Care. Integrity in Motion.
+      </p>
+
+      <div class="w-24 h-px bg-gold/50 my-2"></div>
+
+      <p class="text-xs md:text-sm text-offwhite/80">
+        © <span id="year"></span> PrimeMagnus Care Global. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("menuBtn").onclick = () =>
+    document.getElementById("mobileMenu").classList.toggle("hidden");
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+<!-- FLOATING CONTACT BUTTON -->
+<a
+  href="contact.html"
+  class="fixed bottom-16 right-6 z-50
+         bg-evergreen hover:bg-gold
+         text-offwhite font-medium
+         px-6 py-3 rounded-full
+         shadow-xl hover:shadow-2xl
+         transition-all duration-300
+         hover:-translate-y-1"
+>
+  Contact Us
+</a>
+</body>
+</html>
