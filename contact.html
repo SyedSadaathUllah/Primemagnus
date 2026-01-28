@@ -2,24 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>PrimeMagnus Care Global</title>
+  <title>PrimeMagnus Care</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Fonts -->
+  <!-- GOOGLE FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="56x56" href="images/Logooo.png">
 
-  <!-- Tailwind -->
+<!-- Apple Touch Icon -->
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+
+<!-- Safari Pinned Tab -->
+<link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#0F3D2E">
+
+  <link rel="icon" type="image/png" sizes="56x56" href="images/Logooo.png">
+
   <script src="https://cdn.tailwindcss.com"></script>
-
   <script>
     tailwind.config = {
       theme: {
         extend: {
           fontFamily: {
             heading: ['"Cormorant Garamond"', 'serif'],
-            body: ['Inter', 'sans-serif'],
+            body: ['Inter', 'system-ui', 'sans-serif'],
           },
           colors: {
             evergreen: '#0F3D2E',
@@ -33,119 +40,191 @@
   </script>
 </head>
 
-<body class="bg-offwhite font-body text-charcoal min-h-screen flex flex-col">
+<body class="bg-offwhite text-charcoal font-body">
 
-<main class="flex-grow">
+<!-- NAVBAR -->
+<nav class="bg-evergreen text-offwhite shadow-md">
+  <div class="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
 
-<!-- HERO / CONTACT SECTION -->
-<section class="max-w-4xl mx-auto px-6 mt-16">
-  <div class="bg-white rounded-2xl shadow-xl p-10">
+    <a href="index.html"
+       class="flex items-center gap-1 font-heading font-semibold text-offwhite
+              text-xl md:text-3xl tracking-wide flex-shrink-0">
 
-    <h2 class="text-3xl md:text-4xl font-heading font-semibold text-evergreen text-center mb-6">
+      <img src="images/logo.png"
+           alt="PrimeMagnus Care Global Logo"
+           class="h-14 md:h-20 w-auto" />
+
+      <span class="leading-tight mb-2">
+        PrimeMagnus Care Global
+      </span>
+    </a>
+
+    <div class="hidden md:flex space-x-10">
+      <a href="index.html" class="hover:text-gold font-medium">Home</a>
+      <a href="operate.html" class="hover:text-gold font-medium">Operate</a>
+      <a href="services.html" class="hover:text-gold font-medium">Services</a>
+    </div>
+
+    <button id="menuBtn" class="md:hidden text-2xl ml-4 mb-2">☰</button>
+  </div>
+
+  <div id="mobileMenu" class="hidden bg-evergreen px-6 pb-3 md:hidden">
+    <a href="index.html" class="block py-2 hover:text-gold">Home</a>
+    <a href="operate.html" class="block py-2 hover:text-gold">Operate</a>
+    <a href="services.html" class="block py-2 hover:text-gold">Services</a>
+  </div>
+</nav>
+
+<body class="min-h-screen flex items-center justify-center bg-gray-100">
+
+ <!-- CENTER WRAPPER -->
+<div class="min-h-screen flex items-center justify-center bg-offwhite px-4 mt-6">
+
+  <form
+    id="contactForm"
+    class="w-full max-w-md bg-white rounded-2xl shadow-xl p-8 md:p-10 space-y-6"
+  >
+    <!-- Heading -->
+    <h2 class="text-3xl font-heading font-semibold text-center text-evergreen">
       Contact Us
     </h2>
 
-    <div class="w-24 h-px bg-gold mx-auto mb-8"></div>
+    <p class="text-center text-sm text-gray-500">
+      We’ll get back to you within 24 hours
+    </p>
 
-    <!-- CONTACT FORM -->
-    <form id="contactForm" class="space-y-6">
-
-      <!-- Name -->
-      <div>
-        <label class="block text-sm font-medium mb-1">Name</label>
-        <input
-          type="text"
-          id="name"
-          required
-          class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:ring-2 focus:ring-evergreen outline-none"
-        />
-      </div>
-
-      <!-- Email -->
-      <div>
-        <label class="block text-sm font-medium mb-1">Email</label>
-        <input
-          type="email"
-          id="email"
-          required
-          class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:ring-2 focus:ring-evergreen outline-none"
-        />
-      </div>
-
-      <!-- Organisation -->
-      <div>
-        <label class="block text-sm font-medium mb-1">Organisation</label>
-        <input
-          type="text"
-          id="organisation"
-          class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:ring-2 focus:ring-evergreen outline-none"
-        />
-      </div>
-
-      <!-- Message -->
-      <div>
-        <label class="block text-sm font-medium mb-1">Message</label>
-        <textarea
-          id="message"
-          rows="4"
-          required
-          class="w-full rounded-lg border border-gray-300 px-4 py-3 focus:ring-2 focus:ring-evergreen outline-none"
-        ></textarea>
-      </div>
-
-      <!-- Submit Button -->
-      <button
-        type="submit"
-        class="w-full bg-evergreen text-white py-3 rounded-xl font-semibold text-lg
-               transition-all duration-300 hover:bg-transparent hover:text-evergreen hover:border hover:border-evergreen"
+    <!-- Name -->
+    <div>
+      <label class="block text-sm font-medium mb-1">Name</label>
+      <input
+        type="text"
+        name="name"
+        placeholder="Your full name"
+        required
+        class="w-full rounded-xl border border-gray-300 px-4 py-3
+               focus:outline-none focus:ring-2 focus:ring-evergreen"
       >
-        Send Message
-      </button>
+    </div>
 
-      <!-- Status -->
-      <p id="status" class="text-center text-sm mt-3"></p>
+    <!-- Email -->
+    <div>
+      <label class="block text-sm font-medium mb-1">Email</label>
+      <input
+        type="email"
+        name="email"
+        placeholder="your@email.com"
+        required
+        class="w-full rounded-xl border border-gray-300 px-4 py-3
+               focus:outline-none focus:ring-2 focus:ring-evergreen"
+      >
+    </div>
 
-    </form>
+    <!-- Organisation -->
+    <div>
+      <label class="block text-sm font-medium mb-1">Organisation</label>
+      <input
+        type="text"
+        name="organisation"
+        placeholder="Company / Institution"
+        class="w-full rounded-xl border border-gray-300 px-4 py-3
+               focus:outline-none focus:ring-2 focus:ring-evergreen"
+      >
+    </div>
+
+    <!-- Message -->
+    <div>
+      <label class="block text-sm font-medium mb-1">Message</label>
+      <textarea
+        name="message"
+        rows="4"
+        placeholder="Write your message here..."
+        required
+        class="w-full rounded-xl border border-gray-300 px-4 py-3
+               focus:outline-none focus:ring-2 focus:ring-evergreen resize-none"
+      ></textarea>
+    </div>
+
+    <!-- Submit Button -->
+    <button
+      type="submit"
+      class="w-full py-4 rounded-xl text-lg font-semibold
+             bg-evergreen text-white border-2 border-evergreen
+             hover:bg-transparent hover:text-evergreen transition"
+    >
+      Send Message
+    </button>
+    <!-- OR Divider -->
+<div class="flex items-center gap-4 my-2">
+  <span class="flex-grow h-px bg-gray-300"></span>
+  <span class="text-sm text-gray-500">OR</span>
+  <span class="flex-grow h-px bg-gray-300"></span>
+</div>
+
+<!-- Direct Email Button -->
+<a
+  href="mailto:primemagnus.careglobal@gmail.com"
+  class="w-full inline-flex items-center justify-center py-4 rounded-xl
+         text-lg font-semibold border-2 border-evergreen text-evergreen
+         hover:bg-evergreen hover:text-white transition"
+>
+  Contact PMCG
+</a>
+
+  </form>
+  
+</div>
+
+
+<!-- FOOTER -->
+<footer class="bg-evergreen text-offwhite mt-16">
+  <div class="max-w-7xl mx-auto px-6 py-4">
+    <div class="flex flex-col items-center gap-2 text-center">
+
+      <img src="images/Logooo.png" class="h-12 w-auto" alt="PMCG Logo"/>
+
+      <p class="font-heading text-sm md:text-base tracking-wide">
+        Trusted Pathways. Ethical Care. Integrity in Motion.
+      </p>
+
+      <div class="w-24 h-px bg-gold/50 my-2"></div>
+
+      <p class="text-xs md:text-sm text-offwhite/80">
+        © PrimeMagnus Care Global 2026. All rights reserved.
+      </p>
+    </div>
   </div>
-</section>
-
-</main>
-
-<!-- EmailJS -->
-<script src="https://cdn.jsdelivr.net/npm/emailjs@3/dist/email.min.js"></script>
-
+</footer>
+<script src="https://unpkg.com/emailjs-com@3/dist/email.min.js"></script>
 <script>
-  // Init EmailJS
-  (function () {
-    emailjs.init("elzP7DFHwDW60J3zE");
-  })();
+  document.getElementById("menuBtn").onclick = () =>
+    document.getElementById("mobileMenu").classList.toggle("hidden");
 
-  // Form submit
-  document.getElementById("contactForm").addEventListener("submit", function (e) {
-    e.preventDefault();
+  const yearEl = document.getElementById("year");
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+emailjs.init("1lgQEuouowyGa-k5u");
 
-    const status = document.getElementById("status");
-    status.textContent = "Sending...";
-    status.className = "text-center text-sm text-gray-500";
+  document
+    .getElementById("contactForm")
+    .addEventListener("submit", function (e) {
+      e.preventDefault();
 
-    emailjs.send("service_z73pzr7", "template_6y0wkrv", {
-      name: document.getElementById("name").value,
-      email: document.getElementById("email").value,
-      organisation: document.getElementById("organisation").value,
-      message: document.getElementById("message").value,
-    }).then(
-      () => {
-        status.textContent = "Message sent successfully!";
-        status.className = "text-center text-sm text-green-600";
-        document.getElementById("contactForm").reset();
-      },
-      (error) => {
-        status.textContent = "Failed to send message. Please try again.";
-        status.className = "text-center text-sm text-red-600";
-        console.error(error);
-      }
-    );
-  });
+      emailjs
+        .sendForm(
+          "service_8ks3ixs",
+          "template_8139cjg",
+          this
+        )
+        .then(
+          () => {
+            alert("Email sent successfully!");
+            this.reset();
+          },
+          (error) => {
+            console.error(error);
+            alert("Failed to send email");
+          }
+        );
+    });
 </script>
 
 </body>
