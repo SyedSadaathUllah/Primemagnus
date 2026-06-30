@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>PrimeMagnus Care</title>
@@ -8,17 +9,19 @@
   <!-- GOOGLE FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-   <!-- Favicons -->
-<!-- <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"> -->
-<!-- <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png"> -->
-<link rel="icon" type="image/png" sizes="56x56" href="images/Logooo.png">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <!-- Favicons -->
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"> -->
+  <!-- <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png"> -->
+  <link rel="icon" type="image/png" sizes="56x56" href="images/Logooo.png">
 
-<!-- Apple Touch Icon -->
-<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <!-- Apple Touch Icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
 
-<!-- Safari Pinned Tab -->
-<link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#0F3D2E">
+  <!-- Safari Pinned Tab -->
+  <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#0F3D2E">
 
   <script src="https://cdn.tailwindcss.com"></script>
 
@@ -44,221 +47,228 @@
 
 <body class="bg-offwhite text-charcoal font-body">
 
-<!-- NAVBAR -->
-<nav class="bg-evergreen text-offwhite shadow-md">
-  <div class="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
+  <!-- NAVBAR -->
+  <nav class="bg-evergreen text-offwhite shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
 
-    <!-- LOGO + TEXT -->
-<a href="index.html"
-   class="flex items-center gap-1 font-heading font-semibold text-offwhite
+      <!-- LOGO + TEXT -->
+      <a href="index.html" class="flex items-center gap-1 font-heading font-semibold text-offwhite
           text-xl md:text-3xl tracking-wide
           flex-shrink-0">
 
-  <img src="images/logo.png"
-       alt="PrimeMagnus Care Global Logo"
-       class="h-14 md:h-20 w-auto" />
+        <img src="images/logo.png" alt="PrimeMagnus Care Global Logo" class="h-14 md:h-20 w-auto" />
 
-  <span class="leading-tight text-left whitespace-normal mb-2">
-    PrimeMagnus Care Global
-  </span>
-</a>
+        <span class="leading-tight text-left whitespace-normal mb-2">
+          PrimeMagnus Care Global
+        </span>
+      </a>
 
-    <!-- DESKTOP NAV -->
-    <div class="hidden md:flex space-x-10">
-      <a href="index.html" class="hover:text-gold font-medium">Home</a>
-      <a href="operate.html" class="hover:text-gold font-medium">Operate</a>
+      <!-- DESKTOP NAV -->
+      <div class="hidden md:flex space-x-10">
+        <a href="index.html" class="hover:text-gold font-medium">Home</a>
+        <a href="operate.html" class="hover:text-gold font-medium">Operate</a>
+        <a href="services.html" class="hover:text-gold font-medium">Services</a>
+      </div>
+
+      <!-- MOBILE MENU BUTTON -->
+      <button id="menuBtn" class="md:hidden text-2xl ml-4 mb-2 flex-shrink-0">
+        ☰
+      </button>
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div id="mobileMenu" class="hidden bg-evergreen px-6 pb-3 md:hidden">
+      <a href="index.html" class="block py-2 hover:text-gold">Home</a>
+      <a href="operate.html" class="block py-2 hover:text-gold">Operate</a>
       <a href="services.html" class="hover:text-gold font-medium">Services</a>
     </div>
-
-    <!-- MOBILE MENU BUTTON -->
-    <button id="menuBtn"
-            class="md:hidden text-2xl ml-4 mb-2 flex-shrink-0">
-      ☰
-    </button>
-  </div>
-
-  <!-- MOBILE MENU -->
-  <div id="mobileMenu" class="hidden bg-evergreen px-6 pb-3 md:hidden">
-    <a href="index.html" class="block py-2 hover:text-gold">Home</a>
-    <a href="operate.html" class="block py-2 hover:text-gold">Operate</a>
-    <a href="services.html" class="hover:text-gold font-medium">Services</a>
-  </div>
-</nav>
+  </nav>
 
 
 
-<!-- HERO (NOW A DISTINCT BOX) -->
-<section class="max-w-7xl mx-auto px-6 mt-12 text-center">
-  <div class="relative bg-white rounded-2xl shadow-xl px-8 md:px-12 py-12 text-center">
+  <!-- HERO (NOW A DISTINCT BOX) -->
+  <section class="max-w-[85rem] mx-auto px-6 mt-12 text-center">
+    <div class="relative bg-white rounded-2xl shadow-xl px-10 md:px-16 py-16 text-center">
 
-    <!-- LEFT THIN ACCENT LINE -->
-    <div class="absolute left-0 top-2 bottom-12 w-0.5 bg-gradient-to-b from-transparent via-gold/60 to-transparent"></div>
-
-    <!-- RIGHT THIN ACCENT LINE -->
-    <div class="absolute right-0 top-12 bottom-12 w-px bg-gradient-to-b from-transparent via-gold/60 to-transparent"></div>
-
-    <div class="max-w-6xl mx-auto">
-
-      <p class="text-evergreen text-xl md:text-3xl font-heading font-semibold mb-4 text-center">
-        India Healthcare Pathways, Validation & Governance Partner
-      </p>
-
-      <!-- CENTER DIVIDER -->
-      <div class="flex items-center my-8">
-        <div class="h-px flex-1 bg-gradient-to-r from-transparent to-gray-300"></div>
-        <div class="mx-3 h-2 w-2 rounded-full bg-gold"></div>
-        <div class="h-px flex-1 bg-gradient-to-l from-transparent to-gray-300"></div>
+      <!-- LEFT THIN ACCENT LINE -->
+      <div class="absolute left-0 top-2 bottom-12 w-0.5 bg-gradient-to-b from-transparent via-gold/60 to-transparent">
       </div>
 
-      <p class="text-charcoal text-sm md:text-lg font-normal leading-relaxed text-left">
-        Supporting hospitals, digital health companies and investors with India-focused clinical, operational and governance alignment.
-      </p>
+      <!-- RIGHT THIN ACCENT LINE -->
+      <div class="absolute right-0 top-12 bottom-12 w-px bg-gradient-to-b from-transparent via-gold/60 to-transparent">
+      </div>
 
+      <div class="max-w-[75rem] mx-auto">
+
+        <p class="text-evergreen text-xl md:text-3xl font-heading font-semibold mb-4 text-center">
+          Improving Hospital Performance & Revenue
+        </p>
+
+        <p class="text-charcoal text-sm md:text-lg font-normal leading-relaxed text-left mb-4">
+          Hospitals do not lose revenue due to lack of demand. They lose it through breakdowns in patient flow,
+          utilisation and execution.
+        </p>
+
+        <!-- CENTER DIVIDER -->
+        <div class="flex items-center my-8">
+          <div class="h-px flex-1 bg-gradient-to-r from-transparent to-gray-300"></div>
+          <div class="mx-3 h-2 w-2 rounded-full bg-gold"></div>
+          <div class="h-px flex-1 bg-gradient-to-l from-transparent to-gray-300"></div>
+        </div>
+
+        <p class="text-charcoal text-sm md:text-lg font-normal leading-relaxed text-left">
+          PMCG helps hospitals identify where performance is being lost and improve it through operational and
+          governance changes.
+        </p>
+
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="max-w-7xl mx-auto px-6 mt-12 text-center">
-  <div class="relative bg-white rounded-2xl shadow-xl px-8 md:px-12 py-12 text-center">
+  <section class="max-w-[85rem] mx-auto px-6 mt-12 text-center">
+    <div class="relative bg-white rounded-2xl shadow-xl px-10 md:px-16 py-16 text-center">
 
-    <!-- LEFT THIN ACCENT LINE -->
-    <div class="absolute left-0 top-2 bottom-12 w-0.5 bg-gradient-to-b from-transparent via-gold/60 to-transparent"></div>
-
-    <!-- RIGHT THIN ACCENT LINE -->
-    <div class="absolute right-0 top-12 bottom-12 w-px bg-gradient-to-b from-transparent via-gold/60 to-transparent"></div>
-
-    <div class="max-w-6xl mx-auto">
-
-      <p class="text-evergreen text-xl md:text-3xl font-heading font-semibold mb-4 text-center">
-        Why International Healthcare Needs Structure
-      </p>
-
-      <!-- CENTER DIVIDER -->
-      <div class="flex items-center my-8">
-        <div class="h-px flex-1 bg-gradient-to-r from-transparent to-gray-300"></div>
-        <div class="mx-3 h-2 w-2 rounded-full bg-gold"></div>
-        <div class="h-px flex-1 bg-gradient-to-l from-transparent to-gray-300"></div>
+      <!-- LEFT THIN ACCENT LINE -->
+      <div class="absolute left-0 top-2 bottom-12 w-0.5 bg-gradient-to-b from-transparent via-gold/60 to-transparent">
       </div>
 
-      <p class="text-charcoal text-sm md:text-lg font-normal leading-relaxed text-left">
-        India’s healthcare ecosystem is diverse and rapidly maturing, with strong expectations around compliance, evidence and institutional credibility. International teams sometimes underestimate these requirements, which can delay adoption and partnerships. PMCG supports hospitals, digital health firms and investors in aligning with these expectations so solutions can progress responsibly and at pace, without friction in governance or delivery.
-      </p>
-      <!-- CTA BUTTONS -->
-<div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+      <!-- RIGHT THIN ACCENT LINE -->
+      <div class="absolute right-0 top-12 bottom-12 w-px bg-gradient-to-b from-transparent via-gold/60 to-transparent">
+      </div>
 
-  <!-- Explore Services -->
-  <a
-    href="services.html"
-    class="inline-flex justify-center items-center
-           px-8 py-3 rounded-full
-           bg-evergreen text-offwhite
-           font-medium tracking-wide
-           hover:bg-gold hover:text-evergreen
-           transition-all duration-300
-           shadow-lg hover:shadow-xl"
-  >
-    Explore Services
-  </a>
+      <div class="max-w-[75rem] mx-auto text-left">
 
-  <!-- Speak with PMCG -->
-  <a
-    href="contact.html"
-    class="inline-flex justify-center items-center
-           px-8 py-3 rounded-full
-           border border-evergreen
-           text-evergreen bg-transparent
-           font-medium tracking-wide
-           hover:bg-evergreen hover:text-offwhite
-           transition-all duration-300
-           shadow-sm hover:shadow-lg"
-  >
-    Speak with PMCG
-  </a>
+        <h2 class="text-2xl md:text-3xl font-heading font-semibold text-evergreen mb-4">
+          Where Hospital Performance Breaks Down
+        </h2>
 
-</div>
+        <ul class="space-y-3 text-sm md:text-lg font-normal leading-relaxed">
+          <li class="flex gap-3"><span class="text-gold">•</span>Patients don’t convert from consultation to admission
+          </li>
+          <li class="flex gap-3"><span class="text-gold">•</span>Capacity exists but is not fully utilised</li>
+          <li class="flex gap-3"><span class="text-gold">•</span>Clinical decisions don’t translate into action</li>
+          <li class="flex gap-3"><span class="text-gold">•</span>Revenue is lost across conversion and billing</li>
+          <li class="flex gap-3"><span class="text-gold">•</span>Teams are busy but not coordinated</li>
+        </ul>
 
+        <!-- CTA BUTTONS -->
+        <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+
+          <!-- Book a Performance Diagnostic -->
+          <a href="contact.html" class="inline-flex justify-center items-center
+            px-8 py-3 rounded-full
+            bg-evergreen text-offwhite
+            font-medium tracking-wide
+            hover:bg-gold hover:text-evergreen
+            transition-all duration-300
+            shadow-lg hover:shadow-xl">
+            Book a Performance Diagnostic
+          </a>
+
+          <!-- View Services -->
+          <a href="services.html" class="inline-flex justify-center items-center
+            px-8 py-3 rounded-full
+            border border-evergreen
+            text-evergreen bg-transparent
+            font-medium tracking-wide
+            hover:bg-evergreen hover:text-offwhite
+            transition-all duration-300
+            shadow-sm hover:shadow-lg">
+            View Services
+          </a>
+
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- MAIN CONTENT -->
-<main class="max-w-7xl mx-auto px-6 py-8">
-  <div class="relative bg-white rounded-2xl shadow-xl px-8 md:px-12 py-6">
-    <div class="max-w-3xl space-y-6">
-      <section>
-        <h2 class="text-2xl md:text-3xl font-heading font-semibold text-evergreen mb-4">
-          Who We Serve
-        </h2>
+  <!-- MAIN CONTENT -->
+  <main class="max-w-[85rem] mx-auto px-6 py-8">
+    <div class="relative bg-white rounded-2xl shadow-xl px-10 md:px-16 py-16">
+      <div class="max-w-[75rem] mx-auto space-y-6">
+        <section>
+          <h2 class="text-2xl md:text-3xl font-heading font-semibold text-evergreen mb-4">
+            Who We Serve
+          </h2>
 
-        <ul class="space-y-3 text-sm md:text-lg font-normal leading-relaxed">
-          <li class="flex gap-3"><span class="text-gold">•</span>Hospitals & Health Systems</li>
-          <li class="flex gap-3"><span class="text-gold">•</span>Digital Health & AI Companies</li>
-          <li class="flex gap-3"><span class="text-gold">•</span>Med-Tech & Diagnostics</li>
-          <li class="flex gap-3"><span class="text-gold">•</span>Investors & Accelerators</li>
-          <li class="flex gap-3"><span class="text-gold">•</span>Multilateral & Policy-Adjacent Health Bodies</li>          
-        </ul>
-      </section>
+          <ul class="space-y-3 text-sm md:text-lg font-normal leading-relaxed">
+            <li class="flex gap-3"><span class="text-gold">•</span>Hospitals & Health Systems</li>
+            <li class="flex gap-3"><span class="text-gold">•</span>Digital Health & AI Companies</li>
+            <li class="flex gap-3"><span class="text-gold">•</span>Med-Tech & Diagnostics</li>
+            <li class="flex gap-3"><span class="text-gold">•</span>Investors & Accelerators</li>
+            <li class="flex gap-3"><span class="text-gold">•</span>Multilateral & Policy-Adjacent Health Bodies</li>
+          </ul>
+        </section>
 
-       <!-- CENTER DIVIDER -->
-      <div class="flex items-center my-8">
-        <div class="h-px flex-1 bg-gradient-to-r from-transparent to-gray-300"></div>
-        <div class="mx-3 h-2 w-2 rounded-full bg-gold"></div>
-        <div class="h-px flex-1 bg-gradient-to-l from-transparent to-gray-300"></div>
-      </div>
+        <!-- CENTER DIVIDER -->
+        <div class="flex items-center my-8">
+          <div class="h-px flex-1 bg-gradient-to-r from-transparent to-gray-300"></div>
+          <div class="mx-3 h-2 w-2 rounded-full bg-gold"></div>
+          <div class="h-px flex-1 bg-gradient-to-l from-transparent to-gray-300"></div>
+        </div>
 
-<section>
-        <h2 class="text-2xl md:text-3xl font-heading font-semibold text-evergreen mb-4">
-          What PMCG Delivers
-        </h2>
+        <section>
+          <h2 class="text-2xl md:text-3xl font-heading font-semibold text-evergreen mb-4">
+            What PMCG Delivers
+          </h2>
 
-        <ul class="space-y-3 text-sm md:text-lg font-normal leading-relaxed">
-          <li class="flex gap-3"><span class="text-gold">•</span>India governance and operational readiness audits</li>
-          <li class="flex gap-3"><span class="text-gold">•</span>Pathway and programme modernisation for hospitals, including International Patient Programs (IPP) governance.</li>
-          <li class="flex gap-3"><span class="text-gold">•</span>Digital health validation and evidence-aligned pilot planning</li>
-          <li class="flex gap-3"><span class="text-gold">•</span>Accreditation, compliance and standards alignment</li>
-          <li class="flex gap-3"><span class="text-gold">•</span>Clinical and operational diligence for investors</li>          
-        </ul>
-      </section>
+          <ul class="space-y-3 text-sm md:text-lg font-normal leading-relaxed">
+            <li class="flex gap-3"><span class="text-gold">•</span>India governance and operational readiness audits
+            </li>
+            <li class="flex gap-3"><span class="text-gold">•</span>Pathway and programme modernisation for hospitals,
+              including International Patient Programs (IPP) governance.</li>
+            <li class="flex gap-3"><span class="text-gold">•</span>Digital health validation and evidence-aligned pilot
+              planning</li>
+            <li class="flex gap-3"><span class="text-gold">•</span>Accreditation, compliance and standards alignment
+            </li>
+            <li class="flex gap-3"><span class="text-gold">•</span>Clinical and operational diligence for investors</li>
+          </ul>
+        </section>
 
-       <!-- CENTER DIVIDER -->
-      <div class="flex items-center my-8">
-        <div class="h-px flex-1 bg-gradient-to-r from-transparent to-gray-300"></div>
-        <div class="mx-3 h-2 w-2 rounded-full bg-gold"></div>
-        <div class="h-px flex-1 bg-gradient-to-l from-transparent to-gray-300"></div>
-      </div>
+        <!-- CENTER DIVIDER -->
+        <div class="flex items-center my-8">
+          <div class="h-px flex-1 bg-gradient-to-r from-transparent to-gray-300"></div>
+          <div class="mx-3 h-2 w-2 rounded-full bg-gold"></div>
+          <div class="h-px flex-1 bg-gradient-to-l from-transparent to-gray-300"></div>
+        </div>
 
-<section>
-        <h2 class="text-2xl md:text-3xl font-heading font-semibold text-evergreen mb-4">
-          Outcomes We Enable
-        </h2>
+        <section>
+          <h2 class="text-2xl md:text-3xl font-heading font-semibold text-evergreen mb-4">
+            Outcomes We Enable
+          </h2>
 
-        <ul class="space-y-3 text-sm md:text-lg font-normal leading-relaxed">
-          <li class="flex gap-3"><span class="text-gold">•</span>Credibility with Indian hospitals and regulators</li>
-          <li class="flex gap-3"><span class="text-gold">•</span>Evidence pathways for digital and AI health products</li>
-          <li class="flex gap-3"><span class="text-gold">•</span>Structured hospital-side IPP modernisation and governance</li>
-          <li class="flex gap-3"><span class="text-gold">•</span>Accreditation, compliance and data governance clarity</li>
-          <li class="flex gap-3"><span class="text-gold">•</span>Better investment readiness and adoption signals</li>          
-        </ul>
-      </section>
+          <ul class="space-y-3 text-sm md:text-lg font-normal leading-relaxed">
+            <li class="flex gap-3"><span class="text-gold">•</span>Credibility with Indian hospitals and regulators</li>
+            <li class="flex gap-3"><span class="text-gold">•</span>Evidence pathways for digital and AI health products
+            </li>
+            <li class="flex gap-3"><span class="text-gold">•</span>Structured hospital-side IPP modernisation and
+              governance</li>
+            <li class="flex gap-3"><span class="text-gold">•</span>Accreditation, compliance and data governance clarity
+            </li>
+            <li class="flex gap-3"><span class="text-gold">•</span>Better investment readiness and adoption signals</li>
+          </ul>
+        </section>
 
-       <!-- CENTER DIVIDER -->
-      <div class="flex items-center my-8">
-        <div class="h-px flex-1 bg-gradient-to-r from-transparent to-gray-300"></div>
-        <div class="mx-3 h-2 w-2 rounded-full bg-gold"></div>
-        <div class="h-px flex-1 bg-gradient-to-l from-transparent to-gray-300"></div>
-      </div>
+        <!-- CENTER DIVIDER -->
+        <div class="flex items-center my-8">
+          <div class="h-px flex-1 bg-gradient-to-r from-transparent to-gray-300"></div>
+          <div class="mx-3 h-2 w-2 rounded-full bg-gold"></div>
+          <div class="h-px flex-1 bg-gradient-to-l from-transparent to-gray-300"></div>
+        </div>
 
-<section>
-        <h2 class="text-2xl md:text-3xl font-heading font-semibold text-evergreen mb-4">
-          Why This Exists
-        </h2>
+        <section>
+          <h2 class="text-2xl md:text-3xl font-heading font-semibold text-evergreen mb-4">
+            Why This Exists
+          </h2>
 
-         <p class="text-sm md:text-lg font-normal leading-relaxed">
-          India’s healthcare environment is decentralised, rapidly digitising and evidence-sensitive. What most international teams lack is the structural layer that translates clinical models into operational reality. PMCG strengthens this layer through governance, validation and disciplined pathway design.
-      </p>
-      </section>
+          <p class="text-sm md:text-lg font-normal leading-relaxed">
+            India’s healthcare environment is decentralised, rapidly digitising and evidence-sensitive. What most
+            international teams lack is the structural layer that translates clinical models into operational reality.
+            PMCG strengthens this layer through governance, validation and disciplined pathway design.
+          </p>
+        </section>
 
-      <!-- <section>
+        <!-- <section>
         <h2 class="text-2xl md:text-3xl font-heading font-semibold text-evergreen mb-4">
           Our Role
         </h2>
@@ -270,14 +280,14 @@
           <li class="flex gap-3"><span class="text-gold">•</span>We engage where clarity, discipline, and structured oversight are required</li>
         </ul>
       </section> -->
- <!-- CENTER DIVIDER -->
-      <!-- <div class="flex items-center my-8">
+        <!-- CENTER DIVIDER -->
+        <!-- <div class="flex items-center my-8">
         <div class="h-px flex-1 bg-gradient-to-r from-transparent to-gray-300"></div>
         <div class="mx-3 h-2 w-2 rounded-full bg-gold"></div>
         <div class="h-px flex-1 bg-gradient-to-l from-transparent to-gray-300"></div>
       </div> -->
 
-      <!-- <section>
+        <!-- <section>
         <h2 class="text-2xl md:text-3xl font-heading font-semibold text-evergreen mb-4">
           What We Enable
         </h2>
@@ -289,14 +299,14 @@
           <li class="flex gap-3"><span class="text-gold">•</span>Predictable, accountable coordination structures</li>
         </ul>
       </section> -->
-       <!-- CENTER DIVIDER -->
-      <!-- <div class="flex items-center my-8">
+        <!-- CENTER DIVIDER -->
+        <!-- <div class="flex items-center my-8">
         <div class="h-px flex-1 bg-gradient-to-r from-transparent to-gray-300"></div>
         <div class="mx-3 h-2 w-2 rounded-full bg-gold"></div>
         <div class="h-px flex-1 bg-gradient-to-l from-transparent to-gray-300"></div>
       </div> -->
-      
-      <!-- <section>
+
+        <!-- <section>
         <h2 class="text-2xl md:text-3xl font-heading font-semibold text-evergreen mb-4">
           Who We Work With
         </h2>
@@ -313,65 +323,59 @@
       </p>
       </section> -->
 
+      </div>
     </div>
-  </div>
-</main>
-<!-- FOOTER -->
-<footer class="bg-evergreen text-offwhite mt-16">
-  <div class="max-w-7xl mx-auto px-6 py-4">
+  </main>
+  <!-- FOOTER -->
+  <footer class="bg-evergreen text-offwhite mt-16">
+    <div class="max-w-7xl mx-auto px-6 py-4">
 
-    <div class="flex flex-col items-center text-center gap-2">
+      <div class="flex flex-col items-center text-center gap-2">
 
-      <!-- LOGO -->
-      <img
-        src="images/Logooo.png"
-        alt="PrimeMagnus Care Global Logo"
-        class="h-12 w-auto"
-      />
+        <!-- LOGO -->
+        <img src="images/Logooo.png" alt="PrimeMagnus Care Global Logo" class="h-12 w-auto" />
 
-      <!-- TAGLINE -->
-      <p class="font-heading text-sm md:text-base text-3xl tracking-wide">
-        Trusted Pathways. Ethical Care. Integrity in Motion.
-      </p>
+        <!-- TAGLINE -->
+        <p class="font-heading text-sm md:text-base text-3xl tracking-wide">
+          Trusted Pathways. Ethical Care. Integrity in Motion.
+        </p>
 
-      <!-- EMAIL -->
-      <!-- <a
+        <!-- EMAIL -->
+        <!-- <a
         href="mailto:azeem@primemagnuscareglobal.com"
         class="text-sm md:text-base hover:text-gold transition-colors"
       >
         azeem@primemagnuscareglobal.com
       </a> -->
 
-      <!-- DIVIDER -->
-      <div class="w-24 h-px bg-gold/50 my-2"></div>
+        <!-- DIVIDER -->
+        <div class="w-24 h-px bg-gold/50 my-2"></div>
 
-      <!-- COPYRIGHT -->
-      <p class="text-xs md:text-sm text-offwhite/80">
-        © <span id="year"></span> PrimeMagnus Care Global 2026. All rights reserved.
-      </p>
+        <!-- COPYRIGHT -->
+        <p class="text-xs md:text-sm text-offwhite/80">
+          © <span id="year"></span> PrimeMagnus Care Global 2026. All rights reserved.
+        </p>
 
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
 
-<script>
-  document.getElementById("menuBtn").onclick = () =>
-    document.getElementById("mobileMenu").classList.toggle("hidden");
-</script>
-<!-- FLOATING CONTACT BUTTON -->
-<a
-  href="contact.html"
-  class="fixed bottom-16 right-6 z-50
+  <script>
+    document.getElementById("menuBtn").onclick = () =>
+      document.getElementById("mobileMenu").classList.toggle("hidden");
+  </script>
+  <!-- FLOATING CONTACT BUTTON -->
+  <a href="contact.html" class="fixed bottom-16 right-6 z-50
          bg-evergreen hover:bg-gold
          text-offwhite font-medium
          px-6 py-3 rounded-full
          shadow-xl hover:shadow-2xl
          transition-all duration-300
-         hover:-translate-y-1"
->
-  Contact Us
-</a>
+         hover:-translate-y-1">
+    Contact Us
+  </a>
 
 </body>
+
 </html>

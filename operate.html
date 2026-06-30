@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>How We Operate</title>
@@ -7,14 +8,16 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="icon" type="image/png" sizes="56x56" href="images/Logooo.png">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="56x56" href="images/Logooo.png">
 
-<!-- Apple Touch Icon -->
-<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <!-- Apple Touch Icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
 
-<!-- Safari Pinned Tab -->
-<link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#0F3D2E">
+  <!-- Safari Pinned Tab -->
+  <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#0F3D2E">
 
   <script src="https://cdn.tailwindcss.com"></script>
 
@@ -39,61 +42,100 @@
 </head>
 
 <body class="bg-offwhite text-charcoal font-body">
-<nav class="bg-evergreen text-offwhite shadow-md">
-  <div class="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
+  <nav class="bg-evergreen text-offwhite shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
 
-    <!-- LOGO + TEXT -->
-<a href="index.html"
-   class="flex items-center gap-1 font-heading font-semibold text-offwhite
+      <!-- LOGO + TEXT -->
+      <a href="index.html" class="flex items-center gap-1 font-heading font-semibold text-offwhite
           text-xl md:text-3xl tracking-wide
           flex-shrink-0">
 
-  <img src="images/logo.png"
-       alt="PrimeMagnus Care Global Logo"
-       class="h-14 md:h-20 w-auto" />
+        <img src="images/logo.png" alt="PrimeMagnus Care Global Logo" class="h-14 md:h-20 w-auto" />
 
-  <span class="leading-tight text-left whitespace-normal mb-2">
-    PrimeMagnus Care Global
-  </span>
-</a>
+        <span class="leading-tight text-left whitespace-normal mb-2">
+          PrimeMagnus Care Global
+        </span>
+      </a>
 
-    <!-- DESKTOP NAV -->
-    <div class="hidden md:flex space-x-10">
-      <a href="index.html" class="hover:text-gold font-medium">Home</a>
-      <a href="operate.html" class="hover:text-gold font-medium">Operate</a>
-      <a href="services.html" class="hover:text-gold font-medium">Services</a>
+      <!-- DESKTOP NAV -->
+      <div class="hidden md:flex space-x-10">
+        <a href="index.html" class="hover:text-gold font-medium">Home</a>
+        <a href="operate.html" class="hover:text-gold font-medium">Operate</a>
+        <a href="services.html" class="hover:text-gold font-medium">Services</a>
+      </div>
+
+      <!-- MOBILE MENU BUTTON -->
+      <button id="menuBtn" class="md:hidden text-2xl ml-4 mb-2 flex-shrink-0">
+        ☰
+      </button>
     </div>
 
-    <!-- MOBILE MENU BUTTON -->
-    <button id="menuBtn"
-            class="md:hidden text-2xl ml-4 mb-2 flex-shrink-0">
-      ☰
-    </button>
-  </div>
+    <!-- MOBILE MENU -->
+    <div id="mobileMenu" class="hidden bg-evergreen px-6 pb-3 md:hidden">
+      <a href="index.html" class="block py-2 hover:text-gold">Home</a>
+      <a href="operate.html" class="block py-2 hover:text-gold">Operate</a>
+      <a href="services.html" class="hover:text-gold font-medium">Services</a>
+    </div>
+  </nav>
 
-  <!-- MOBILE MENU -->
-  <div id="mobileMenu" class="hidden bg-evergreen px-6 pb-3 md:hidden">
-    <a href="index.html" class="block py-2 hover:text-gold">Home</a>
-    <a href="operate.html" class="block py-2 hover:text-gold">Operate</a>
-    <a href="services.html" class="hover:text-gold font-medium">Services</a>
-  </div>
-</nav>
+  <section class="max-w-[85rem] mx-auto px-6 mt-12 text-center">
+    <div class="relative bg-white rounded-2xl shadow-xl px-10 md:px-16 py-16 text-center">
 
-<section class="max-w-7xl mx-auto px-6 mt-12 text-center">
-  <div class="relative bg-white rounded-2xl shadow-xl px-8 md:px-12 py-12 text-center">
+      <!-- LEFT THIN ACCENT LINE -->
+      <div class="absolute left-0 top-2 bottom-12 w-0.5 bg-gradient-to-b from-transparent via-gold/60 to-transparent">
+      </div>
 
-    <!-- LEFT THIN ACCENT LINE -->
-    <div class="absolute left-0 top-2 bottom-12 w-0.5 bg-gradient-to-b from-transparent via-gold/60 to-transparent"></div>
+      <!-- RIGHT THIN ACCENT LINE -->
+      <div class="absolute right-0 top-12 bottom-12 w-px bg-gradient-to-b from-transparent via-gold/60 to-transparent">
+      </div>
 
-    <!-- RIGHT THIN ACCENT LINE -->
-    <div class="absolute right-0 top-12 bottom-12 w-px bg-gradient-to-b from-transparent via-gold/60 to-transparent"></div>
+      <div class="max-w-[75rem] mx-auto">
 
-    <div class="max-w-6xl mx-auto">
+        <p class="text-evergreen text-xl md:text-3xl font-heading font-semibold mb-4 text-center">
+          Structured hospital operations improve performance and reduce revenue loss.
+        </p>
 
-      <p class="text-evergreen text-xl md:text-3xl font-heading font-semibold mb-4 text-center">
-        Structured Pathways Reduce Risk and Increase Trust
-      </p>
+        <!-- CENTER DIVIDER -->
+        <div class="flex items-center my-8">
+          <div class="h-px flex-1 bg-gradient-to-r from-transparent to-gray-300"></div>
+          <div class="mx-3 h-2 w-2 rounded-full bg-gold"></div>
+          <div class="h-px flex-1 bg-gradient-to-l from-transparent to-gray-300"></div>
+        </div>
 
+        <p class="text-charcoal text-sm md:text-lg font-normal leading-relaxed text-left">
+          PMCG works with hospitals to identify breakdowns in patient flow, utilisation and execution, and fix them
+          through structured operational and governance interventions.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+
+  <main class="max-w-[85rem] mx-auto px-6 py-8">
+    <div class="relative bg-white rounded-2xl shadow-xl px-10 md:px-16 py-16 space-y-6">
+
+      <section>
+        <h1 class="text-2xl md:text-3xl font-heading font-semibold text-evergreen mb-4">
+          How PMCG Works </h1>
+
+        <p class="text-sm md:text-lg font-normal leading-relaxed mb-4">
+          PMCG works through four core areas to improve hospital performance:
+        </p>
+
+        <ul class="space-y-3 text-sm md:text-lg font-normal leading-relaxed">
+          <li class="flex gap-3"><span class="text-charcoal font-semibold">1.</span><span><strong>Patient Flow</strong> –
+              Assess how patients move from OPD to admission and discharge and identify where conversion is lost.</span>
+          </li>
+          <li class="flex gap-3"><span class="text-charcoal font-semibold">2.</span><span><strong>Process</strong> – Review
+              workflows across departments and remove operational bottlenecks.</span></li>
+          <li class="flex gap-3"><span class="text-charcoal font-semibold">3.</span><span><strong>Performance</strong> –
+              Improve utilisation of beds, OTs, diagnostics and revenue capture.</span></li>
+          <li class="flex gap-3"><span class="text-charcoal font-semibold">4.</span><span><strong>People &
+                Accountability</strong> – Align teams, roles and ownership so decisions translate into action.</span>
+          </li>
+        </ul>
+      </section>
       <!-- CENTER DIVIDER -->
       <div class="flex items-center my-8">
         <div class="h-px flex-1 bg-gradient-to-r from-transparent to-gray-300"></div>
@@ -101,75 +143,53 @@
         <div class="h-px flex-1 bg-gradient-to-l from-transparent to-gray-300"></div>
       </div>
 
-      <p class="text-charcoal text-sm md:text-lg font-normal leading-relaxed text-left">
-        When clinical, operational and compliance pathways are unclear, pilots stall and partnerships collapse. Structured pathways make expectations explicit: who owns what, how evidence is generated, what compliance boundaries exist, and how escalation works. With structure, risk drops, partners trust faster and institutional engagement becomes sustainable instead of transactional.
-      </p>
+      <section>
+        <h1 class="text-2xl md:text-3xl font-heading font-semibold text-evergreen mb-4">
+          How We Work
+        </h1>
 
-    </div>
-  </div>
-</section>
-
-
-<main class="max-w-7xl mx-auto px-6 py-6">
-  <div class="relative bg-white rounded-2xl shadow-xl px-6 py-8 space-y-6">
-
-    <section>
-      <h1 class="text-2xl md:text-3xl font-heading font-semibold text-evergreen mb-4">
-        How We Operate
-      </h1>
-
-      <p class="text-sm md:text-lg font-normal leading-relaxed">
-Effective healthcare modernisation requires institutional alignment long before solutions are deployed. PMCG works with organisations to define governance, readiness and operating discipline so pathways are clinically credible and operationally deliverable in India’s environment.      </p>
-    </section>
-     <!-- CENTER DIVIDER -->
-      <div class="flex items-center my-8">
-        <div class="h-px flex-1 bg-gradient-to-r from-transparent to-gray-300"></div>
-        <div class="mx-3 h-2 w-2 rounded-full bg-gold"></div>
-        <div class="h-px flex-1 bg-gradient-to-l from-transparent to-gray-300"></div>
-      </div>
-
-<section>
-      <h1 class="text-2xl md:text-3xl font-heading font-semibold text-evergreen mb-4">
-        How We Work
-      </h1>
-
-      <p class="text-sm md:text-lg font-normal leading-relaxed">
-PMCG supports healthcare organisations at the structural layer of India healthcare. Our work prioritises governance, ownership, operational readiness, escalation pathways and compliance clarity.</p>
+        <p class="text-sm md:text-lg font-normal leading-relaxed">
+          PMCG supports healthcare organisations at the structural layer of India healthcare. Our work prioritises
+          governance, ownership, operational readiness, escalation pathways and compliance clarity.</p>
       </section>
-<!-- CENTER DIVIDER -->
+      <!-- CENTER DIVIDER -->
       <div class="flex items-center my-8">
         <div class="h-px flex-1 bg-gradient-to-r from-transparent to-gray-300"></div>
         <div class="mx-3 h-2 w-2 rounded-full bg-gold"></div>
         <div class="h-px flex-1 bg-gradient-to-l from-transparent to-gray-300"></div>
       </div>
-<section>
-    <h1 class="text-2xl md:text-3xl font-heading font-semibold text-evergreen mb-4">
-        Engagement Scope
-      </h1>
-      <ul class="space-y-3 text-sm md:text-lg font-normal leading-relaxed">
-        <li class="flex gap-3"><span class="text-gold">•</span>India pathway and programme modernisation for hospitals</li>
-        <li class="flex gap-3"><span class="text-gold">•</span>Operational and compliance readiness assessments</li>
-        <li class="flex gap-3"><span class="text-gold">•</span>Validation and pilot planning for digital health</li>
-        <li class="flex gap-3"><span class="text-gold">•</span>Accreditation and governance alignment</li>
-        <li class="flex gap-3"><span class="text-gold">•</span>Clinical and operational diligence for investors</li>
-      </ul>
-    </section>
-<!-- CENTER DIVIDER -->
+      <section>
+        <h1 class="text-2xl md:text-3xl font-heading font-semibold text-evergreen mb-4">
+          Engagement Scope
+        </h1>
+        <ul class="space-y-3 text-sm md:text-lg font-normal leading-relaxed">
+          <li class="flex gap-3"><span class="text-gold">•</span>India pathway and programme modernisation for hospitals
+          </li>
+          <li class="flex gap-3"><span class="text-gold">•</span>Operational and compliance readiness assessments</li>
+          <li class="flex gap-3"><span class="text-gold">•</span>Validation and pilot planning for digital health</li>
+          <li class="flex gap-3"><span class="text-gold">•</span>Accreditation and governance alignment</li>
+          <li class="flex gap-3"><span class="text-gold">•</span>Clinical and operational diligence for investors</li>
+        </ul>
+      </section>
+      <!-- CENTER DIVIDER -->
       <div class="flex items-center my-8">
         <div class="h-px flex-1 bg-gradient-to-r from-transparent to-gray-300"></div>
         <div class="mx-3 h-2 w-2 rounded-full bg-gold"></div>
         <div class="h-px flex-1 bg-gradient-to-l from-transparent to-gray-300"></div>
       </div>
 
-<section>
-      <h1 class="text-2xl md:text-3xl font-heading font-semibold text-evergreen mb-4">
-        What We Do Not
-      </h1>
+      <section>
+        <h1 class="text-2xl md:text-3xl font-heading font-semibold text-evergreen mb-4">
+          What We Do Not
+        </h1>
 
-      <p class="text-sm md:text-lg font-normal leading-relaxed">
-PMCG does not operate referral models, patient commission networks or incentive-based corridors. Our work is governance-led, not volume-led.      
-</section>
-    <!-- <section>
+        <p class="text-sm md:text-lg font-normal leading-relaxed">
+          PMCG does not operate referral networks, patient commission models or volume-based corridors.
+          <br><br>
+          Our work is governance-led, operational and focused on institutional performance.
+        </p>
+      </section>
+      <!-- <section>
       <h1 class="text-2xl md:text-3xl font-heading font-semibold text-evergreen mb-4">
         Pathway Design and Governance
       </h1>
@@ -181,7 +201,7 @@ Cross-border care pathways are designed with explicit ownership and governance s
       <p class="text-sm md:text-lg font-normal leading-relaxed">
 The focus is on ensuring that pathways are institutionally understood, clinically independent, and operationally defensible across participating entities.      </p>
     </section> -->
-    <!-- <section>
+      <!-- <section>
       <h1 class="text-2xl md:text-3xl font-heading font-semibold text-evergreen mb-4">
         Institutional Readiness
       </h1>
@@ -193,8 +213,8 @@ The focus is on ensuring that pathways are institutionally understood, clinicall
       <p class="text-sm md:text-lg font-normal leading-relaxed">
 This includes clarity on clinical independence, coordination responsibilities, and the ability to operate within defined frameworks once pathways are active.      </p>
     </section> -->
-    
-    <!-- <section>
+
+      <!-- <section>
       <h1 class="text-2xl md:text-3xl font-heading font-semibold text-evergreen mb-4">
         Engagement Model
       </h1>
@@ -203,7 +223,7 @@ This includes clarity on clinical independence, coordination responsibilities, a
         Engagements are advisory and governance-led, focused on the upstream design and operating discipline of cross-border care pathways.
       </p>
     </section> -->
-    <!-- <section>
+      <!-- <section>
       <h2 class="text-sm md:text-lg font-normal leading-relaxed mb-4">
         We do not:
       </h2>
@@ -214,11 +234,9 @@ This includes clarity on clinical independence, coordination responsibilities, a
         <li class="flex gap-3"><span class="text-gold">•</span>prioritise speed over safety</li>
       </ul>
     </section> -->
-  </div>
-<div class="flex justify-center mt-10">
-  <a
-    href="mailto:azeem@primemagnuscareglobal.com"
-    class="inline-block
+    </div>
+    <div class="flex justify-center mt-10">
+      <a href="contact.html" class="inline-block
            px-8 py-4
            text-lg font-bold
            rounded-xl
@@ -226,67 +244,60 @@ This includes clarity on clinical independence, coordination responsibilities, a
            bg-[#0f3d2e] text-white
            transition-all duration-300
            hover:bg-transparent hover:text-[#0f3d2e]
-           items-center"
-  >
-    Explore Collaboration
-  </a>
-</div>
+           items-center">
+        Book a Performance Diagnostic
+      </a>
+    </div>
 
-</main>
+  </main>
 
-<!-- FOOTER -->
-<footer class="bg-evergreen text-offwhite mt-16">
-  <div class="max-w-7xl mx-auto px-6 py-4">
+  <!-- FOOTER -->
+  <footer class="bg-evergreen text-offwhite mt-16">
+    <div class="max-w-7xl mx-auto px-6 py-4">
 
-    <div class="flex flex-col items-center text-center gap-2">
+      <div class="flex flex-col items-center text-center gap-2">
 
-      <!-- LOGO -->
-      <img
-        src="images/Logooo.png"
-        alt="PrimeMagnus Care Global Logo"
-        class="h-12 w-auto"
-      />
+        <!-- LOGO -->
+        <img src="images/Logooo.png" alt="PrimeMagnus Care Global Logo" class="h-12 w-auto" />
 
-      <!-- TAGLINE -->
-      <p class="font-heading text-sm md:text-base text-3xl tracking-wide">
-        Trusted Pathways. Ethical Care. Integrity in Motion.
-      </p>
+        <!-- TAGLINE -->
+        <p class="font-heading text-sm md:text-base text-3xl tracking-wide">
+          Trusted Pathways. Ethical Care. Integrity in Motion.
+        </p>
 
-      <!-- EMAIL -->
-      <!-- <a
+        <!-- EMAIL -->
+        <!-- <a
         href="mailto:azeem@primemagnuscareglobal.com"
         class="text-sm md:text-base hover:text-gold transition-colors"
       >
         azeem@primemagnuscareglobal.com
       </a> -->
 
-      <!-- DIVIDER -->
-      <div class="w-24 h-px bg-gold/50 my-2"></div>
+        <!-- DIVIDER -->
+        <div class="w-24 h-px bg-gold/50 my-2"></div>
 
-      <!-- COPYRIGHT -->
-      <p class="text-xs md:text-sm text-offwhite/80">
-        © <span id="year"></span> PrimeMagnus Care Global 2026. All rights reserved.
-      </p>
+        <!-- COPYRIGHT -->
+        <p class="text-xs md:text-sm text-offwhite/80">
+          © <span id="year"></span> PrimeMagnus Care Global 2026. All rights reserved.
+        </p>
 
+      </div>
     </div>
-  </div>
-</footer>
-<script>
-  document.getElementById("menuBtn").onclick = () =>
-    document.getElementById("mobileMenu").classList.toggle("hidden");
-</script>
-<!-- FLOATING CONTACT BUTTON -->
-<a
-  href="contact.html"
-  class="fixed bottom-16 right-6 z-50
+  </footer>
+  <script>
+    document.getElementById("menuBtn").onclick = () =>
+      document.getElementById("mobileMenu").classList.toggle("hidden");
+  </script>
+  <!-- FLOATING CONTACT BUTTON -->
+  <a href="contact.html" class="fixed bottom-16 right-6 z-50
          bg-evergreen hover:bg-gold
          text-offwhite font-medium
          px-6 py-3 rounded-full
          shadow-xl hover:shadow-2xl
          transition-all duration-300
-         hover:-translate-y-1"
->
-  Contact Us
-</a>  
+         hover:-translate-y-1">
+    Contact Us
+  </a>
 </body>
+
 </html>
