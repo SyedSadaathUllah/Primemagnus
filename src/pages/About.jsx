@@ -42,17 +42,17 @@ export default function About() {
     {
       name: "Assess",
       icon: <Settings className="w-5 h-5 text-[#0B4D32] stroke-[2]" />,
-      desc: "Understand existing operations, identify performance gaps and establish priorities.",
+      desc: "Understand your current performance and priorities.",
     },
     {
       name: "Strengthen",
       icon: <Target className="w-5 h-5 text-[#0B4D32] stroke-[2]" />,
-      desc: "Work towards practical improvements in processes, coordination, governance and technology adoption.",
+      desc: "Implement practical improvements with measurable outcomes.",
     },
     {
       name: "Sustain",
       icon: <TrendingUp className="w-5 h-5 text-[#0B4D32] stroke-[2]" />,
-      desc: "Support implementation, monitor progress and strengthen organisational capability for continued improvement.",
+      desc: "Build capability for long-term performance and growth.",
     },
   ];
 
@@ -83,9 +83,9 @@ export default function About() {
           {/* Left Text Column */}
           <div className="lg:col-span-7 px-6 sm:px-10 lg:pl-12 lg:pr-8 py-12 lg:py-16 z-10">
             {/* Eyebrow */}
-            <p className="text-xs sm:text-sm font-bold tracking-wider text-[#0B4D32] uppercase mb-4">
+            {/* <p className="text-xs sm:text-sm font-bold tracking-wider text-[#0B4D32] uppercase mb-4">
               ABOUT PMCG
-            </p>
+            </p> */}
 
             {/* Main Title */}
             <h1 className="text-3xl sm:text-4xl lg:text-[2.75rem] font-heading font-bold text-[#11231A] tracking-tight leading-[1.18] mb-4">
@@ -96,9 +96,9 @@ export default function About() {
 
             {/* Gold Underline Accent Line */}
 
-            <p className="text-sm sm:text-base lg:text-lg text-charcoal-light leading-relaxed max-w-xl">
+            {/* <p className="text-sm sm:text-base lg:text-lg text-charcoal-light leading-relaxed max-w-xl">
               Partnering with healthcare leaders to build accountable pathways, elevate institutional readiness, and drive sustainable performance.
-            </p>
+            </p> */}
           </div>
 
           {/* Right Image Column with Angled Gold Curve */}
@@ -217,13 +217,13 @@ export default function About() {
         <div className="bg-[#093925] rounded-3xl p-6 sm:p-8 lg:p-10 text-white shadow-xl flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8">
           {/* Left Title */}
           <div className="lg:w-48 flex-shrink-0 text-center lg:text-left">
-            <h2 className="font-heading font-bold text-2xl sm:text-3xl text-white leading-tight">
+            <h2 className="no-heading-underline font-heading font-bold text-2xl sm:text-3xl text-white leading-tight">
               Our Areas<br />of Focus
             </h2>
           </div>
 
           {/* Vertical Divider on Desktop */}
-          <div className="hidden lg:block w-px bg-white/20 self-stretch my-1"></div>
+          {/* <div className="hidden lg:block w-px bg-white/20 self-stretch my-1"></div> */}
 
           {/* Right: 4 Focus Items */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 flex-1 w-full">

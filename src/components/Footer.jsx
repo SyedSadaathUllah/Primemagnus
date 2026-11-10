@@ -3,11 +3,11 @@ export default function Footer() {
     <footer className="bg-[#052618] text-white py-8 border-t border-[#0b4d32]/30 mt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col items-center justify-center text-center space-y-2">
         {/* Gold Emblem / Icon in center */}
-        <div className="w-8 h-8 rounded-full border border-gold/70 flex items-center justify-center p-1 bg-gold/10 mb-1">
+        <div className="w-20 h-20 rounded-full overflow-hidden mb-1">
           <img
-            src="/images/logo.png"
+            src="/images/primemagnus-logo.png"
             alt="PMCG Emblem"
-            className="w-full h-full object-contain filter brightness-125"
+            className="w-full h-full object-contain"
           />
         </div>
 

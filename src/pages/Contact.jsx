@@ -11,10 +11,14 @@ export default function Contact() {
   const [formData, setFormData] = useState(emptyForm);
   const [status, setStatus] = useState('idle');
   const service = searchParams.get('service') || '';
+  const isDigitalEnquiry = service === 'Digital Transformation & AI Enablement';
+  const messagePrompt = isDigitalEnquiry
+    ? 'Tell us about the operational challenge, technology requirement or opportunity you would like to explore.'
+    : '';
 
   useEffect(() => {
-    if (service) setFormData(prev => ({ ...prev, message: prev.message || `Enquiring about ${service}.` }));
-  }, [service]);
+    if (service && !isDigitalEnquiry) setFormData(prev => ({ ...prev, message: prev.message || `Enquiring about ${service}.` }));
+  }, [service, isDigitalEnquiry]);
 
   const handleChange = event => setFormData(prev => ({ ...prev, [event.target.name]: event.target.value }));
   const handleSubmit = async event => {
@@ -63,7 +67,12 @@ export default function Contact() {
             </div>
           ) : (
             <form ref={formRef} onSubmit={handleSubmit} className="grid sm:grid-cols-2 gap-5">
-              <input type="hidden" name="serviceInterest" value={service} />
+              {service ? (
+                <div className="sm:col-span-2">
+                  <label htmlFor="serviceInterest" className="block text-sm font-medium text-[#04432E] mb-2">Enquiry Subject</label>
+                  <input id="serviceInterest" name="serviceInterest" value={service} readOnly className={fieldClass} />
+                </div>
+              ) : <input type="hidden" name="serviceInterest" value="" />}
               {status === 'error' && <p role="alert" className="sm:col-span-2 rounded-lg bg-red-50 border border-red-200 p-4 text-sm text-red-800">Your enquiry could not be sent. Please try again or email <a href="mailto:azeem@primemagnuscareglobal.com" className="underline">azeem@primemagnuscareglobal.com</a>.</p>}
               {[
                 { name: 'name', label: 'Name', required: true, autoComplete: 'name', full: true },
@@ -76,7 +85,7 @@ export default function Contact() {
               </div>)}
               <div className="sm:col-span-2">
                 <label htmlFor="message" className="block text-sm font-medium text-[#04432E] mb-2">Your Message (required)</label>
-                <textarea id="message" name="message" rows={4} required value={formData.message} onChange={handleChange} className={`${fieldClass} resize-y`} />
+                <textarea id="message" name="message" rows={4} required value={formData.message} placeholder={messagePrompt} onChange={handleChange} className={`${fieldClass} resize-y`} />
               </div>
               <div className="sm:col-span-2 flex justify-end">
                 <button type="submit" disabled={status === 'submitting'} className="inline-flex items-center justify-center gap-2 rounded-full bg-[#0B3B24] text-white px-8 py-3 font-semibold text-sm hover:bg-[#072818] disabled:opacity-60 disabled:cursor-wait transition-colors">

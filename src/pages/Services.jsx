@@ -22,7 +22,7 @@ const services = [
   },
   {
     title: 'Quality, Governance & Accreditation',
-    description: 'Strengthen systems, standards and organisational accountability.',
+    description: 'Strengthen governance, compliance and accreditation readiness.',
     icon: ShieldCheck,
   },
   {

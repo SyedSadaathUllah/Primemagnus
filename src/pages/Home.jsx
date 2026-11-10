@@ -39,7 +39,7 @@ export default function Home() {
     },
     {
       title: "Quality, Governance & Accreditation",
-      subtitle: "Strengthen systems, standards and organisational accountability.",
+      subtitle: "Strengthen governance, compliance and accreditation readiness.",
       icon: <ShieldCheck className="w-8 h-8 text-[#0B4D32] stroke-[1.6]" />,
     },
     {

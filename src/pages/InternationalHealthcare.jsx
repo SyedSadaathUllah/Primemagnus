@@ -21,7 +21,7 @@ export default function InternationalHealthcare() {
       <section className="overflow-hidden bg-[#04432E]">
         <div className="max-w-[85rem] mx-auto grid lg:grid-cols-[1.1fr_1fr]">
           <div className="px-6 sm:px-10 lg:px-12 py-12 lg:py-16 flex flex-col justify-center text-center">
-            <h1 className="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight">International Patient Programmes (IPP) &amp; Medical Value Travel</h1>
+            <h1 className="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight">International Patient Programmes &amp; Medical Value Travel</h1>
             <p className="mt-5 text-white/95 text-base sm:text-lg leading-relaxed">Structured, coordinated and patient-focused international care programmes for hospitals.</p>
           </div>
           <div className="relative min-h-[260px] sm:min-h-[320px] lg:min-h-full lg:border-l-[5px] border-gold">

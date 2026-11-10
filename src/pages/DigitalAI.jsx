@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Network, Database, UsersRound, Cpu, Check } from 'lucide-react';
+import { Network, Database, UsersRound, Cpu, Check, ChartNoAxesCombined, ArrowRight } from 'lucide-react';
 
 const focusAreas = [
   { title: 'Workflow Digitalisation', description: 'Review and improve workflows before identifying where digital tools can add value.', icon: Network },
@@ -55,9 +55,16 @@ export default function DigitalAI() {
             </ul>
           </section>
         </div>
-        <div className="mt-10 text-center">
-          <Link to="/contact?service=Digital%20%26%20AI%20Engagement" className="inline-flex justify-center rounded-full bg-[#0B3B24] px-7 py-3.5 text-white text-sm sm:text-base font-medium hover:bg-[#072818] transition-colors">Discuss a Digital &amp; AI Engagement</Link>
-        </div>
+        <section aria-labelledby="digital-opportunity-title" className="mt-10 rounded-3xl bg-[#04432E] p-6 sm:p-8 text-white flex flex-col lg:flex-row items-center gap-6 lg:gap-8">
+          <div className="shrink-0 lg:border-r lg:border-gold lg:pr-8">
+            <ChartNoAxesCombined className="w-16 h-16 stroke-[1.3]" aria-hidden="true" />
+          </div>
+          <div className="flex-1 text-center lg:text-left">
+            <h2 id="digital-opportunity-title" className="no-heading-underline font-heading font-bold text-2xl sm:text-3xl lg:!text-left">Where Could Digital Make a Difference in Your Hospital?</h2>
+            <p className="mt-3 text-sm sm:text-base text-white/95 leading-relaxed">From workflow inefficiencies and reporting gaps to patient access and practical AI applications, the starting point is understanding where technology can address a real operational need.</p>
+          </div>
+          <Link to="/contact?service=Digital%20Transformation%20%26%20AI%20Enablement" className="inline-flex shrink-0 items-center justify-center gap-3 rounded-full bg-white px-6 py-3.5 text-[#04432E] text-sm font-semibold hover:bg-[#F1F5F3] transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white">Explore a Digital Opportunity <ArrowRight className="w-5 h-5" aria-hidden="true" /></Link>
+        </section>
       </div>
     </div>
   );

@@ -27,10 +27,18 @@ export default function Navbar() {
           className="flex items-center group transition-transform duration-200"
         >
           <img
-            src="/images/header_logo.png"
+            src="/images/primemagnus-logo.png"
             alt="PrimeMagnus Care Global (PMCG)"
-            className="h-10 sm:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+            className="h-14 w-14 sm:h-16 sm:w-16 rounded-full object-contain transition-transform duration-300 group-hover:scale-105"
           />
+          <span className="ml-2 sm:ml-3 text-[#0B3B24]">
+            <span className="block whitespace-nowrap font-heading text-lg sm:text-2xl font-semibold leading-none">
+              PrimeMagnus Care Global
+            </span>
+            <span className="block mt-1.5 text-[9px] sm:text-[11px] leading-snug">
+              Trusted Pathways. Ethical Care. Integrity in Motion.
+            </span>
+          </span>
         </Link>
 
         {/* DESKTOP NAVIGATION */}
