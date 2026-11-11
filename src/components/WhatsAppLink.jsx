@@ -7,7 +7,7 @@ export default function WhatsAppLink() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat with PrimeMagnus Care Global on WhatsApp (opens in a new tab)"
-      className="fixed bottom-4 right-4 z-40 grid h-14 w-14 place-items-center rounded-full border-2 border-white bg-[#087A43] text-white shadow-lg transition-colors hover:bg-[#066237] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-evergreen sm:bottom-6 sm:right-6"
+      className="fixed bottom-[max(1rem,env(safe-area-inset-bottom))] right-4 z-40 grid h-12 w-12 sm:h-14 sm:w-14 place-items-center rounded-full border-2 border-white bg-[#087A43] text-white shadow-lg transition-colors hover:bg-[#066237] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-evergreen sm:bottom-6 sm:right-6"
     >
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.65" strokeLinecap="round" strokeLinejoin="round" className="h-8 w-8" aria-hidden="true">
         <path d="M21 11.8a9 9 0 0 1-13.4 7.9L3 21l1.3-4.5A9 9 0 1 1 21 11.8Z" />

@@ -1,13 +1,13 @@
 export default function Footer() {
   return (
-    <footer className="bg-[#052618] text-white py-8 border-t border-[#0b4d32]/30 mt-16">
+    <footer className="bg-[#052618] text-white pt-8 pb-20 sm:pb-8 border-t border-[#0b4d32]/30 mt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col items-center justify-center text-center space-y-2">
         {/* Gold Emblem / Icon in center */}
         <div className="w-20 h-20 rounded-full overflow-hidden mb-1">
           <img
             src="/images/primemagnus-logo.png"
             alt="PMCG Emblem"
-            className="w-full h-full object-contain brightness-110 contrast-125 saturate-150"
+            className="w-full h-full object-contain brightness-105"
           />
         </div>
 

@@ -7,7 +7,7 @@ export default function ScrollToTop() {
   useEffect(() => {
     const section = hash && document.getElementById(hash.slice(1));
     if (section) {
-      section.scrollIntoView();
+      section.scrollIntoView({ behavior: 'instant' });
       return;
     }
 

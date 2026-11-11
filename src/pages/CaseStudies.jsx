@@ -38,11 +38,11 @@ export default function CaseStudies() {
     <div>
       <section className="overflow-hidden bg-[#04432E]">
         <div className="max-w-[85rem] mx-auto grid lg:grid-cols-2">
-          <div className="flex flex-col justify-center px-6 sm:px-10 lg:px-12 py-12 lg:py-16 text-center">
+          <div className="flex flex-col justify-center px-6 sm:px-10 lg:px-12 py-9 sm:py-12 lg:py-16 text-center">
             <h1 className="font-heading font-bold text-white text-4xl sm:text-5xl lg:text-[3.4rem] leading-tight">Case Studies</h1>
             <p className="mt-5 text-white/95 text-base sm:text-lg leading-relaxed">Practical interventions. Measurable results.</p>
           </div>
-          <div className="relative min-h-[280px] sm:min-h-[340px] lg:min-h-[360px] lg:border-l-[5px] border-gold">
+          <div className="relative min-h-[210px] sm:min-h-[340px] lg:min-h-[360px] lg:border-l-[5px] border-gold">
             <img src="/images/case-studies-hero.png" alt="Healthcare consulting team reviewing a hospital performance dashboard" className="absolute inset-0 w-full h-full object-cover object-[center_40%]" />
           </div>
         </div>

@@ -98,9 +98,9 @@ export default function Home() {
         {/* Subtle Top Gold Accent Line */}
         <div className="absolute top-0 left-0 w-36 h-1 bg-gradient-to-r from-gold to-transparent"></div>
 
-        <div className="max-w-[85rem] mx-auto grid grid-cols-1 lg:grid-cols-12 items-center min-h-[520px]">
+        <div className="max-w-[85rem] mx-auto grid grid-cols-1 lg:grid-cols-12 items-center lg:min-h-[520px]">
           {/* Left Text Column */}
-          <div className="lg:col-span-7 px-6 sm:px-10 lg:pl-12 lg:pr-8 py-12 lg:py-16 z-10">
+          <div className="lg:col-span-7 px-6 sm:px-10 lg:pl-12 lg:pr-8 py-8 sm:py-12 lg:py-16 z-10">
             {/* Category Eyebrow */}
             <p className="text-xs sm:text-sm font-bold tracking-wider text-[#0B4D32] uppercase mb-4">
               Healthcare Operations • Performance • Digital Enablement
@@ -118,17 +118,17 @@ export default function Home() {
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-wrap items-center gap-4">
+            <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
               <Link
                 to="/services"
-                className="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-[#0B3B24] hover:bg-[#072818] text-white font-medium text-sm sm:text-base shadow-sm hover:shadow transition-all duration-200"
+                className="inline-flex items-center justify-center gap-2 px-7 py-3 rounded-full bg-[#0B3B24] hover:bg-[#072818] text-white font-medium text-sm sm:text-base shadow-sm hover:shadow transition-all duration-200"
               >
                 <span>Explore Our Services</span>
                 <span className="text-base">→</span>
               </Link>
               <Link
                 to={consultationPath}
-                className="inline-flex items-center px-7 py-3 rounded-full bg-white hover:bg-gray-50 text-[#0B3B24] border border-[#0B3B24] font-medium text-sm sm:text-base shadow-sm hover:shadow transition-all duration-200"
+                className="inline-flex items-center justify-center px-7 py-3 rounded-full bg-white hover:bg-gray-50 text-[#0B3B24] border border-[#0B3B24] font-medium text-sm sm:text-base shadow-sm hover:shadow transition-all duration-200"
               >
                 Book a Consultation
               </Link>
@@ -136,7 +136,7 @@ export default function Home() {
           </div>
 
           {/* Right Image Column with Angled Gold Curve */}
-          <div className="lg:col-span-5 relative h-72 sm:h-96 lg:h-full lg:min-h-[520px] overflow-hidden flex items-center justify-end">
+          <div className="lg:col-span-5 relative h-56 sm:h-96 lg:h-full lg:min-h-[520px] overflow-hidden flex items-center justify-end">
             {/* Angled curved separator overlay (Desktop) */}
             <div className="hidden lg:block absolute inset-y-0 left-0 w-24 z-10 pointer-events-none">
               <svg

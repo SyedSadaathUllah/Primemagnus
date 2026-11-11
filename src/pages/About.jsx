@@ -79,9 +79,9 @@ export default function About() {
     <div className="space-y-12 sm:space-y-14 lg:space-y-16 pb-20 font-body text-charcoal">
       {/* 1. HERO SECTION */}
       <section className="relative overflow-hidden bg-gradient-to-r from-[#EEF6F9] via-[#E6F1F5] to-[#F3F8FA] border-b border-gray-200/60">
-        <div className="max-w-[85rem] mx-auto grid grid-cols-1 lg:grid-cols-12 items-center min-h-[460px]">
+        <div className="max-w-[85rem] mx-auto grid grid-cols-1 lg:grid-cols-12 items-center lg:min-h-[460px]">
           {/* Left Text Column */}
-          <div className="lg:col-span-7 px-6 sm:px-10 lg:pl-12 lg:pr-8 py-12 lg:py-16 z-10">
+          <div className="lg:col-span-7 px-6 sm:px-10 lg:pl-12 lg:pr-8 py-9 sm:py-12 lg:py-16 z-10">
             {/* Eyebrow */}
             {/* <p className="text-xs sm:text-sm font-bold tracking-wider text-[#0B4D32] uppercase mb-4">
               ABOUT PMCG
@@ -102,7 +102,7 @@ export default function About() {
           </div>
 
           {/* Right Image Column with Angled Gold Curve */}
-          <div className="lg:col-span-5 relative h-72 sm:h-80 lg:h-full lg:min-h-[460px] overflow-hidden flex items-center justify-end">
+          <div className="lg:col-span-5 relative h-56 sm:h-80 lg:h-full lg:min-h-[460px] overflow-hidden flex items-center justify-end">
             {/* Angled curved separator overlay (Desktop) */}
             <div className="hidden lg:block absolute inset-y-0 left-0 w-24 z-10 pointer-events-none">
               <svg

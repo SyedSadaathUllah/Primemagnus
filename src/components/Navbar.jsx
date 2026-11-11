@@ -20,20 +20,20 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-gray-200/80 shadow-sm transition-all duration-300">
-      <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-between">
+      <div className="max-w-[85rem] mx-auto px-3 sm:px-6 lg:px-8 py-2.5 sm:py-3.5 flex items-center justify-between gap-2 xl:gap-0">
         {/* LOGO & BRAND */}
         <Link
           to="/"
           onClick={closeMenu}
-          className="flex items-center group transition-transform duration-200"
+          className="flex min-w-0 items-center group transition-transform duration-200"
         >
           <img
             src="/images/primemagnus-logo.png"
             alt="PrimeMagnus Care Global (PMCG)"
-            className="h-14 w-14 sm:h-16 sm:w-16 rounded-full object-contain brightness-110 contrast-125 saturate-150 transition-transform duration-300 group-hover:scale-105"
+            className="h-12 w-12 shrink-0 sm:h-16 sm:w-16 rounded-full object-contain brightness-105 transition-transform duration-300 group-hover:scale-105"
           />
           <span className="ml-2 sm:ml-3 text-[#0B3B24]">
-            <span className="block whitespace-nowrap font-heading text-lg sm:text-2xl font-semibold leading-none">
+            <span className="block font-heading text-lg sm:text-2xl sm:whitespace-nowrap font-semibold leading-none">
               PrimeMagnus Care Global
             </span>
             <span className="block mt-1.5 text-[9px] sm:text-[11px] leading-snug">
@@ -83,7 +83,7 @@ export default function Navbar() {
         <button
           type="button"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="xl:hidden p-2 rounded-lg text-[#0B3B24] hover:bg-gray-100 transition-colors focus:outline-none"
+          className="xl:hidden grid h-11 w-11 shrink-0 place-items-center rounded-lg text-[#0B3B24] hover:bg-gray-100 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-evergreen"
           aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
           aria-expanded={mobileMenuOpen}
           aria-controls="mobile-navigation"
@@ -113,7 +113,7 @@ export default function Navbar() {
                   ? 'page'
                   : undefined
               }
-              className="py-2 text-sm font-medium text-gray-700 hover:text-[#0B3B24] border-b border-gray-50"
+              className="flex min-h-11 items-center border-b border-gray-50 text-sm font-medium text-gray-700 hover:text-[#0B3B24]"
             >
               {link.name}
             </Link>
@@ -121,11 +121,11 @@ export default function Navbar() {
           <Link
             to="/contact"
             onClick={closeMenu}
-            className="py-2 text-sm font-medium text-gray-700 hover:text-[#0B3B24] border-b border-gray-50"
+            className="flex min-h-11 items-center border-b border-gray-50 text-sm font-medium text-gray-700 hover:text-[#0B3B24]"
           >
             Contact
           </Link>
-          <Link to={consultationPath} onClick={closeMenu} className="inline-flex items-center justify-center rounded-full bg-[#0B3B24] px-4 py-2.5 text-sm font-medium text-white">
+          <Link to={consultationPath} onClick={closeMenu} className="inline-flex min-h-11 items-center justify-center rounded-full bg-[#0B3B24] px-4 py-2.5 text-sm font-medium text-white">
             Book a Consultation
           </Link>
         </div>

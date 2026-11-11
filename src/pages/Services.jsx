@@ -57,7 +57,7 @@ export default function Services() {
     <div className="pb-4">
       <section className="relative overflow-hidden bg-[#04432E]">
         <div className="max-w-[85rem] mx-auto grid grid-cols-1 lg:grid-cols-2 min-h-[280px] lg:min-h-[320px]">
-          <div className="relative z-10 flex flex-col justify-center px-6 sm:px-10 lg:px-12 py-12 lg:py-16">
+          <div className="relative z-10 flex flex-col justify-center px-6 sm:px-10 lg:px-12 py-9 sm:py-12 lg:py-16">
             <h1 className="font-heading font-bold text-white text-4xl sm:text-5xl lg:text-[3.4rem] leading-tight">
               Our Services
             </h1>
@@ -66,7 +66,7 @@ export default function Services() {
             </p>
           </div>
 
-          <div className="relative min-h-[220px] sm:min-h-[260px] lg:min-h-full">
+          <div className="relative min-h-[200px] sm:min-h-[260px] lg:min-h-full">
             <img
               src="/images/services_corridor.jpg"
               alt="Hospital corridor"
