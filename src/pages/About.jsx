@@ -17,23 +17,23 @@ import { HeadingDivider } from '../components/CardDivider';
 export default function About() {
   const whoWeWorkWith = [
     {
-      title: "Hospitals & Health Systems",
+      title: ["Hospitals &", "Health Systems"],
       icon: <Building2 className="w-8 h-8 text-[#0B4D32] stroke-[1.8]" />,
     },
     {
-      title: "Tier-2 & Emerging Hospitals in India",
+      title: ["Tier-2 & Emerging", "Hospitals in India"],
       icon: <Building className="w-8 h-8 text-[#0B4D32] stroke-[1.8]" />,
     },
     {
-      title: "Investors in Healthcare",
+      title: ["Healthcare", "Investors"],
       icon: <Users className="w-8 h-8 text-[#0B4D32] stroke-[1.8]" />,
     },
     {
-      title: "Digital Health Companies",
+      title: ["Digital Health", "Companies"],
       icon: <Monitor className="w-8 h-8 text-[#0B4D32] stroke-[1.8]" />,
     },
     {
-      title: "International Healthcare Partners",
+      title: ["International", "Healthcare Partners"],
       icon: <Globe className="w-8 h-8 text-[#0B4D32] stroke-[1.8]" />,
     },
   ];
@@ -58,19 +58,19 @@ export default function About() {
 
   const areasOfFocus = [
     {
-      title: "Hospital Operations & Performance Improvement",
+      title: ["Hospital Operations", "& Performance", "Improvement"],
       icon: <Building2 className="w-7 h-7 text-white stroke-[1.8]" />,
     },
     {
-      title: "Digital Transformation & AI Enablement",
+      title: ["Digital", "Transformation &", "AI Enablement"],
       icon: <Monitor className="w-7 h-7 text-white stroke-[1.8]" />,
     },
     {
-      title: "Quality, Governance & Accreditation",
+      title: ["Quality,", "Governance &", "Accreditation"],
       icon: <ShieldCheck className="w-7 h-7 text-white stroke-[1.8]" />,
     },
     {
-      title: "International Patient Programmes",
+      title: ["International", "Patient", "Programmes"],
       icon: <UserPlus className="w-7 h-7 text-white stroke-[1.8]" />,
     },
   ];
@@ -132,7 +132,7 @@ export default function About() {
 
       {/* 2. SECTION: "Who We Are" (Standalone One Below Another) */}
       <section className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl">
+        <div className="max-w-7xl mx-auto">
           <HeadingDivider className="mb-6 justify-center max-w-none mx-0 px-0">
             <h2 className="text-2xl sm:text-3xl font-heading font-bold text-[#0B3B24] whitespace-normal">
               Who We Are
@@ -158,13 +158,17 @@ export default function About() {
             {whoWeWorkWith.map((item, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-2xl p-5 text-center border border-gray-100 shadow-[0_2px_12px_-2px_rgba(0,0,0,0.05)] hover:shadow-md transition-all duration-200 flex flex-col items-center justify-between min-h-[145px] group"
+                className="bg-white rounded-2xl p-5 text-center border border-gray-100 shadow-[0_2px_12px_-2px_rgba(0,0,0,0.05)] hover:shadow-md transition-all duration-200 flex flex-col items-center gap-5 min-h-[145px] group"
               >
-                <div className="h-12 flex items-center justify-center transition-transform duration-200 group-hover:scale-110">
+                <div className="h-12 shrink-0 flex items-center justify-center transition-transform duration-200 group-hover:scale-110">
                   {item.icon}
                 </div>
                 <h3 className="text-xs sm:text-[13px] font-bold text-[#0B3B24] leading-snug">
-                  {item.title}
+                  {item.title.map((line, index) => (
+                    <span key={line} className="lg:block">
+                      {index > 0 && ' '}{line}
+                    </span>
+                  ))}
                 </h3>
               </div>
             ))}
@@ -182,16 +186,16 @@ export default function About() {
           </HeadingDivider>
 
           {/* 3 Process Step Cards with Gold Chevrons */}
-          <div className="flex flex-col lg:flex-row items-center gap-4">
+          <div className="grid gap-4 lg:grid-cols-3 lg:gap-12">
             {approachSteps.map((step, idx) => (
-              <div key={idx} className="w-full flex flex-col lg:flex-row items-center gap-4 flex-1">
+              <div key={idx} className="relative flex min-w-0">
                 {/* Step Card */}
                 <div className="w-full bg-white rounded-2xl p-6 border border-gray-100 shadow-[0_2px_12px_-2px_rgba(0,0,0,0.05)] flex items-start gap-4 flex-1 min-h-[110px]">
                   <div className="w-10 h-10 rounded-full border-2 border-[#0B4D32] flex items-center justify-center flex-shrink-0 mt-0.5 bg-emerald-50/50">
                     {step.icon}
                   </div>
-                  <div>
-                    <h3 className="font-bold text-[#0B3B24] text-base sm:text-lg mb-1">
+                  <div className="min-w-0">
+                    <h3 className="text-left font-bold text-[#0B3B24] text-base sm:text-lg mb-1">
                       {step.name}
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
@@ -202,7 +206,7 @@ export default function About() {
 
                 {/* Gold Chevron between steps on Desktop */}
                 {idx < approachSteps.length - 1 && (
-                  <div className="hidden lg:flex items-center justify-center text-gold px-1 flex-shrink-0">
+                  <div className="absolute -right-9 top-1/2 hidden -translate-y-1/2 text-gold lg:block">
                     <ChevronRight className="w-6 h-6 stroke-[2.5]" />
                   </div>
                 )}
@@ -217,8 +221,8 @@ export default function About() {
         <div className="bg-[#093925] rounded-3xl p-6 sm:p-8 lg:p-10 text-white shadow-xl flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8">
           {/* Left Title */}
           <div className="lg:w-48 flex-shrink-0 text-center lg:text-left">
-            <h2 className="no-heading-underline font-heading font-bold text-2xl sm:text-3xl text-white leading-tight">
-              Our Areas<br />of Focus
+            <h2 className="no-heading-underline lg:text-left font-heading font-bold text-2xl sm:text-3xl text-white leading-tight">
+              Our Areas of Focus
             </h2>
           </div>
 
@@ -228,12 +232,16 @@ export default function About() {
           {/* Right: 4 Focus Items */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 flex-1 w-full">
             {areasOfFocus.map((focus, idx) => (
-              <div key={idx} className="flex items-center gap-3.5 group">
+              <div key={idx} className="flex min-w-0 items-center gap-3.5 group">
                 <div className="w-12 h-12 rounded-xl bg-white/10 border border-white/20 flex items-center justify-center flex-shrink-0 transition-transform duration-200 group-hover:scale-105">
                   {focus.icon}
                 </div>
-                <h3 className="font-bold text-xs sm:text-sm text-white leading-snug">
-                  {focus.title}
+                <h3 className="text-left font-bold text-xs sm:text-sm text-white leading-snug">
+                  {focus.title.map((line, index) => (
+                    <span key={line} className="xl:block">
+                      {index > 0 && ' '}{line}
+                    </span>
+                  ))}
                 </h3>
               </div>
             ))}
@@ -244,11 +252,11 @@ export default function About() {
       {/* 6. SECTION: "Our Experience" */}
       <section className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-          {/* Hospital Corner Photo on Left */}
+          {/* Healthcare Team Photo */}
           <div className="lg:col-span-5 h-64 sm:h-72 rounded-3xl overflow-hidden shadow-md">
             <img
-              src="/images/about_hospital_hd.jpg"
-              alt="PMCG Hospital Partner Facility"
+              src="/images/our-experience.jpeg"
+              alt="Healthcare team reviewing a performance dashboard in a meeting"
               className="w-full h-full object-cover object-center"
             />
           </div>
@@ -260,8 +268,11 @@ export default function About() {
                 Our Experience
               </h2>
             </HeadingDivider>
-            <p className="text-sm sm:text-base lg:text-[1.05rem] text-gray-700 leading-relaxed">
-              PMCG is founded on 22 years of healthcare experience across NHS England and private healthcare in the UAE. This experience encompasses hospital operations, quality management, governance and JCI accreditation, alongside an understanding of the operational requirements involved in delivering coordinated healthcare services.
+            <p className="text-center text-sm sm:text-base lg:text-[1.05rem] text-gray-700 leading-relaxed">
+              PMCG draws on over 20 years of the founder's healthcare experience across NHS England and private healthcare in the UAE.
+            </p>
+            <p className="mt-4 text-center text-sm sm:text-base lg:text-[1.05rem] text-gray-700 leading-relaxed">
+              This experience includes hospital operations, quality management, governance and JCI accreditation, alongside a practical understanding of the systems and processes required to deliver effective and coordinated healthcare services.
             </p>
           </div>
         </div>

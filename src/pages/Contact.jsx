@@ -1,8 +1,9 @@
 import { useState, useRef, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
-import { CalendarDays, Mail, MessageCircle, Phone, MapPin, CheckCircle2, Loader2 } from 'lucide-react';
+import { CalendarDays, Mail, Phone, MapPin, CheckCircle2, Loader2 } from 'lucide-react';
 import ConsultationBooking from '../components/ConsultationBooking';
+import WhatsAppIcon from '../components/WhatsAppIcon';
 import { whatsappUrl } from '../consultation';
 
 const emptyForm = { name: '', organisation: '', email: '', phone: '', message: '' };
@@ -57,8 +58,8 @@ export default function Contact() {
           <a href="mailto:azeem@primemagnuscareglobal.com" className="flex items-center gap-4 hover:underline"><Mail className="w-6 h-6 shrink-0" aria-hidden="true" /><span className="break-all">azeem@primemagnuscareglobal.com</span></a>
           <a href="tel:+917981982043" className="flex items-center gap-4 hover:underline"><Phone className="w-6 h-6 shrink-0" aria-hidden="true" /><span>India: +91 798 198 2043</span></a>
           <a href="tel:+971508810746" className="flex items-center gap-4 hover:underline"><Phone className="w-6 h-6 shrink-0" aria-hidden="true" /><span>UAE: +971 50 881 0746</span></a>
+          <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 hover:underline"><WhatsAppIcon className="w-6 h-6 shrink-0" /><span>Chat on WhatsApp</span></a>
           <p className="flex items-center gap-4"><MapPin className="w-6 h-6 shrink-0" aria-hidden="true" /><span>Hyderabad, India</span></p>
-          <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 hover:underline"><MessageCircle className="w-6 h-6 shrink-0" aria-hidden="true" /><span>Chat on WhatsApp</span></a>
           <a href="#book-a-consultation" className="flex items-center gap-4 hover:underline"><CalendarDays className="w-6 h-6 shrink-0" aria-hidden="true" /><span>Book a Consultation</span></a>
         </address>
 

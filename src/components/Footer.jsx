@@ -7,7 +7,7 @@ export default function Footer() {
           <img
             src="/images/primemagnus-logo.png"
             alt="PMCG Emblem"
-            className="w-full h-full object-contain brightness-105"
+            className="w-full h-full object-contain brightness-105 hue-rotate-[12deg]"
           />
         </div>
 

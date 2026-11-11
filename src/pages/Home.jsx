@@ -19,7 +19,7 @@ export default function Home() {
   const whereWeHelpCards = [
     {
       title: "Hospital Operations & Performance Improvement",
-      subtitle: "Improve utilisation, patient processes and operational performance.",
+      subtitle: ["Improve utilisation,", "patient processes and", "operational performance."],
       icon: (
         <div className="flex items-end justify-center gap-1 w-8 h-8 text-[#0B4D32]">
           <span className="w-1.5 h-3 bg-[#0B4D32] rounded-xs"></span>
@@ -31,7 +31,7 @@ export default function Home() {
     },
     {
       title: "Digital Transformation & AI Enablement",
-      subtitle: "Assess readiness and apply technology to practical hospital needs.",
+      subtitle: ["Assess readiness and", "apply technology to", "practical hospital needs."],
       icon: (
         <div className="w-8 h-8 rounded-lg border-2 border-[#0B4D32] flex items-center justify-center p-1">
           <Settings className="w-5 h-5 text-[#0B4D32] stroke-[1.8]" />
@@ -40,12 +40,12 @@ export default function Home() {
     },
     {
       title: "Quality, Governance & Accreditation",
-      subtitle: "Strengthen governance, compliance and accreditation readiness.",
+      subtitle: ["Strengthen governance,", "compliance and", "accreditation readiness."],
       icon: <ShieldCheck className="w-8 h-8 text-[#0B4D32] stroke-[1.6]" />,
     },
     {
       title: "International Patient Programmes",
-      subtitle: "Develop coordinated pathways for patients seeking care in India.",
+      subtitle: ["Develop coordinated", "pathways for patients", "seeking care in India."],
       icon: <Globe className="w-8 h-8 text-[#0B4D32] stroke-[1.6]" />,
     },
   ];
@@ -53,22 +53,22 @@ export default function Home() {
   const wholeHospitalAreas = [
     {
       title: "Operations",
-      description: "Patient flow, capacity and resource utilisation.",
+      description: ["Patient flow,", "capacity and", "resource utilisation."],
       icon: <Users className="w-6 h-6 text-[#0B4D32] stroke-[1.8]" />,
     },
     {
       title: "Financial Performance",
-      description: "Revenue integrity, documentation, coding and billing.",
+      description: ["Revenue integrity,", "documentation,", "coding and billing."],
       icon: <Coins className="w-6 h-6 text-[#0B4D32] stroke-[1.8]" />,
     },
     {
       title: "Governance",
-      description: "Standards, accountability and operational controls.",
+      description: ["Standards,", "accountability and", "operational controls."],
       icon: <ShieldCheck className="w-6 h-6 text-[#0B4D32] stroke-[1.8]" />,
     },
     {
       title: "Technology",
-      description: "Digital readiness, practical AI applications and workflow improvement.",
+      description: ["Digital readiness,", "practical AI applications", "and workflow improvement."],
       icon: <Monitor className="w-6 h-6 text-[#0B4D32] stroke-[1.8]" />,
     },
   ];
@@ -107,7 +107,7 @@ export default function Home() {
             </p>
 
             {/* Main Headline */}
-            <h1 className="no-heading-underline text-3xl sm:text-5xl lg:text-[3.25rem] font-heading font-bold text-[#11231A] tracking-tight leading-[1.12] mb-6">
+            <h1 className="text-left no-heading-underline text-3xl sm:text-5xl lg:text-[3.25rem] font-heading font-bold text-[#11231A] tracking-tight leading-[1.12] mb-6">
               Better Hospital Operations.<br />
               Stronger Performance.
             </h1>
@@ -136,7 +136,7 @@ export default function Home() {
           </div>
 
           {/* Right Image Column with Angled Gold Curve */}
-          <div className="lg:col-span-5 relative h-56 sm:h-96 lg:h-full lg:min-h-[520px] overflow-hidden flex items-center justify-end">
+          <div className="lg:col-span-5 relative h-56 sm:h-96 lg:h-auto lg:self-stretch lg:min-h-[520px] lg:-mr-[max(0px,calc((100vw-85rem)/2))] overflow-hidden">
             {/* Angled curved separator overlay (Desktop) */}
             <div className="hidden lg:block absolute inset-y-0 left-0 w-24 z-10 pointer-events-none">
               <svg
@@ -158,7 +158,7 @@ export default function Home() {
             <img
               src="/images/hero_hospital_hd.jpg"
               alt="Modern Hospital Facility"
-              className="w-full h-full object-cover object-center lg:object-left shadow-inner"
+              className="absolute inset-0 w-full h-full object-cover object-center lg:object-left shadow-inner"
             />
           </div>
         </div>
@@ -179,7 +179,7 @@ export default function Home() {
         </p>
 
         {/* 4 Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
           {whereWeHelpCards.map((card, idx) => (
             <div
               key={idx}
@@ -197,7 +197,11 @@ export default function Home() {
 
               {/* Subtitle */}
               <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
-                {card.subtitle}
+                {card.subtitle.map((line, index) => (
+                  <span key={line} className="xl:block">
+                    {index > 0 && ' '}{line}
+                  </span>
+                ))}
               </p>
             </div>
           ))}
@@ -210,10 +214,8 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Content */}
             <div className="lg:col-span-5 lg:pr-6">
-              <h2 className="text-2xl sm:text-3xl lg:text-[2.2rem] font-heading font-bold text-[#0B3B24] leading-[1.2] mb-5">
-                Improving One Area Often<br className="hidden sm:inline" />
-                Requires Looking at the<br className="hidden sm:inline" />
-                Whole Hospital
+              <h2 className="text-2xl sm:text-3xl lg:text-[2.2rem] font-heading font-bold text-[#0B3B24] text-left leading-[1.2] mb-5">
+                Improving One Area Often Requires Looking at the Whole Hospital
               </h2>
               <p className="text-xs sm:text-sm lg:text-[0.95rem] text-gray-700 leading-relaxed">
                 A hospital's performance is shaped by interconnected processes. Patient flow affects capacity. Documentation affects coding and revenue. Governance affects consistency. Technology must support the way people actually work.
@@ -221,7 +223,7 @@ export default function Home() {
             </div>
 
             {/* Right 2x2 Feature Grid in Individual White Boxes */}
-            <div className="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
+            <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
               {wholeHospitalAreas.map((area, idx) => (
                 <div
                   key={idx}
@@ -230,12 +232,16 @@ export default function Home() {
                   <div className="flex-shrink-0 mt-0.5">
                     {area.icon}
                   </div>
-                  <div>
-                    <h3 className="font-bold text-[#0B3B24] text-base sm:text-[1.05rem] mb-1 leading-snug">
+                  <div className="min-w-0">
+                    <h3 className="text-left font-bold text-[#0B3B24] text-base sm:text-[1.05rem] mb-1 leading-snug">
                       {area.title}
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
-                      {area.description}
+                      {area.description.map((line, index) => (
+                        <span key={line} className="xl:block">
+                          {index > 0 && ' '}{line}
+                        </span>
+                      ))}
                     </p>
                   </div>
                 </div>
@@ -260,18 +266,18 @@ export default function Home() {
         </div>
 
         {/* 3 Step Process Cards with Gold Arrows */}
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-4 lg:gap-6">
+        <div className="grid gap-4 lg:grid-cols-3 lg:gap-12">
           {progressSteps.map((step, idx) => (
-            <div key={idx} className="w-full flex flex-col lg:flex-row items-center gap-4 flex-1">
+            <div key={idx} className="relative flex min-w-0">
               {/* Step Card */}
-              <div className="w-full bg-white rounded-2xl p-6 border border-gray-100 shadow-[0_4px_16px_-4px_rgba(0,0,0,0.05)] relative flex items-center justify-center px-20 lg:px-6 lg:pt-20 gap-4 flex-1 min-h-[110px]">
+              <div className="w-full bg-white rounded-2xl p-6 border border-gray-100 shadow-[0_4px_16px_-4px_rgba(0,0,0,0.05)] flex items-start gap-4 lg:flex-col lg:items-center min-h-[110px]">
                 {/* Green Circle Icon */}
-                <div className="absolute left-6 top-1/2 -translate-y-1/2 lg:left-1/2 lg:top-6 lg:-translate-x-1/2 lg:translate-y-0 w-11 h-11 rounded-full bg-[#0B4D32] flex items-center justify-center shadow-sm">
+                <div className="w-11 h-11 shrink-0 rounded-full bg-[#0B4D32] flex items-center justify-center shadow-sm">
                   {step.icon}
                 </div>
                 {/* Content */}
-                <div className="w-full min-w-0 text-center">
-                  <h3 className="font-bold text-[#0B3B24] text-base sm:text-lg mb-1">
+                <div className="w-full min-w-0 lg:text-center">
+                  <h3 className="text-left lg:text-center font-bold text-[#0B3B24] text-base sm:text-lg mb-1">
                     {step.title}
                   </h3>
                   <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
@@ -282,7 +288,7 @@ export default function Home() {
 
               {/* Gold Arrow (between steps on Desktop) */}
               {idx < progressSteps.length - 1 && (
-                <div className="hidden lg:flex items-center justify-center text-gold px-1 flex-shrink-0">
+                <div className="absolute -right-9 top-1/2 hidden -translate-y-1/2 text-gold lg:block">
                   <ArrowRight className="w-6 h-6 stroke-[2.2]" />
                 </div>
               )}
@@ -296,7 +302,7 @@ export default function Home() {
         <div className="bg-[#093925] rounded-3xl overflow-hidden relative shadow-xl grid grid-cols-1 lg:grid-cols-12 min-h-[220px]">
           {/* Left Text Content */}
           <div className="lg:col-span-8 p-8 sm:p-10 lg:p-12 z-10 flex flex-col justify-center">
-            <h2 className="text-2xl sm:text-3xl lg:text-[2.1rem] font-heading font-bold text-white mb-3 leading-snug">
+            <h2 className="text-2xl sm:text-3xl lg:text-[2.1rem] font-heading font-bold text-white text-left mb-3 leading-snug">
               Have a Hospital Challenge You Need to Address?
             </h2>
             <p className="text-xs sm:text-sm lg:text-base text-white/90 leading-relaxed max-w-2xl mb-6">
@@ -313,7 +319,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Right Corridor Photo with Angled Divider */}
+          {/* Leadership Meeting Photo with Angled Divider */}
           <div className="lg:col-span-4 relative h-48 lg:h-full min-h-[220px] overflow-hidden flex items-center justify-end">
             {/* Angled curved separator overlay (Desktop) */}
             <div className="hidden lg:block absolute inset-y-0 left-0 w-16 z-10 pointer-events-none">
@@ -332,10 +338,9 @@ export default function Home() {
               </svg>
             </div>
 
-            {/* Hospital Corridor Image */}
             <img
-              src="/images/cta_corridor_hd.jpg"
-              alt="Medical Team in Hospital Corridor"
+              src="/images/hospital-leadership-meeting.png"
+              alt="Hospital leaders and clinicians meeting around a table"
               className="w-full h-full object-cover object-center"
             />
           </div>

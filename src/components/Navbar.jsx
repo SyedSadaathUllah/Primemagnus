@@ -14,6 +14,7 @@ export default function Navbar() {
     { name: 'Digital & AI', path: '/digital-ai' },
     { name: 'International Healthcare', path: '/international-healthcare' },
     { name: 'Case Studies', path: '/case-studies' },
+    { name: 'Contact', path: '/contact' },
   ];
 
   const closeMenu = () => setMobileMenuOpen(false);
@@ -30,7 +31,7 @@ export default function Navbar() {
           <img
             src="/images/primemagnus-logo.png"
             alt="PrimeMagnus Care Global (PMCG)"
-            className="h-12 w-12 shrink-0 sm:h-16 sm:w-16 rounded-full object-contain brightness-105 transition-transform duration-300 group-hover:scale-105"
+            className="h-12 w-12 shrink-0 sm:h-16 sm:w-16 rounded-full object-contain brightness-105 hue-rotate-[12deg] transition-transform duration-300 group-hover:scale-105"
           />
           <span className="ml-2 sm:ml-3 text-[#0B3B24]">
             <span className="block font-heading text-lg sm:text-2xl sm:whitespace-nowrap font-semibold leading-none">
@@ -68,12 +69,6 @@ export default function Navbar() {
             );
           })}
 
-          <Link
-            to="/contact"
-            className="py-1 text-sm font-medium text-gray-800 hover:text-[#0B3B24]"
-          >
-            Contact
-          </Link>
           <Link to={consultationPath} className="inline-flex items-center justify-center whitespace-nowrap rounded-full bg-[#0B3B24] px-5 py-2 text-sm font-medium text-white hover:bg-[#072818]">
             Book a Consultation
           </Link>
@@ -94,11 +89,11 @@ export default function Navbar() {
 
       {/* MOBILE DROPDOWN MENU */}
       <nav id="mobile-navigation" aria-label="Mobile navigation"
-        className={`xl:hidden bg-white border-t border-gray-100 transition-all duration-300 overflow-hidden shadow-lg ${
-          mobileMenuOpen ? 'max-h-[65dvh] overflow-y-auto opacity-100 py-4 px-6' : 'invisible max-h-0 opacity-0 py-0 px-6'
+        className={`absolute right-3 top-full mt-2 max-h-[min(24rem,55dvh)] w-64 max-w-[calc(100%-1.5rem)] overflow-y-auto overscroll-contain [scrollbar-width:none] [&::-webkit-scrollbar]:hidden rounded-xl border border-gray-200 bg-white p-2 shadow-lg sm:right-6 lg:right-8 xl:hidden ${
+          mobileMenuOpen ? '' : 'hidden'
         }`}
       >
-        <div className="flex flex-col space-y-3">
+        <div className="flex flex-col">
           {navLinks.map((link) => (
             <Link
               key={link.name}
@@ -113,19 +108,12 @@ export default function Navbar() {
                   ? 'page'
                   : undefined
               }
-              className="flex min-h-11 items-center border-b border-gray-50 text-sm font-medium text-gray-700 hover:text-[#0B3B24]"
+              className="flex min-h-11 items-center rounded-md px-3 text-sm font-medium text-gray-700 hover:bg-gray-50 hover:text-[#0B3B24] aria-[current=page]:bg-emerald-50 aria-[current=page]:text-[#0B3B24]"
             >
               {link.name}
             </Link>
           ))}
-          <Link
-            to="/contact"
-            onClick={closeMenu}
-            className="flex min-h-11 items-center border-b border-gray-50 text-sm font-medium text-gray-700 hover:text-[#0B3B24]"
-          >
-            Contact
-          </Link>
-          <Link to={consultationPath} onClick={closeMenu} className="inline-flex min-h-11 items-center justify-center rounded-full bg-[#0B3B24] px-4 py-2.5 text-sm font-medium text-white">
+          <Link to={consultationPath} onClick={closeMenu} className="mt-1 inline-flex min-h-11 items-center justify-center rounded-full bg-[#0B3B24] px-4 py-2.5 text-sm font-medium text-white">
             Book a Consultation
           </Link>
         </div>

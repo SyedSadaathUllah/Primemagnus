@@ -1,5 +1,5 @@
 const whatsappNumber = import.meta.env.VITE_WHATSAPP_NUMBER || '917981982043';
-const openingMessage = 'Hello, I visited the PrimeMagnus Care Global website and would like to know more about your services.';
+const openingMessage = 'Hello, I visited the PrimeMagnus Care Global website and would like to explore how your services could support our hospital or organisation.';
 
 export const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(openingMessage)}`;
 export const consultationPath = '/contact#book-a-consultation';

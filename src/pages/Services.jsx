@@ -14,22 +14,22 @@ import {
 const services = [
   {
     title: 'Hospital Operations & Performance Improvement',
-    description: 'Improve utilisation, patient processes and operational performance.',
+    description: ['Improve utilisation,', 'patient processes and', 'operational performance.'],
     icon: Hospital,
   },
   {
     title: 'Digital Transformation & AI Enablement',
-    description: 'Assess readiness and apply technology to practical hospital needs.',
+    description: ['Assess readiness and', 'apply technology to', 'practical hospital needs.'],
     icon: MonitorCog,
   },
   {
     title: 'Quality, Governance & Accreditation',
-    description: 'Strengthen governance, compliance and accreditation readiness.',
+    description: ['Strengthen governance,', 'compliance and', 'accreditation readiness.'],
     icon: ShieldCheck,
   },
   {
     title: 'International Patient Programmes',
-    description: 'Develop coordinated pathways for patients seeking care in India.',
+    description: ['Develop coordinated', 'pathways for patients', 'seeking care in India.'],
     icon: Globe,
   },
 ];
@@ -58,7 +58,7 @@ export default function Services() {
       <section className="relative overflow-hidden bg-[#04432E]">
         <div className="max-w-[85rem] mx-auto grid grid-cols-1 lg:grid-cols-2 min-h-[280px] lg:min-h-[320px]">
           <div className="relative z-10 flex flex-col justify-center px-6 sm:px-10 lg:px-12 py-9 sm:py-12 lg:py-16">
-            <h1 className="font-heading font-bold text-white text-4xl sm:text-5xl lg:text-[3.4rem] leading-tight">
+            <h1 className="text-left font-heading font-bold text-white text-4xl sm:text-5xl lg:text-[3.4rem] leading-tight">
               Our Services
             </h1>
             <p className="mt-5 max-w-xl text-white/95 text-base sm:text-lg leading-relaxed">
@@ -68,8 +68,8 @@ export default function Services() {
 
           <div className="relative min-h-[200px] sm:min-h-[260px] lg:min-h-full">
             <img
-              src="/images/services_corridor.jpg"
-              alt="Hospital corridor"
+              src="/images/services-hero.png"
+              alt="Hospital team reviewing performance data on a dashboard"
               className="absolute inset-0 h-full w-full object-cover object-center"
             />
             <div className="hidden lg:block absolute inset-y-0 left-0 w-28 z-10 pointer-events-none">
@@ -100,12 +100,16 @@ export default function Services() {
                 key={service.title}
                 className="relative flex flex-col bg-white rounded-2xl border border-gray-200/90 shadow-[0_6px_24px_-10px_rgba(4,67,46,0.18)] p-6 sm:p-7 min-h-[240px]"
               >
-                <Icon className="w-9 h-9 text-[#0B6B3A] stroke-[1.6]" aria-hidden="true" />
+                <Icon className="mx-auto w-9 h-9 text-[#0B6B3A] stroke-[1.6]" aria-hidden="true" />
                 <h3 className="mt-4 font-heading font-bold text-[#04432E] text-xl leading-snug">
                   {service.title}
                 </h3>
-                <p className="mt-3 text-sm sm:text-[0.95rem] text-gray-600 leading-relaxed">
-                  {service.description}
+                <p className="mt-3 text-sm sm:text-[0.95rem] text-center text-gray-600 leading-relaxed">
+                  {service.description.map((line, index) => (
+                    <span key={line} className="xl:block">
+                      {index > 0 && ' '}{line}
+                    </span>
+                  ))}
                 </p>
               </article>
             );
@@ -132,7 +136,7 @@ export default function Services() {
                         <Icon className="w-5 h-5 text-white stroke-[2]" aria-hidden="true" />
                       </div>
                       <div>
-                        <h3 className="font-bold text-[#04432E] text-base">{step.title}</h3>
+                        <h3 className="text-left font-bold text-[#04432E] text-base">{step.title}</h3>
                         <p className="text-sm text-gray-600 leading-snug mt-0.5">{step.description}</p>
                       </div>
                     </div>

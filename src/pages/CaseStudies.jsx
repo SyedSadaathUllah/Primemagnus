@@ -49,9 +49,9 @@ export default function CaseStudies() {
       </section>
 
       <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pt-12 sm:pt-14">
-        <div className="grid auto-rows-fr gap-6 lg:grid-cols-3">
+        <div className="grid auto-rows-fr gap-6 lg:auto-rows-auto lg:grid-cols-3">
           {studies.map(({ location, title, icon: Icon, summary, interventions, measures, context }) => (
-            <article key={location} className="rounded-2xl border border-gray-200 bg-white p-6 sm:p-7 shadow-[0_6px_24px_-10px_rgba(4,67,46,0.18)]">
+            <article key={location} className="rounded-2xl border border-gray-200 bg-white p-6 sm:p-7 shadow-[0_6px_24px_-10px_rgba(4,67,46,0.18)] lg:supports-[grid-template-rows:subgrid]:row-span-5 lg:supports-[grid-template-rows:subgrid]:grid lg:supports-[grid-template-rows:subgrid]:grid-rows-subgrid lg:supports-[grid-template-rows:subgrid]:gap-y-0">
               <Icon className="mx-auto w-10 h-10 text-[#0B6B3A] stroke-[1.6]" aria-hidden="true" />
               <h2 className="mt-5 font-heading font-bold text-[#04432E] text-2xl sm:text-3xl leading-tight">{location}</h2>
               <h3 className="mt-5 font-semibold text-[#04432E] text-lg leading-snug">{title}</h3>
@@ -77,7 +77,9 @@ export default function CaseStudies() {
           ))}
         </div>
         <aside className="mt-8 rounded-xl border border-[#C9A24D]/30 bg-[#FAF8F2] px-6 py-5 text-center text-sm text-gray-600 leading-relaxed">
-          The UAE and UK examples describe the founder’s professional experience prior to the establishment of PMCG. The India example is presented as a PMCG engagement.
+          The UAE and UK examples describe the founder’s professional experience prior to the establishment of PMCG.
+          <br />
+          The India example is presented as a PMCG engagement.
         </aside>
       </div>
     </div>

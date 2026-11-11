@@ -7,7 +7,7 @@ export default function ConsultationBooking() {
   return (
     <section id="book-a-consultation" aria-labelledby="booking-title" className="scroll-mt-24 sm:scroll-mt-32 mx-auto mt-12 max-w-[85rem] px-2 sm:px-6 lg:px-8">
       <div className="flex flex-col rounded-2xl border border-gray-200 bg-[#F8FAF9] px-1 py-5 text-center sm:p-8">
-        <h2 id="booking-title" className="font-heading text-3xl font-bold text-[#04432E]">Book a Consultation</h2>
+        <h2 id="booking-title" className="font-heading text-3xl font-bold text-[#04432E]">Introductory Discussion | PrimeMagnus Care Global</h2>
         <iframe
           src={bookingEmbedUrl}
           title="PrimeMagnus consultation booking calendar"

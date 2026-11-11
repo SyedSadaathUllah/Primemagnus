@@ -3,10 +3,26 @@ import { Network, Database, UsersRound, Cpu, Check, ChartNoAxesCombined, ArrowRi
 import { serviceConsultationPath } from '../consultation';
 
 const focusAreas = [
-  { title: 'Workflow Digitalisation', description: 'Review and improve workflows before identifying where digital tools can add value.', icon: Network },
-  { title: 'Data & Reporting', description: 'Support more accurate, timely and actionable operational information.', icon: Database },
-  { title: 'Patient Access & Coordination', description: 'Explore practical digital support for communication, access and coordination processes.', icon: UsersRound },
-  { title: 'Practical AI Applications', description: 'Identify appropriate non-clinical opportunities, such as documentation support, administrative workflows and operational efficiency.', icon: Cpu },
+  {
+    title: ['Workflow', 'Digitalisation'],
+    description: ['Improve workflows', 'and find where digital', 'tools can help.'],
+    icon: Network,
+  },
+  {
+    title: ['Data &', 'Reporting'],
+    description: ['Make reports timely,', 'accurate and useful', 'for operations.'],
+    icon: Database,
+  },
+  {
+    title: ['Patient Access &', 'Coordination'],
+    description: ['Use digital tools for', 'communication and', 'care coordination.'],
+    icon: UsersRound,
+  },
+  {
+    title: ['Practical AI', 'Applications'],
+    description: ['Explore AI for', 'documentation and', 'administrative tasks.'],
+    icon: Cpu,
+  },
 ];
 
 const approach = [
@@ -41,10 +57,18 @@ export default function DigitalAI() {
             <h2 id="digital-focus-title" className="font-heading font-bold text-[#04432E] text-3xl sm:text-4xl">Our Focus Areas</h2>
             <div className="mt-7 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {focusAreas.map(({ title, description, icon: Icon }) => (
-                <article key={title} className="rounded-xl border border-gray-200 bg-[#F8FAF9] p-5 text-center shadow-sm">
+                <article key={title.join(' ')} className="rounded-xl border border-gray-200 bg-[#F8FAF9] p-5 lg:px-4 text-center shadow-sm">
                   <Icon className="mx-auto w-9 h-9 text-[#0B6B3A] stroke-[1.6]" aria-hidden="true" />
-                  <h3 className="mt-4 font-heading font-bold text-[#04432E] text-xl leading-snug">{title}</h3>
-                  <p className="mt-3 text-sm text-gray-600 leading-relaxed">{description}</p>
+                  <h3 className="mt-4 font-heading font-bold text-[#04432E] text-xl leading-snug">
+                    {title.map((line, index) => (
+                      <span key={line} className="lg:block">{index > 0 && ' '}{line}</span>
+                    ))}
+                  </h3>
+                  <p className="mt-3 text-sm text-gray-600 leading-relaxed">
+                    {description.map((line, index) => (
+                      <span key={line} className="lg:block">{index > 0 && ' '}{line}</span>
+                    ))}
+                  </p>
                 </article>
               ))}
             </div>
