@@ -28,8 +28,14 @@ const studies = [
     location: 'UK — Founder Experience',
     title: 'Governance & Quality',
     icon: ShieldCheck,
-    summary: 'Within NHS England, the founder directly managed two practices in Nottingham City. Both practices achieved Level 2 Advanced Quality Accreditation.',
-    context: 'The two practices served patient populations of approximately 5,500 and 7,000 respectively. The accreditation claim applies to these two practices under the founder’s management.',
+    summary: 'Within NHS England, the founder directly managed two general practices in Nottingham. Both achieved Level 2 Advanced Quality Accreditation under the ADVANCE scheme.',
+    interventionsHeading: 'Quality & Governance Contribution',
+    interventions: [
+      'Quality standards and governance oversight.',
+      'Strengthening practice systems and processes.',
+      'Achievement of Level 2 accreditation at both practices.',
+    ],
+    advanceScheme: 'A local quality improvement framework designed to help general practices strengthen their systems and prepare for the standards required under the Care Quality Commission (CQC) registration framework.',
   },
 ];
 
@@ -50,7 +56,7 @@ export default function CaseStudies() {
 
       <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pt-12 sm:pt-14">
         <div className="grid auto-rows-fr gap-6 lg:auto-rows-auto lg:grid-cols-3">
-          {studies.map(({ location, title, icon: Icon, summary, interventions, measures, context }) => (
+          {studies.map(({ location, title, icon: Icon, summary, interventionsHeading = 'Areas of intervention', interventions, measures, advanceScheme }) => (
             <article key={location} className="rounded-2xl border border-gray-200 bg-white p-6 sm:p-7 shadow-[0_6px_24px_-10px_rgba(4,67,46,0.18)] lg:supports-[grid-template-rows:subgrid]:row-span-5 lg:supports-[grid-template-rows:subgrid]:grid lg:supports-[grid-template-rows:subgrid]:grid-rows-subgrid lg:supports-[grid-template-rows:subgrid]:gap-y-0">
               <Icon className="mx-auto w-10 h-10 text-[#0B6B3A] stroke-[1.6]" aria-hidden="true" />
               <h2 className="mt-5 font-heading font-bold text-[#04432E] text-2xl sm:text-3xl leading-tight">{location}</h2>
@@ -58,10 +64,16 @@ export default function CaseStudies() {
               <p className="mt-4 text-sm sm:text-base text-gray-600 leading-relaxed">{summary}</p>
               {interventions && (
                 <div className="mt-6 rounded-xl bg-[#F3F7F4] p-4">
-                  <h4 className="text-xs font-semibold uppercase tracking-wider text-[#04432E]">Areas of intervention</h4>
+                  <h4 className="text-xs font-semibold uppercase tracking-wider text-[#04432E]">{interventionsHeading}</h4>
                   <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-gray-600 leading-relaxed">
                     {interventions.map(intervention => <li key={intervention}>{intervention}</li>)}
                   </ul>
+                  {advanceScheme && (
+                    <div className="mt-4 border-t border-gray-200 pt-4">
+                      <h4 className="text-xs font-semibold uppercase tracking-wider text-[#04432E]">About the ADVANCE Scheme</h4>
+                      <p className="mt-4 text-sm text-gray-600 leading-relaxed">{advanceScheme}</p>
+                    </div>
+                  )}
                 </div>
               )}
               {measures && (
@@ -72,7 +84,6 @@ export default function CaseStudies() {
                   </dl>
                 </div>
               )}
-              {context && <div className="mt-6 rounded-xl bg-[#F3F7F4] p-4"><h4 className="text-xs font-semibold uppercase tracking-wider text-[#04432E]">Context</h4><p className="mt-4 text-sm text-gray-600 leading-relaxed">{context}</p></div>}
             </article>
           ))}
         </div>
