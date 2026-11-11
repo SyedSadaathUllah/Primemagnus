@@ -7,7 +7,7 @@ export default function Footer() {
           <img
             src="/images/primemagnus-logo.png"
             alt="PMCG Emblem"
-            className="w-full h-full object-contain"
+            className="w-full h-full object-contain brightness-110 contrast-125 saturate-150"
           />
         </div>
 
@@ -25,7 +25,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <p className="text-xs text-white/60">
-          © 2026 PrimeMagnus Care Global. All rights reserved.
+          © 2027 PrimeMagnus Care Global. All rights reserved.
         </p>
       </div>
     </footer>

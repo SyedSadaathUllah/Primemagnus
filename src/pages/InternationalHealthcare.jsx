@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { serviceConsultationPath } from '../consultation';
 import { Hospital, UsersRound, ShieldCheck, HeartHandshake, Laptop, FilePlus2, ClipboardCheck, Bed, UserRoundCheck, ChevronRight } from 'lucide-react';
 
 const support = [
@@ -64,7 +65,7 @@ export default function InternationalHealthcare() {
           <div className="p-7 sm:p-10 text-center">
             <h2 id="international-cta-title" className="font-heading font-bold text-white text-2xl sm:text-3xl">Discuss an International Patient Programme</h2>
             <p className="mt-4 text-white/90 text-sm sm:text-base leading-relaxed">Let’s explore how PMCG can help your hospital build or strengthen its international patient programme.</p>
-            <Link to="/contact?service=International%20Patient%20Programme" className="inline-flex items-center justify-center mt-6 rounded-full bg-white text-[#04432E] px-7 py-3 font-semibold text-sm hover:bg-[#F2EAD7] transition-colors">Discuss an International Patient Programme</Link>
+            <Link to={serviceConsultationPath('International Patient Programme')} className="inline-flex items-center justify-center mt-6 rounded-full bg-white text-[#04432E] px-7 py-3 font-semibold text-sm hover:bg-[#F2EAD7] transition-colors">Discuss an International Patient Programme</Link>
           </div>
           <div className="hidden lg:block relative border-l-[5px] border-gold"><img src="/images/services_corridor.jpg" alt="Hospital care environment" className="absolute inset-0 w-full h-full object-cover" /></div>
         </section>

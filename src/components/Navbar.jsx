@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import { consultationPath } from '../consultation';
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -29,7 +30,7 @@ export default function Navbar() {
           <img
             src="/images/primemagnus-logo.png"
             alt="PrimeMagnus Care Global (PMCG)"
-            className="h-14 w-14 sm:h-16 sm:w-16 rounded-full object-contain transition-transform duration-300 group-hover:scale-105"
+            className="h-14 w-14 sm:h-16 sm:w-16 rounded-full object-contain brightness-110 contrast-125 saturate-150 transition-transform duration-300 group-hover:scale-105"
           />
           <span className="ml-2 sm:ml-3 text-[#0B3B24]">
             <span className="block whitespace-nowrap font-heading text-lg sm:text-2xl font-semibold leading-none">
@@ -42,7 +43,7 @@ export default function Navbar() {
         </Link>
 
         {/* DESKTOP NAVIGATION */}
-        <nav className="hidden lg:flex items-center space-x-4 xl:space-x-6">
+        <nav className="hidden xl:flex items-center space-x-4">
           {navLinks.map((link) => {
             const isCurrentActive =
               link.name === 'Services'
@@ -69,9 +70,12 @@ export default function Navbar() {
 
           <Link
             to="/contact"
-            className="inline-flex items-center justify-center px-6 py-2 rounded-full bg-[#0B3B24] hover:bg-[#072818] text-white font-medium text-sm transition-all duration-200 shadow-sm hover:shadow"
+            className="py-1 text-sm font-medium text-gray-800 hover:text-[#0B3B24]"
           >
             Contact
+          </Link>
+          <Link to={consultationPath} className="inline-flex items-center justify-center whitespace-nowrap rounded-full bg-[#0B3B24] px-5 py-2 text-sm font-medium text-white hover:bg-[#072818]">
+            Book a Consultation
           </Link>
         </nav>
 
@@ -79,17 +83,19 @@ export default function Navbar() {
         <button
           type="button"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="lg:hidden p-2 rounded-lg text-[#0B3B24] hover:bg-gray-100 transition-colors focus:outline-none"
+          className="xl:hidden p-2 rounded-lg text-[#0B3B24] hover:bg-gray-100 transition-colors focus:outline-none"
           aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
+          aria-expanded={mobileMenuOpen}
+          aria-controls="mobile-navigation"
         >
           {mobileMenuOpen ? <X className="w-6 h-6 text-[#0B3B24]" /> : <Menu className="w-6 h-6" />}
         </button>
       </div>
 
       {/* MOBILE DROPDOWN MENU */}
-      <div
-        className={`lg:hidden bg-white border-t border-gray-100 transition-all duration-300 overflow-hidden shadow-lg ${
-          mobileMenuOpen ? 'max-h-96 opacity-100 py-4 px-6' : 'max-h-0 opacity-0 py-0 px-6'
+      <nav id="mobile-navigation" aria-label="Mobile navigation"
+        className={`xl:hidden bg-white border-t border-gray-100 transition-all duration-300 overflow-hidden shadow-lg ${
+          mobileMenuOpen ? 'max-h-[65dvh] overflow-y-auto opacity-100 py-4 px-6' : 'invisible max-h-0 opacity-0 py-0 px-6'
         }`}
       >
         <div className="flex flex-col space-y-3">
@@ -115,12 +121,15 @@ export default function Navbar() {
           <Link
             to="/contact"
             onClick={closeMenu}
-            className="mt-3 inline-flex justify-center items-center py-2.5 px-4 rounded-full bg-[#0B3B24] text-white font-medium text-center text-sm shadow-sm"
+            className="py-2 text-sm font-medium text-gray-700 hover:text-[#0B3B24] border-b border-gray-50"
           >
             Contact
           </Link>
+          <Link to={consultationPath} onClick={closeMenu} className="inline-flex items-center justify-center rounded-full bg-[#0B3B24] px-4 py-2.5 text-sm font-medium text-white">
+            Book a Consultation
+          </Link>
         </div>
-      </div>
+      </nav>
     </header>
   );
 }

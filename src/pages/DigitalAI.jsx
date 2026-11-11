@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Network, Database, UsersRound, Cpu, Check, ChartNoAxesCombined, ArrowRight } from 'lucide-react';
+import { serviceConsultationPath } from '../consultation';
 
 const focusAreas = [
   { title: 'Workflow Digitalisation', description: 'Review and improve workflows before identifying where digital tools can add value.', icon: Network },
@@ -63,7 +64,7 @@ export default function DigitalAI() {
             <h2 id="digital-opportunity-title" className="no-heading-underline font-heading font-bold text-2xl sm:text-3xl lg:!text-left">Where Could Digital Make a Difference in Your Hospital?</h2>
             <p className="mt-3 text-sm sm:text-base text-white/95 leading-relaxed">From workflow inefficiencies and reporting gaps to patient access and practical AI applications, the starting point is understanding where technology can address a real operational need.</p>
           </div>
-          <Link to="/contact?service=Digital%20Transformation%20%26%20AI%20Enablement" className="inline-flex shrink-0 items-center justify-center gap-3 rounded-full bg-white px-6 py-3.5 text-[#04432E] text-sm font-semibold hover:bg-[#F1F5F3] transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white">Explore a Digital Opportunity <ArrowRight className="w-5 h-5" aria-hidden="true" /></Link>
+          <Link to={serviceConsultationPath('Digital Transformation & AI Enablement')} className="inline-flex shrink-0 items-center justify-center gap-3 rounded-full bg-white px-6 py-3.5 text-[#04432E] text-sm font-semibold hover:bg-[#F1F5F3] transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white">Explore a Digital Opportunity <ArrowRight className="w-5 h-5" aria-hidden="true" /></Link>
         </section>
       </div>
     </div>

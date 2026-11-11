@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { consultationPath } from '../consultation';
 import {
   ArrowRight,
   TrendingUp,
@@ -126,10 +127,10 @@ export default function Home() {
                 <span className="text-base">→</span>
               </Link>
               <Link
-                to="/contact"
+                to={consultationPath}
                 className="inline-flex items-center px-7 py-3 rounded-full bg-white hover:bg-gray-50 text-[#0B3B24] border border-[#0B3B24] font-medium text-sm sm:text-base shadow-sm hover:shadow transition-all duration-200"
               >
-                Discuss an Engagement
+                Book a Consultation
               </Link>
             </div>
           </div>

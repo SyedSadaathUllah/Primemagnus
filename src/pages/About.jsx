@@ -261,7 +261,7 @@ export default function About() {
               </h2>
             </HeadingDivider>
             <p className="text-sm sm:text-base lg:text-[1.05rem] text-gray-700 leading-relaxed">
-              PMCG is founded on 22 years of healthcare experience across NHS England and private healthcare in the UAE, including hospital operations, quality management, governance and JCI accreditation.
+              PMCG is founded on 22 years of healthcare experience across NHS England and private healthcare in the UAE. This experience encompasses hospital operations, quality management, governance and JCI accreditation, alongside an understanding of the operational requirements involved in delivering coordinated healthcare services.
             </p>
           </div>
         </div>

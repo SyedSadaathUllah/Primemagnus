@@ -2,6 +2,8 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import WhatsAppLink from './components/WhatsAppLink';
+import PageMetadata from './components/PageMetadata';
 
 import Home from './pages/Home';
 import About from './pages/About';
@@ -15,6 +17,7 @@ export default function App() {
   return (
     <div className="min-h-screen flex flex-col bg-white text-charcoal font-body antialiased selection:bg-gold/30 selection:text-evergreen">
       <ScrollToTop />
+      <PageMetadata />
       <Navbar />
 
       <main className="flex-grow">
@@ -32,6 +35,7 @@ export default function App() {
       </main>
 
       <Footer />
+      <WhatsAppLink />
     </div>
   );
 }

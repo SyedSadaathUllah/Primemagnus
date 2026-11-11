@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+import { consultationPath } from '../consultation';
 import {
   Hospital,
   MonitorCog,
@@ -142,6 +144,11 @@ export default function Services() {
               })}
             </div>
           </div>
+        </div>
+        <div className="mt-8 text-center">
+          <Link to={consultationPath} className="inline-flex rounded-full bg-[#0B3B24] px-7 py-3 text-sm font-semibold text-white hover:bg-[#072818]">
+            Discuss Your Requirements
+          </Link>
         </div>
       </section>
     </div>
