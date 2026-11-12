@@ -57,11 +57,11 @@ export default function Services() {
     <div className="pb-4">
       <section className="relative overflow-hidden bg-[#04432E]">
         <div className="max-w-[85rem] mx-auto grid grid-cols-1 lg:grid-cols-2 min-h-[280px] lg:min-h-[320px]">
-          <div className="relative z-10 flex flex-col justify-center px-6 sm:px-10 lg:px-12 py-9 sm:py-12 lg:py-16">
-            <h1 className="text-left font-heading font-bold text-white text-4xl sm:text-5xl lg:text-[3.4rem] leading-tight">
+          <div className="relative z-10 flex flex-col justify-center px-6 sm:px-10 lg:px-12 py-9 sm:py-12 lg:py-16 text-center">
+            <h1 className="font-heading font-bold text-white text-4xl sm:text-5xl lg:text-[3.4rem] leading-tight">
               Our Services
             </h1>
-            <p className="mt-5 max-w-xl text-white/95 text-base sm:text-lg leading-relaxed">
+            <p className="mt-5 max-w-xl mx-auto text-white/95 text-base sm:text-lg leading-relaxed">
               Integrated support to improve hospital operations, strengthen governance, enable practical digital adoption and develop international patient programmes.
             </p>
           </div>

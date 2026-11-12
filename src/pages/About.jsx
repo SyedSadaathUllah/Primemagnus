@@ -91,7 +91,7 @@ export default function About() {
             <h1 className="text-3xl sm:text-4xl lg:text-[2.75rem] font-heading font-bold text-[#11231A] tracking-tight leading-[1.18] mb-4">
               A Healthcare Partner for{' '}<br className="hidden sm:inline" />
               Operational Excellence{' '}<br className="hidden sm:inline" />
-              and Global Healthcare Access.
+              and Global Healthcare Access
             </h1>
 
             {/* Gold Underline Accent Line */}
