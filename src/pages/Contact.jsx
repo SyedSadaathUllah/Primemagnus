@@ -48,13 +48,13 @@ export default function Contact() {
             <p className="mt-5 text-white/95 text-base sm:text-lg leading-relaxed">Let’s discuss how PMCG can support your hospital, programme or investment plan.</p>
           </div>
           <div className="relative min-h-[200px] sm:min-h-[300px] lg:min-h-[320px] lg:border-l-[5px] border-gold">
-            <img src="/images/contact-hero.png" alt="Open notebook and pen on a sunlit meeting room table" className="absolute inset-0 w-full h-full object-cover object-[center_65%]" />
+            <img src="/images/contact-hero.jpg" fetchPriority="high" decoding="async" alt="Open notebook and pen on a sunlit meeting room table" className="absolute inset-0 w-full h-full object-cover object-[center_65%]" />
           </div>
         </div>
       </section>
 
       <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pt-12 sm:pt-14 grid lg:grid-cols-[0.85fr_1.15fr] gap-10 lg:gap-14 items-start">
-        <address className="not-italic space-y-7 py-4 text-[#04432E] lg:border-r lg:border-gray-200 lg:pr-10">
+        <address className="not-italic space-y-7 py-4 text-[#04432E] lg:border-r lg:border-gray-300 lg:pr-10">
           <a href="mailto:azeem@primemagnuscareglobal.com" className="flex items-center gap-4 hover:underline"><Mail className="w-6 h-6 shrink-0" aria-hidden="true" /><span className="break-all">azeem@primemagnuscareglobal.com</span></a>
           <a href="tel:+917981982043" className="flex items-center gap-4 hover:underline"><Phone className="w-6 h-6 shrink-0" aria-hidden="true" /><span>India: +91 798 198 2043</span></a>
           <a href="tel:+971508810746" className="flex items-center gap-4 hover:underline"><Phone className="w-6 h-6 shrink-0" aria-hidden="true" /><span>UAE: +971 50 881 0746</span></a>
@@ -63,7 +63,7 @@ export default function Contact() {
           <a href="#book-a-consultation" className="flex items-center gap-4 hover:underline"><CalendarDays className="w-6 h-6 shrink-0" aria-hidden="true" /><span>Book a Consultation</span></a>
         </address>
 
-        <div id="contact-enquiry" className="scroll-mt-32 rounded-2xl border border-gray-200 bg-[#F8FAF9] p-6 sm:p-8 shadow-sm">
+        <div id="contact-enquiry" className="scroll-mt-32 rounded-2xl border border-gray-300 bg-[#F8FAF9] p-6 sm:p-8 shadow-sm">
           {status === 'success' ? (
             <div role="status" className="text-center py-8">
               <CheckCircle2 className="w-12 h-12 text-evergreen mx-auto mb-5" aria-hidden="true" />

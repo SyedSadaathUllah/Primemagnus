@@ -94,7 +94,7 @@ export default function Home() {
   return (
     <div className="space-y-12 sm:space-y-16 lg:space-y-20 pb-12 font-body text-charcoal">
       {/* 1. HERO SECTION */}
-      <section className="relative overflow-hidden bg-gradient-to-r from-[#EEF6F9] via-[#E6F1F5] to-[#F3F8FA] border-b border-gray-200/60">
+      <section className="relative overflow-hidden bg-gradient-to-r from-[#EEF6F9] via-[#E6F1F5] to-[#F3F8FA] border-b border-gray-300">
         {/* Subtle Top Gold Accent Line */}
         <div className="absolute top-0 left-0 w-36 h-1 bg-gradient-to-r from-gold to-transparent"></div>
 
@@ -156,7 +156,7 @@ export default function Home() {
 
             {/* Hospital Building Image */}
             <img
-              src="/images/hero_hospital_hd.jpg"
+              src="/images/hero_hospital_hd.jpg" fetchPriority="high" decoding="async"
               alt="Modern Hospital Facility"
               className="absolute inset-0 w-full h-full object-cover object-center lg:object-left shadow-inner"
             />
@@ -183,7 +183,7 @@ export default function Home() {
           {whereWeHelpCards.map((card, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-2xl p-6 sm:p-8 text-center border border-gray-100 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-lg transition-all duration-300 flex flex-col items-center justify-start group"
+              className="bg-white rounded-2xl p-6 sm:p-8 text-center border border-gray-300 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-lg transition-all duration-300 flex flex-col items-center justify-start group"
             >
               {/* Icon Container */}
               <div className="h-14 flex items-center justify-center mb-4 transition-transform duration-300 group-hover:scale-110">
@@ -210,7 +210,7 @@ export default function Home() {
 
       {/* 3. SECTION: "Improving One Area Often Requires Looking at the Whole Hospital" */}
       <section className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-[#EEF3F5] rounded-3xl p-6 sm:p-10 lg:p-12 border border-gray-200/80">
+        <div className="bg-[#EEF3F5] rounded-3xl p-6 sm:p-10 lg:p-12 border border-gray-300">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Content */}
             <div className="lg:col-span-5 lg:pr-6">
@@ -227,7 +227,7 @@ export default function Home() {
               {wholeHospitalAreas.map((area, idx) => (
                 <div
                   key={idx}
-                  className="bg-white rounded-2xl p-5 sm:p-6 border border-white/90 shadow-[0_2px_12px_-2px_rgba(0,0,0,0.05)] hover:shadow-md transition-all duration-200 flex items-start gap-4"
+                  className="bg-white rounded-2xl p-5 sm:p-6 border border-gray-300 shadow-[0_2px_12px_-2px_rgba(0,0,0,0.05)] hover:shadow-md transition-all duration-200 flex items-start gap-4"
                 >
                   <div className="flex-shrink-0 mt-0.5">
                     {area.icon}
@@ -270,7 +270,7 @@ export default function Home() {
           {progressSteps.map((step, idx) => (
             <div key={idx} className="relative flex min-w-0">
               {/* Step Card */}
-              <div className="w-full bg-white rounded-2xl p-6 border border-gray-100 shadow-[0_4px_16px_-4px_rgba(0,0,0,0.05)] flex items-start gap-4 lg:flex-col lg:items-center min-h-[110px]">
+              <div className="w-full bg-white rounded-2xl p-6 border border-gray-300 shadow-[0_4px_16px_-4px_rgba(0,0,0,0.05)] flex items-start gap-4 lg:flex-col lg:items-center min-h-[110px]">
                 {/* Green Circle Icon */}
                 <div className="w-11 h-11 shrink-0 rounded-full bg-[#0B4D32] flex items-center justify-center shadow-sm">
                   {step.icon}
@@ -339,7 +339,7 @@ export default function Home() {
             </div>
 
             <img
-              src="/images/hospital-leadership-meeting.png"
+              src="/images/hospital-leadership-meeting.jpg"
               alt="Hospital leaders and clinicians meeting around a table"
               className="w-full h-full object-cover object-center"
             />

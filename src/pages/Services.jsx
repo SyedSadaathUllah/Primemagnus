@@ -68,7 +68,7 @@ export default function Services() {
 
           <div className="relative min-h-[200px] sm:min-h-[260px] lg:min-h-full">
             <img
-              src="/images/services-hero.png"
+              src="/images/services-hero.jpg" fetchPriority="high" decoding="async"
               alt="Hospital team reviewing performance data on a dashboard"
               className="absolute inset-0 h-full w-full object-cover object-center"
             />
@@ -98,7 +98,7 @@ export default function Services() {
             return (
               <article
                 key={service.title}
-                className="relative flex flex-col bg-white rounded-2xl border border-gray-200/90 shadow-[0_6px_24px_-10px_rgba(4,67,46,0.18)] p-6 sm:p-7 min-h-[240px]"
+                className="relative flex flex-col bg-white rounded-2xl border border-gray-300 shadow-[0_6px_24px_-10px_rgba(4,67,46,0.18)] p-6 sm:p-7 min-h-[240px]"
               >
                 <Icon className="mx-auto w-9 h-9 text-[#0B6B3A] stroke-[1.6]" aria-hidden="true" />
                 <h3 className="mt-4 font-heading font-bold text-[#04432E] text-xl leading-snug">
@@ -118,7 +118,7 @@ export default function Services() {
       </section>
 
       <section className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pt-8 sm:pt-10 pb-6">
-        <div className="rounded-2xl bg-[#F3F5F4] border border-gray-200/80 px-5 sm:px-8 py-6 sm:py-7">
+        <div className="rounded-2xl bg-[#F3F5F4] border border-gray-300 px-5 sm:px-8 py-6 sm:py-7">
           <div className="flex flex-col lg:flex-row lg:items-center gap-6 lg:gap-8">
             <div className="lg:w-52 flex-shrink-0 lg:pr-6 lg:border-r lg:border-gray-300">
               <h2 className="font-heading font-bold text-[#04432E] text-3xl sm:text-4xl">

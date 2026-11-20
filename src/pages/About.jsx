@@ -78,7 +78,7 @@ export default function About() {
   return (
     <div className="space-y-12 sm:space-y-14 lg:space-y-16 pb-20 font-body text-charcoal">
       {/* 1. HERO SECTION */}
-      <section className="relative overflow-hidden bg-gradient-to-r from-[#EEF6F9] via-[#E6F1F5] to-[#F3F8FA] border-b border-gray-200/60">
+      <section className="relative overflow-hidden bg-gradient-to-r from-[#EEF6F9] via-[#E6F1F5] to-[#F3F8FA] border-b border-gray-300">
         <div className="max-w-[85rem] mx-auto grid grid-cols-1 lg:grid-cols-12 items-center lg:min-h-[460px]">
           {/* Left Text Column */}
           <div className="lg:col-span-7 px-6 sm:px-10 lg:pl-12 lg:pr-8 py-9 sm:py-12 lg:py-16 z-10">
@@ -158,7 +158,7 @@ export default function About() {
             {whoWeWorkWith.map((item, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-2xl p-5 text-center border border-gray-100 shadow-[0_2px_12px_-2px_rgba(0,0,0,0.05)] hover:shadow-md transition-all duration-200 flex flex-col items-center gap-5 min-h-[145px] group"
+                className="bg-white rounded-2xl p-5 text-center border border-gray-300 shadow-[0_2px_12px_-2px_rgba(0,0,0,0.05)] hover:shadow-md transition-all duration-200 flex flex-col items-center gap-5 min-h-[145px] group"
               >
                 <div className="h-12 shrink-0 flex items-center justify-center transition-transform duration-200 group-hover:scale-110">
                   {item.icon}
@@ -190,7 +190,7 @@ export default function About() {
             {approachSteps.map((step, idx) => (
               <div key={idx} className="relative flex min-w-0">
                 {/* Step Card */}
-                <div className="w-full bg-white rounded-2xl p-6 border border-gray-100 shadow-[0_2px_12px_-2px_rgba(0,0,0,0.05)] flex items-start gap-4 flex-1 min-h-[110px]">
+                <div className="w-full bg-white rounded-2xl p-6 border border-gray-300 shadow-[0_2px_12px_-2px_rgba(0,0,0,0.05)] flex items-start gap-4 flex-1 min-h-[110px]">
                   <div className="w-10 h-10 rounded-full border-2 border-[#0B4D32] flex items-center justify-center flex-shrink-0 mt-0.5 bg-emerald-50/50">
                     {step.icon}
                   </div>

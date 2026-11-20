@@ -62,7 +62,7 @@ export default function InternationalHealthcare() {
             <p className="mt-5 text-white/95 text-base sm:text-lg leading-relaxed">Structured, coordinated and patient-focused international care programmes for hospitals.</p>
           </div>
           <div className="relative min-h-[210px] sm:min-h-[320px] lg:min-h-full lg:border-l-[5px] border-gold">
-            <img src="/images/international-healthcare-hero.png" alt="Healthcare coordinator discussing care arrangements with a patient and companion" className="absolute inset-0 w-full h-full object-cover object-center" />
+            <img src="/images/international-healthcare-hero.jpg" fetchPriority="high" decoding="async" alt="Healthcare coordinator discussing care arrangements with a patient and companion" className="absolute inset-0 w-full h-full object-cover object-center" />
           </div>
         </div>
       </section>
@@ -73,7 +73,7 @@ export default function InternationalHealthcare() {
           <p className="max-w-4xl mx-auto mt-5 text-center text-gray-600 text-sm sm:text-base leading-relaxed">PMCG works with hospitals to design and strengthen international patient programmes, with clear processes for patient access, coordination, governance and continuity of care.</p>
           <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {support.map(({ title, description, icon: Icon }) => (
-              <article key={title.join(' ')} className="rounded-2xl border border-gray-200 bg-[#F5F8F6] p-6 lg:px-4 xl:px-6 text-center shadow-sm">
+              <article key={title.join(' ')} className="rounded-2xl border border-gray-300 bg-[#F5F8F6] p-6 lg:px-4 xl:px-6 text-center shadow-sm">
                 <Icon className="mx-auto w-10 h-10 text-[#0B6B3A] stroke-[1.6]" aria-hidden="true" />
                 <h3 className="mt-4 font-heading font-bold text-[#04432E] text-xl leading-snug">
                   {title.map((line, index) => (
@@ -95,7 +95,7 @@ export default function InternationalHealthcare() {
           <p className="mt-5 text-center text-gray-600 text-sm sm:text-base leading-relaxed">A structured journey for international patients, from initial enquiry through treatment and post-treatment follow-up.</p>
           <ol className="mt-8 grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-5 xl:gap-7">
             {pathway.map(({ title, description, icon: Icon }, index) => (
-              <li key={title.join(' ')} className="relative rounded-2xl border border-gray-200 bg-[#F8FAF9] p-5 xl:px-3 text-center shadow-sm">
+              <li key={title.join(' ')} className="relative rounded-2xl border border-gray-300 bg-[#F8FAF9] p-5 xl:px-3 text-center shadow-sm">
                 <Icon className="mx-auto w-10 h-10 text-[#0B6B3A] stroke-[1.6]" aria-hidden="true" />
                 <h3 className="mt-4 font-heading font-bold text-[#04432E] text-xl leading-snug">
                   {title.map((line, index) => (

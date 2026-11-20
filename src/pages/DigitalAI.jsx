@@ -43,7 +43,7 @@ export default function DigitalAI() {
           </div>
           <div className="relative min-h-[210px] sm:min-h-[320px] lg:min-h-full border-l-0 lg:border-l-[5px] border-gold">
             <img
-              src="/images/digital-ai-hero.png"
+              src="/images/digital-ai-hero.jpg" fetchPriority="high" decoding="async"
               alt="Healthcare colleagues reviewing operational data on a hospital dashboard"
               className="absolute inset-0 h-full w-full object-cover object-center"
             />
@@ -57,7 +57,7 @@ export default function DigitalAI() {
             <h2 id="digital-focus-title" className="font-heading font-bold text-[#04432E] text-3xl sm:text-4xl">Our Focus Areas</h2>
             <div className="mt-7 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {focusAreas.map(({ title, description, icon: Icon }) => (
-                <article key={title.join(' ')} className="rounded-xl border border-gray-200 bg-[#F8FAF9] p-5 lg:px-4 text-center shadow-sm">
+                <article key={title.join(' ')} className="rounded-xl border border-gray-300 bg-[#F8FAF9] p-5 lg:px-4 text-center shadow-sm">
                   <Icon className="mx-auto w-9 h-9 text-[#0B6B3A] stroke-[1.6]" aria-hidden="true" />
                   <h3 className="mt-4 font-heading font-bold text-[#04432E] text-xl leading-snug">
                     {title.map((line, index) => (
@@ -73,7 +73,7 @@ export default function DigitalAI() {
               ))}
             </div>
           </section>
-          <section aria-labelledby="digital-approach-title" className="xl:border-l xl:border-gray-200 xl:pl-8">
+          <section aria-labelledby="digital-approach-title" className="xl:border-l xl:border-gray-300 xl:pl-8">
             <h2 id="digital-approach-title" className="font-heading font-bold text-[#04432E] text-3xl sm:text-4xl">The PMCG Approach</h2>
             <ul className="mt-7 space-y-5">
               {approach.map(item => <li key={item} className="flex items-start gap-3 text-sm sm:text-base text-gray-700 leading-relaxed"><Check className="w-5 h-5 mt-0.5 shrink-0 text-[#0B6B3A]" aria-hidden="true" /><span>{item}</span></li>)}

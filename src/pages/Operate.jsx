@@ -102,7 +102,7 @@ export default function Operate() {
     <div className="space-y-12 md:space-y-16 pb-12">
       {/* HEADER HERO SECTION */}
       <section className="max-w-[85rem] mx-auto px-4 sm:px-6 pt-8 md:pt-12 text-center">
-        <div className="relative bg-white rounded-3xl shadow-xl px-6 sm:px-10 md:px-16 py-12 md:py-20 border border-gray-100">
+        <div className="relative bg-white rounded-3xl shadow-xl px-6 sm:px-10 md:px-16 py-12 md:py-20 border border-gray-300">
           <div className="absolute left-0 top-6 bottom-12 w-1 gold-line-v rounded-r"></div>
           <div className="absolute right-0 top-6 bottom-12 w-1 gold-line-v rounded-l"></div>
 
@@ -125,7 +125,7 @@ export default function Operate() {
 
       {/* HOW PMCG WORKS - 4 CORE PILLARS */}
       <section className="max-w-[85rem] mx-auto px-4 sm:px-6">
-        <div className="relative bg-white rounded-3xl shadow-xl px-6 sm:px-10 md:px-16 py-12 md:py-16 border border-gray-100">
+        <div className="relative bg-white rounded-3xl shadow-xl px-6 sm:px-10 md:px-16 py-12 md:py-16 border border-gray-300">
           <div className="max-w-[75rem] mx-auto">
             <div className="text-center max-w-2xl mx-auto mb-12">
               <span className="text-gold uppercase tracking-wider font-semibold text-xs md:text-sm">
@@ -145,7 +145,7 @@ export default function Operate() {
                 return (
                   <div
                     key={pillar.id}
-                    className="p-8 rounded-2xl bg-offwhite/50 border border-gray-200 hover:border-gold transition-all duration-300 hover:shadow-lg flex flex-col justify-between"
+                    className="p-8 rounded-2xl bg-offwhite/50 border border-gray-300 hover:border-gold transition-all duration-300 hover:shadow-lg flex flex-col justify-between"
                   >
                     <div>
                       <div className="flex items-center justify-between mb-4">
@@ -196,7 +196,7 @@ export default function Operate() {
 
       {/* ENGAGEMENT LIFECYCLE */}
       <section className="max-w-[85rem] mx-auto px-4 sm:px-6">
-        <div className="relative bg-white rounded-3xl shadow-xl px-6 sm:px-10 md:px-16 py-12 md:py-16 border border-gray-100">
+        <div className="relative bg-white rounded-3xl shadow-xl px-6 sm:px-10 md:px-16 py-12 md:py-16 border border-gray-300">
           <div className="max-w-[75rem] mx-auto">
             <div className="text-center max-w-2xl mx-auto mb-12">
               <span className="text-gold uppercase tracking-wider font-semibold text-xs md:text-sm">
@@ -211,7 +211,7 @@ export default function Operate() {
               {workflowSteps.map((ws, i) => (
                 <div
                   key={i}
-                  className="p-6 rounded-2xl bg-white border border-gray-200 hover:border-gold shadow-sm flex flex-col"
+                  className="p-6 rounded-2xl bg-white border border-gray-300 hover:border-gold shadow-sm flex flex-col"
                 >
                   <span className="text-xs font-bold text-gold uppercase tracking-wider mb-1">
                     {ws.step}
