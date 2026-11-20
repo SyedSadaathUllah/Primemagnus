@@ -9,6 +9,9 @@ for (const path of publicPaths) {
   const page = getPageMetadata(path);
   const title = escapeHtml(page.title);
   const description = escapeHtml(page.description);
+  const rendered = renderPage(path);
+  const heroes = [...rendered.matchAll(/<img[^>]*src="([^"]+)"[^>]*fetchpriority="high"|<img[^>]*fetchpriority="high"[^>]*src="([^"]+)"/g)].map(m => m[1] || m[2]);
+  const preloads = [...new Set(heroes)].map(href => `<link rel="preload" as="image" href="${href}" fetchpriority="high" />`).join('');
   const html = template
     .replace(/<title>.*?<\/title>/, () => `<title>${title}</title>`)
     .replace(/<meta name="description"[^>]*>/, () => `<meta name="description" content="${description}" />`)
@@ -16,7 +19,8 @@ for (const path of publicPaths) {
     .replace(/<meta property="og:title"[^>]*>/, () => `<meta property="og:title" content="${title}" />`)
     .replace(/<meta property="og:description"[^>]*>/, () => `<meta property="og:description" content="${description}" />`)
     .replace(/<meta property="og:url"[^>]*>/, () => `<meta property="og:url" content="${page.canonical}" />`)
-    .replace('<div id="root"></div>', () => `<div id="root">${renderPage(path)}</div>`);
+    .replace('<div id="root"></div>', () => `<div id="root">${rendered}</div>`)
+    .replace('</head>', () => `${preloads}</head>`);
 
   const directory = path === '/' ? 'dist' : `dist${path}`;
   await mkdir(directory, { recursive: true });

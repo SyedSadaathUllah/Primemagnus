@@ -49,7 +49,7 @@ export default function CaseStudies() {
             <p className="mt-5 text-white/95 text-base sm:text-lg leading-relaxed">Practical interventions. Measurable results.</p>
           </div>
           <div className="relative min-h-[210px] sm:min-h-[340px] lg:min-h-[360px] lg:border-l-[5px] border-gold">
-            <img src="/images/case-studies-hero.jpg" fetchPriority="high" decoding="async" alt="Healthcare consulting team reviewing a hospital performance dashboard" className="absolute inset-0 w-full h-full object-cover object-[center_40%]" />
+            <img src="/images/case-studies-hero.jpg" fetchpriority="high" decoding="async" alt="Healthcare consulting team reviewing a hospital performance dashboard" className="absolute inset-0 w-full h-full object-cover object-[center_40%]" />
           </div>
         </div>
       </section>

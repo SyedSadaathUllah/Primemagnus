@@ -68,7 +68,7 @@ export default function Services() {
 
           <div className="relative min-h-[200px] sm:min-h-[260px] lg:min-h-full">
             <img
-              src="/images/services-hero.jpg" fetchPriority="high" decoding="async"
+              src="/images/services-hero.jpg" fetchpriority="high" decoding="async"
               alt="Hospital team reviewing performance data on a dashboard"
               className="absolute inset-0 h-full w-full object-cover object-center"
             />

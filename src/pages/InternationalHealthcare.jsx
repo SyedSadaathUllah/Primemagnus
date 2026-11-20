@@ -62,7 +62,7 @@ export default function InternationalHealthcare() {
             <p className="mt-5 text-white/95 text-base sm:text-lg leading-relaxed">Structured, coordinated and patient-focused international care programmes for hospitals.</p>
           </div>
           <div className="relative min-h-[210px] sm:min-h-[320px] lg:min-h-full lg:border-l-[5px] border-gold">
-            <img src="/images/international-healthcare-hero.jpg" fetchPriority="high" decoding="async" alt="Healthcare coordinator discussing care arrangements with a patient and companion" className="absolute inset-0 w-full h-full object-cover object-center" />
+            <img src="/images/international-healthcare-hero.jpg" fetchpriority="high" decoding="async" alt="Healthcare coordinator discussing care arrangements with a patient and companion" className="absolute inset-0 w-full h-full object-cover object-center" />
           </div>
         </div>
       </section>

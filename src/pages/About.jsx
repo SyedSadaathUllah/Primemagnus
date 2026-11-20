@@ -122,7 +122,7 @@ export default function About() {
 
             {/* Doctors Consulting in Hallway Image */}
             <img
-              src="/images/about_doctors_hd.jpg"
+              src="/images/about_doctors_hd.jpg" fetchpriority="high" decoding="async"
               alt="Medical Team Reviewing Clinical Data"
               className="w-full h-full object-cover object-center lg:object-left shadow-inner"
             />

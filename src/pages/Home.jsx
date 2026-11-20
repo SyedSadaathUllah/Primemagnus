@@ -156,7 +156,7 @@ export default function Home() {
 
             {/* Hospital Building Image */}
             <img
-              src="/images/hero_hospital_hd.jpg" fetchPriority="high" decoding="async"
+              src="/images/hero_hospital_hd.jpg" fetchpriority="high" decoding="async"
               alt="Modern Hospital Facility"
               className="absolute inset-0 w-full h-full object-cover object-center lg:object-left shadow-inner"
             />

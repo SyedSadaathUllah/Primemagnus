@@ -43,7 +43,7 @@ export default function DigitalAI() {
           </div>
           <div className="relative min-h-[210px] sm:min-h-[320px] lg:min-h-full border-l-0 lg:border-l-[5px] border-gold">
             <img
-              src="/images/digital-ai-hero.jpg" fetchPriority="high" decoding="async"
+              src="/images/digital-ai-hero.jpg" fetchpriority="high" decoding="async"
               alt="Healthcare colleagues reviewing operational data on a hospital dashboard"
               className="absolute inset-0 h-full w-full object-cover object-center"
             />
