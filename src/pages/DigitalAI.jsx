@@ -41,7 +41,7 @@ export default function DigitalAI() {
             <h1 className="font-heading font-bold text-white text-4xl sm:text-5xl lg:text-[3.4rem] leading-tight">Digital &amp; AI in Healthcare</h1>
             <p className="mt-5 text-white/95 text-base sm:text-lg leading-relaxed max-w-xl mx-auto">Practical digital and AI adoption to support hospital efficiency, operational control and better-coordinated processes.</p>
           </div>
-          <div className="relative min-h-[210px] sm:min-h-[320px] lg:min-h-full border-l-0 lg:border-l-[5px] border-gold">
+          <div className="relative min-h-[210px] sm:min-h-[320px] lg:min-h-full border-l-0 lg:-mr-[max(0px,calc((100vw-85rem)/2))] lg:border-l-[5px] border-gold">
             <img
               src="/images/digital-ai-hero.jpg" fetchpriority="high" decoding="async"
               alt="Healthcare colleagues reviewing operational data on a hospital dashboard"

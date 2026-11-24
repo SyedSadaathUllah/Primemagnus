@@ -61,7 +61,7 @@ export default function InternationalHealthcare() {
             <h1 className="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight">International Patient Programmes &amp; Medical Value Travel</h1>
             <p className="mt-5 text-white/95 text-base sm:text-lg leading-relaxed">Structured, coordinated and patient-focused international care programmes for hospitals.</p>
           </div>
-          <div className="relative min-h-[210px] sm:min-h-[320px] lg:min-h-full lg:border-l-[5px] border-gold">
+          <div className="relative min-h-[210px] sm:min-h-[320px] lg:min-h-full lg:-mr-[max(0px,calc((100vw-85rem)/2))] lg:border-l-[5px] border-gold">
             <img src="/images/international-healthcare-hero.jpg" fetchpriority="high" decoding="async" alt="Healthcare coordinator discussing care arrangements with a patient and companion" className="absolute inset-0 w-full h-full object-cover object-center" />
           </div>
         </div>
@@ -119,7 +119,7 @@ export default function InternationalHealthcare() {
             <p className="mt-4 text-white/90 text-sm sm:text-base leading-relaxed">Let’s explore how PMCG can help your hospital build or strengthen its international patient programme.</p>
             <Link to={serviceConsultationPath('International Patient Programme')} className="inline-flex items-center justify-center mt-6 rounded-full bg-white text-[#04432E] px-7 py-3 font-semibold text-sm hover:bg-[#F2EAD7] transition-colors">Discuss an International Patient Programme</Link>
           </div>
-          <div className="hidden lg:block relative border-l-[5px] border-gold"><img src="/images/services_corridor.jpg" alt="Hospital care environment" className="absolute inset-0 w-full h-full object-cover" /></div>
+          <div className="hidden lg:block relative border-l-[5px] border-gold"><img src="/images/cta_corridor_hd.jpg" alt="Hospital care environment" className="absolute inset-0 w-full h-full object-cover" /></div>
         </section>
       </div>
     </div>

@@ -78,7 +78,7 @@ export default function About() {
   return (
     <div className="space-y-12 sm:space-y-14 lg:space-y-16 pb-20 font-body text-charcoal">
       {/* 1. HERO SECTION */}
-      <section className="relative overflow-hidden bg-gradient-to-r from-[#EEF6F9] via-[#E6F1F5] to-[#F3F8FA] border-b border-gray-300">
+      <section className="relative overflow-hidden bg-[#04432E]">
         <div className="max-w-[85rem] mx-auto grid grid-cols-1 lg:grid-cols-12 items-center lg:min-h-[460px]">
           {/* Left Text Column */}
           <div className="lg:col-span-7 px-6 sm:px-10 lg:pl-12 lg:pr-8 py-9 sm:py-12 lg:py-16 z-10">
@@ -88,7 +88,7 @@ export default function About() {
             </p> */}
 
             {/* Main Title */}
-            <h1 className="text-3xl sm:text-4xl lg:text-[2.75rem] font-heading font-bold text-[#11231A] tracking-tight leading-[1.18] mb-4">
+            <h1 className="text-3xl sm:text-4xl lg:text-[2.75rem] font-heading font-bold text-white tracking-tight leading-[1.18] mb-4">
               A Healthcare Partner for{' '}<br className="hidden sm:inline" />
               Operational Excellence{' '}<br className="hidden sm:inline" />
               and Global Healthcare Access
@@ -102,13 +102,13 @@ export default function About() {
           </div>
 
           {/* Right Image Column with Angled Gold Curve */}
-          <div className="lg:col-span-5 relative h-56 sm:h-80 lg:h-full lg:min-h-[460px] overflow-hidden flex items-center justify-end">
+          <div className="lg:col-span-5 relative h-56 lg:-mr-[max(0px,calc((100vw-85rem)/2))] sm:h-80 lg:h-full lg:min-h-[460px] overflow-hidden flex items-center justify-end">
             {/* Angled curved separator overlay (Desktop) */}
             <div className="hidden lg:block absolute inset-y-0 left-0 w-24 z-10 pointer-events-none">
               <svg
                 viewBox="0 0 100 100"
                 preserveAspectRatio="none"
-                className="h-full w-full fill-[#E6F1F5]"
+                className="h-full w-full fill-[#04432E]"
               >
                 <path d="M0,0 L65,0 C45,35 15,65 0,100 Z" />
                 <path

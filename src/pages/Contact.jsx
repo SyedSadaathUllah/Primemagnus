@@ -47,7 +47,7 @@ export default function Contact() {
             <h1 className="font-heading font-bold text-white text-4xl sm:text-5xl lg:text-[3.4rem] leading-tight">Contact Us</h1>
             <p className="mt-5 text-white/95 text-base sm:text-lg leading-relaxed">Let’s discuss how PMCG can support your hospital, programme or investment plan.</p>
           </div>
-          <div className="relative min-h-[200px] sm:min-h-[300px] lg:min-h-[320px] lg:border-l-[5px] border-gold">
+          <div className="relative min-h-[200px] sm:min-h-[300px] lg:min-h-[320px] lg:-mr-[max(0px,calc((100vw-85rem)/2))] lg:border-l-[5px] border-gold">
             <img src="/images/contact-hero.jpg" fetchpriority="high" decoding="async" alt="Open notebook and pen on a sunlit meeting room table" className="absolute inset-0 w-full h-full object-cover object-[center_65%]" />
           </div>
         </div>
